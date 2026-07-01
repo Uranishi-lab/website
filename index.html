@@ -1,0 +1,140 @@
+---
+layout: default
+title: "Uranishi Lab"
+type: "website"
+---
+
+<main id="main_content" class="l-mainContent l-article">
+  <div class="l-mainContent__inner">
+    <div class="post_content">
+
+      <div class="responsive">
+        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/21hWeGo1vTU?si=0yGGR5lflqwupmvL"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen class=" lazyloaded"></iframe>
+      </div>
+
+
+
+      <p>メディア統合環境講座（浦西研究室）は「メディアを統合、活用した新しい環境の創造」をテーマとして、VR、拡張現実感、HCIやロボティクスなどにおける各種問題を解決し、様々なフィールドへの応用に取り組んでいます。
+      </p>
+
+
+
+      <h2 class="wp-block-heading">最近の活動</h2>
+
+
+
+      <ul class="swell-block-linkList is-style-default -border">
+        {% for post in site.posts %}
+        <li class="swell-block-linkList__item">
+          <a class="swell-block-linkList__link" href="{{ post.url }}"><svg xmlns="http://www.w3.org/2000/svg"
+              class="swl-svg-caretRight swell-block-linkList__icon -left" width="1em" height="1em" viewBox="0 0 48 48"
+              role="img" aria-hidden="true" focusable="false">
+              <path d="M19.4 38.3 32.7 25c.6-.6.6-1.5 0-2.1L19.4 9.6c-.9-.9-2.6-.3-2.6 1.1v26.5c0 1.4 1.6 2.1 2.6 1.1z">
+              </path>
+            </svg><span class="swell-block-linkList__text">{{ post.date | date: "%Y/%m/%d" }}　{{ post.title
+              }}</span></a>
+        </li>
+        {% endfor %}
+      </ul>
+
+
+
+      <h2 class="wp-block-heading">メニュー</h2>
+
+
+
+      <div class="swell-block-columns" style="--clmn-w--pc:33.33%">
+        <div class="swell-block-columns__inner">
+          <div class="swell-block-column swl-has-mb--s">
+            <div class="swell-block-bannerLink">
+              <a href="{{ '/research/' | relative_url }}" class="c-bannerLink -shadow-on"
+                style="background-color:rgba(0, 0, 0, 0.4)">
+                <figure class="c-bannerLink__figure">
+                  <img decoding="async" width="1327" height="746"
+                    src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                    data-src="{{ '/assets/images/research.png' | relative_url }}"
+                    class="c-bannerLink__img wp-image-2738 size-full lazyload lazyaspectratio" alt=""
+                    sizes="(max-width: 1327px) 100vw, 1327px" data-aspectratio="1327/746" style="height: 203.506px;">
+                </figure>
+                <div class="c-bannerLink__text">
+                  <div class="c-bannerLink__title">研究紹介</div>
+                </div>
+              </a>
+            </div>
+          </div>
+
+
+
+          <div class="swell-block-column swl-has-mb--s">
+            <div class="swell-block-bannerLink"><a href="{{ '/members/' | relative_url }}"
+                class="c-bannerLink -shadow-on" style="background-color:rgba(0, 0, 0, 0.4)">
+                <figure class="c-bannerLink__figure"><img decoding="async" width="1789" height="1006"
+                    src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                    data-src="{{ '/assets/images/members.png' | relative_url }}"
+                    class="c-bannerLink__img wp-image-3056 size-full lazyload lazyaspectratio" alt=""
+                    sizes="(max-width: 1789px) 100vw, 1789px" data-aspectratio="1789/1006" style="height: 203.562px;">
+                </figure>
+                <div class="c-bannerLink__text">
+                  <div class="c-bannerLink__title">メンバー</div>
+                </div>
+              </a></div>
+          </div>
+
+
+
+          <div class="swell-block-column swl-has-mb--s">
+            <div class="swell-block-bannerLink"><a href="{{ '/achievements/' | relative_url }}"
+                class="c-bannerLink -shadow-on" style="background-color:rgba(0, 0, 0, 0.4)">
+                <figure class="c-bannerLink__figure"><img decoding="async" width="1302" height="732"
+                    src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                    data-src="{{ '/assets/images/achievements.png' | relative_url }}"
+                    class="c-bannerLink__img wp-image-2729 size-full lazyload lazyaspectratio" alt=""
+                    sizes="(max-width: 1302px) 100vw, 1302px" data-aspectratio="1302/732" style="height: 203.521px;">
+                </figure>
+                <div class="c-bannerLink__text">
+                  <div class="c-bannerLink__title">研究業績</div>
+                </div>
+              </a></div>
+          </div>
+
+
+
+          <div class="swell-block-column swl-has-mb--s">
+            <div class="swell-block-bannerLink"><a href="{{ '/gallery/' | relative_url }}"
+                class="c-bannerLink -shadow-on" style="background-color:rgba(0, 0, 0, 0.4)">
+                <figure class="c-bannerLink__figure"><img decoding="async" width="2560" height="1440"
+                    src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                    data-src="{{ '/assets/images/gallery.jpg' | relative_url }}"
+                    class="c-bannerLink__img wp-image-2748 lazyload lazyaspectratio" alt=""
+                    sizes="(max-width: 2560px) 100vw, 2560px" data-aspectratio="2560/1440" style="height: 203.625px;">
+                </figure>
+                <div class="c-bannerLink__text">
+                  <div class="c-bannerLink__title">フォトギャラリー</div>
+                </div>
+              </a></div>
+          </div>
+
+
+
+          <div class="swell-block-column swl-has-mb--s">
+            <div class="swell-block-bannerLink"><a href="{{ '/contact/' | relative_url }}"
+                class="c-bannerLink -shadow-on" style="background-color:rgba(0, 0, 0, 0.4)">
+                <figure class="c-bannerLink__figure"><img decoding="async" width="1163" height="654"
+                    src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                    data-src="{{ '/assets/images/contact.png' | relative_url }}"
+                    class="c-bannerLink__img wp-image-2731 size-full lazyload lazyaspectratio" alt=""
+                    sizes="(max-width: 1163px) 100vw, 1163px" data-aspectratio="1163/654" style="height: 203.567px;">
+                </figure>
+                <div class="c-bannerLink__text">
+                  <div class="c-bannerLink__title">コンタクト</div>
+                </div>
+              </a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
