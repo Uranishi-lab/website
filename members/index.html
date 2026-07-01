@@ -1,0 +1,137 @@
+---
+layout: default
+title: "メンバー | Uranishi Lab"
+description: "※メール送信時の注意：アドレス末尾の osaka-u.ac.jp が省略されています。"
+type: "article"
+---
+
+<main id="main_content" class="l-mainContent l-article">
+  <div class="l-mainContent__inner" data-clarity-region="article">
+    <h1 class="c-pageTitle" data-style="b_bottom"><span class="c-pageTitle__inner">メンバー</span></h1>
+    <div class="post_content">
+      <p>※メール送信時の注意：アドレス末尾の osaka-u.ac.jp が省略されています。</p>
+
+      {% assign section_order = site.data.members | map: "section" | uniq %}
+      {% for section in section_order %}
+      {% assign section_members = site.data.members | where: "section", section %}
+      {% if section != "学生" and section_members.size > 0 %}
+      <h2 class="wp-block-heading">{{ section }}</h2>
+      <div class="swell-block-columns" style="--clmn-w--pc:20%;--clmn-w--mobile:50%">
+        <div class="swell-block-columns__inner">
+          {% for member in section_members %}
+          <div class="swell-block-column swl-has-mb--s">
+            {% assign member_photo = member.photo | default: 'uranishilab-transparent.png' %}
+            {% assign member_image = '/assets/images/members/' | append: member_photo | relative_url %}
+            <div class="wp-block-image sample-expanding-image">
+              <figure class="alignleft size-full is-resized">
+                {% if member.url %}
+                <a href="{{ member.url }}" target="_blank" rel="noreferrer noopener">
+                  <img decoding="async" width="221" height="221" src="{{ member_image }}" alt="{{ member.name }}"
+                    style="aspect-ratio:1;object-fit:contain;width:221px">
+                </a>
+                {% else %}
+                <img decoding="async" width="221" height="221" src="{{ member_image }}" alt="{{ member.name }}"
+                  style="aspect-ratio:1;object-fit:contain;width:221px">
+                {% endif %}
+              </figure>
+            </div>
+
+            <details class="wp-block-details is-layout-flow wp-block-details-is-layout-flow">
+              <summary><strong>{{ member.name }}</strong><br>　{{ member.role }}</summary>
+              <p>
+                {% if member.name_en %}{{ member.name_en }}<br>{% endif %}
+                {% if member.affiliation %}{{ member.affiliation }}<br>{% endif %}
+                {% if member.tel %}<span
+                  style="--the-icon-svg: url(data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjFlbSIgd2lkdGg9IjFlbSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBhcmlhLWhpZGRlbj0idHJ1ZSIgdmlld0JveD0iMCAwIDQ4IDQ4Ij48cGF0aCBkPSJNMTMuMyAyMS42YzMuMSA1LjMgNy41IDkuOSAxMyAxMyAuOS42IDIgLjUgMi44LS4zbDIuOS0yLjljLjctLjcgMS41LS43IDIuNC0uNmw4LjIgMS4zYzEuMi4yIDIuMyAxIDIuMyAyLjN2OC4xYzAgMS4zLTEgMi4zLTIuMyAyLjNDMjAuOCA0NC45IDMgMjcuMiAzIDUuNWMwLTEuMyAxLTIuMyAyLjMtMi4zaDguMWMxLjMgMCAyLjIgMS4xIDIuMyAyLjNsMS4zIDguMmMuMi45LjEgMS43LS42IDIuNEwxMy41IDE4Yy0uNi42LS44IDIuOC0uMiAzLjZ6Ij48L3BhdGg+PC9zdmc+)"
+                  data-icon="LsPhone" data-id="38" aria-hidden="true" class="swl-inline-icon">  : {{ member.tel
+                  }}</span><br>{%
+                endif %}
+                {% if member.email %}<span
+                  style="--the-icon-svg: url(data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjFlbSIgd2lkdGg9IjFlbSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBhcmlhLWhpZGRlbj0idHJ1ZSIgdmlld0JveD0iMCAwIDQ4IDQ4Ij48cGF0aCBkPSJNMjUuMiAyNC43IDQ2IDkuNVY5YzAtMS4xLS45LTItMi0ySDRjLTEuMSAwLTIgLjktMiAydi41bDIwLjggMTUuMWMuNy42IDEuNy42IDIuNC4xeiI+PC9wYXRoPjxwYXRoIGQ9Ik0yMi44IDI5LjYgMiAxNC41VjM4YzAgMS43IDEuMyAzIDMgM2gzOGMxLjcgMCAzLTEuMyAzLTNWMTQuNUwyNS4yIDI5LjZjLS43LjUtMS43LjUtMi40IDB6Ij48L3BhdGg+PC9zdmc+)"
+                  data-icon="LsMail" data-id="3" aria-hidden="true" class="swl-inline-icon"> &nbsp;: {{ member.email
+                  }}</span><br>{% endif %}
+                {% if member.url %}<span
+                  style="--the-icon-svg: url(data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjFlbSIgd2lkdGg9IjFlbSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBhcmlhLWhpZGRlbj0idHJ1ZSIgdmlld0JveD0iMCAwIDQ4IDQ4Ij48cGF0aCBkPSJNMjEuMiAzMC4yYy0uNSAwLTEtLjItMS40LS42bC0uNy0uN2MtMi4zLTIuMy0zLjUtNS4zLTMuNS04LjVzMS4yLTYuMiAzLjUtOC41bDcuMS03LjFjMi4zLTIuMyA1LjMtMy41IDguNS0zLjVzNi4yIDEuMiA4LjUgMy41YzQuNyA0LjcgNC43IDEyLjMgMCAxN2wtMy41IDMuNWMtLjguOC0yIC44LTIuOCAwLS44LS44LS44LTIgMC0yLjhsMy41LTMuNWMzLjEtMy4xIDMuMS04LjIgMC0xMS4zLTEuNS0xLjUtMy41LTIuMy01LjctMi4zLTIuMSAwLTQuMi44LTUuNyAyLjNsLTcuMSA3LjFjLTEuNSAxLjUtMi4zIDMuNS0yLjMgNS43cy44IDQuMiAyLjMgNS43bC43LjdjLjguOC44IDIgMCAyLjgtLjQuMy0uOS41LTEuNC41eiI+PC9wYXRoPjxwYXRoIGQ9Ik0xMy40IDQ2LjZjLTMuMSAwLTYuMS0xLjItOC41LTMuNS0yLjMtMi4zLTMuNS01LjMtMy41LTguNXMxLjItNi4yIDMuNS04LjVsMy41LTMuNWMuOC0uOCAyLS44IDIuOCAwIC44LjguOCAyIDAgMi44bC0zLjUgMy41Yy0xLjUgMS41LTIuMyAzLjUtMi4zIDUuNyAwIDIuMS44IDQuMiAyLjMgNS43IDMuMSAzLjEgOC4yIDMuMSAxMS4zIDBsNy4xLTcuMWMxLjUtMS41IDIuMy0zLjUgMi4zLTUuNyAwLTIuMS0uOC00LjItMi4zLTUuN2wtLjctLjdjLS44LS44LS44LTIgMC0yLjguOC0uOCAyLS44IDIuOCAwbC43LjdjMi4zIDIuMyAzLjUgNS4zIDMuNSA4LjVzLTEuMiA2LjItMy41IDguNWwtNy4xIDcuMWMtMi4zIDIuMy01LjMgMy41LTguNCAzLjV6Ij48L3BhdGg+PC9zdmc+)"
+                  data-icon="LsLink" data-id="15" aria-hidden="true" class="swl-inline-icon">  : </span><a
+                  href="{{ member.url }}" target="_blank" rel="noreferrer noopener">{{
+                  member.name_en | default: member.name }}</a>{% endif %}
+              </p>
+            </details>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+      {% endif %}
+      {% endfor %}
+
+      {% assign student_members = site.data.members | where: "section", "学生" %}
+      {% if student_members.size > 0 %}
+      <h2 class="wp-block-heading">学生</h2>
+      {% assign student_groups = "博士後期課程,博士前期課程,学部生,研究生" | split: "," %}
+      {% for student_group in student_groups %}
+      {% assign grouped_students = "" | split: "" %}
+      {% for member in student_members %}
+      {% if student_group == "博士後期課程" and member.role contains "博士後期課程" %}
+      {% assign grouped_students = grouped_students | push: member %}
+      {% elsif student_group == "博士前期課程" and member.role contains "博士前期課程" %}
+      {% assign grouped_students = grouped_students | push: member %}
+      {% elsif student_group == "学部生" and member.role contains "学部" %}
+      {% assign grouped_students = grouped_students | push: member %}
+      {% elsif student_group == "研究生" and member.role contains "研究生" %}
+      {% assign grouped_students = grouped_students | push: member %}
+      {% endif %}
+      {% endfor %}
+      {% if grouped_students.size > 0 %}
+      <p><span class="swl-fz u-fz-l"><strong><span class="swl-marker mark_blue">{{ student_group
+              }}</span></strong></span></p>
+      <div class="swell-block-columns" style="--clmn-w--pc:20%;--clmn-w--mobile:50%">
+        <div class="swell-block-columns__inner">
+          {% for member in grouped_students %}
+          <div class="swell-block-column swl-has-mb--s">
+            {% assign member_photo = member.photo | default: 'uranishilab-transparent.png' %}
+            {% assign member_image = '/assets/images/members/' | append: member_photo | relative_url %}
+            <div class="wp-block-image sample-expanding-image">
+              <figure class="alignleft size-full is-resized">
+                {% if member.url %}
+                <a href="{{ member.url }}" target="_blank" rel="noreferrer noopener">
+                  <img decoding="async" width="221" height="221" src="{{ member_image }}" alt="{{ member.name }}"
+                    style="aspect-ratio:1;object-fit:contain;width:221px">
+                </a>
+                {% else %}
+                <img decoding="async" width="221" height="221" src="{{ member_image }}" alt="{{ member.name }}"
+                  style="aspect-ratio:1;object-fit:contain;width:221px">
+                {% endif %}
+              </figure>
+            </div>
+
+            <details class="wp-block-details is-layout-flow wp-block-details-is-layout-flow">
+              <summary><strong>{{ member.name }}</strong><br>　{{ member.role }}</summary>
+              <p>
+                {% if member.name_en %}{{ member.name_en }}<br>{% endif %}
+                {% if member.affiliation %}{{ member.affiliation }}<br>{% endif %}
+                {% if member.tel %}<span
+                  style="--the-icon-svg: url(data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjFlbSIgd2lkdGg9IjFlbSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBhcmlhLWhpZGRlbj0idHJ1ZSIgdmlld0JveD0iMCAwIDQ4IDQ4Ij48cGF0aCBkPSJNMTMuMyAyMS42YzMuMSA1LjMgNy41IDkuOSAxMyAxMyAuOS42IDIgLjUgMi44LS4zbDIuOS0yLjljLjctLjcgMS41LS43IDIuNC0uNmw4LjIgMS4zYzEuMi4yIDIuMyAxIDIuMyAyLjN2OC4xYzAgMS4zLTEgMi4zLTIuMyAyLjNDMjAuOCA0NC45IDMgMjcuMiAzIDUuNWMwLTEuMyAxLTIuMyAyLjMtMi4zaDguMWMxLjMgMCAyLjIgMS4xIDIuMyAyLjNsMS4zIDguMmMuMi45LjEgMS43LS42IDIuNEwxMy41IDE4Yy0uNi42LS44IDIuOC0uMiAzLjZ6Ij48L3BhdGg+PC9zdmc+)"
+                  data-icon="LsPhone" data-id="38" aria-hidden="true" class="swl-inline-icon">  : {{ member.tel
+                  }}</span><br>{%
+                endif %}
+                {% if member.email %}<span
+                  style="--the-icon-svg: url(data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjFlbSIgd2lkdGg9IjFlbSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBhcmlhLWhpZGRlbj0idHJ1ZSIgdmlld0JveD0iMCAwIDQ4IDQ4Ij48cGF0aCBkPSJNMjUuMiAyNC43IDQ2IDkuNVY5YzAtMS4xLS45LTItMi0ySDRjLTEuMSAwLTIgLjktMiAydi41bDIwLjggMTUuMWMuNy42IDEuNy42IDIuNC4xeiI+PC9wYXRoPjxwYXRoIGQ9Ik0yMi44IDI5LjYgMiAxNC41VjM4YzAgMS43IDEuMyAzIDMgM2gzOGMxLjcgMCAzLTEuMyAzLTNWMTQuNUwyNS4yIDI5LjZjLS43LjUtMS43LjUtMi40IDB6Ij48L3BhdGg+PC9zdmc+)"
+                  data-icon="LsMail" data-id="3" aria-hidden="true" class="swl-inline-icon"> &nbsp;: {{ member.email
+                  }}</span><br>{% endif %}
+                {% if member.url %}<span
+                  style="--the-icon-svg: url(data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjFlbSIgd2lkdGg9IjFlbSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBhcmlhLWhpZGRlbj0idHJ1ZSIgdmlld0JveD0iMCAwIDQ4IDQ4Ij48cGF0aCBkPSJNMjEuMiAzMC4yYy0uNSAwLTEtLjItMS40LS42bC0uNy0uN2MtMi4zLTIuMy0zLjUtNS4zLTMuNS04LjVzMS4yLTYuMiAzLjUtOC41bDcuMS03LjFjMi4zLTIuMyA1LjMtMy41IDguNS0zLjVzNi4yIDEuMiA4LjUgMy41YzQuNyA0LjcgNC43IDEyLjMgMCAxN2wtMy41IDMuNWMtLjguOC0yIC44LTIuOCAwLS44LS44LS44LTIgMC0yLjhsMy41LTMuNWMzLjEtMy4xIDMuMS04LjIgMC0xMS4zLTEuNS0xLjUtMy41LTIuMy01LjctMi4zLTIuMSAwLTQuMi44LTUuNyAyLjNsLTcuMSA3LjFjLTEuNSAxLjUtMi4zIDMuNS0yLjMgNS43cy44IDQuMiAyLjMgNS43bC43LjdjLjguOC44IDIgMCAyLjgtLjQuMy0uOS41LTEuNC41eiI+PC9wYXRoPjxwYXRoIGQ9Ik0xMy40IDQ2LjZjLTMuMSAwLTYuMS0xLjItOC41LTMuNS0yLjMtMi4zLTMuNS01LjMtMy41LTguNXMxLjItNi4yIDMuNS04LjVsMy41LTMuNWMuOC0uOCAyLS44IDIuOCAwIC44LjguOCAyIDAgMi44bC0zLjUgMy41Yy0xLjUgMS41LTIuMyAzLjUtMi4zIDUuNyAwIDIuMS44IDQuMiAyLjMgNS43IDMuMSAzLjEgOC4yIDMuMSAxMS4zIDBsNy4xLTcuMWMxLjUtMS41IDIuMy0zLjUgMi4zLTUuNyAwLTIuMS0uOC00LjItMi4zLTUuN2wtLjctLjdjLS44LS44LS44LTIgMC0yLjguOC0uOCAyLS44IDIuOCAwbC43LjdjMi4zIDIuMyAzLjUgNS4zIDMuNSA4LjVzLTEuMiA2LjItMy41IDguNWwtNy4xIDcuMWMtMi4zIDIuMy01LjMgMy41LTguNCAzLjV6Ij48L3BhdGg+PC9zdmc+)"
+                  data-icon="LsLink" data-id="15" aria-hidden="true" class="swl-inline-icon">  : </span><a
+                  href="{{ member.url }}" target="_blank" rel="noreferrer noopener">{{ member.name_en | default:
+                  member.name }}</a>{% endif %}
+              </p>
+            </details>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+      {% endif %}
+      {% endfor %}
+      {% endif %}
+    </div>
+  </div>
+</main>
