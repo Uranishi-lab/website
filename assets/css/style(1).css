@@ -1,0 +1,50 @@
+@charset "UTF-8";
+/*
+    Template: swell
+    Theme Name: SWELL CHILD
+    Theme URI: https://swell-theme.com/
+    Description: SWELLの子テーマ
+    Version: 1.0.0
+    Author: LOOS WEB STUDIO
+    Author URI: https://loos-web-studio.com/
+
+    License: GNU General Public License
+    License URI: http://www.gnu.org/licenses/gpl.html
+*/
+
+/* 以下の書き方は https://vool.jp/bogo-how-to-use/#index_id15 を参考にした */
+
+.widget_bogo_language_switcher .w-header__title {
+  display: none;
+}
+
+.bogo-language-switcher {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.bogo-language-switcher a {
+  padding: 1em;
+  color: var(--color_text);
+  font-weight: 500;
+}
+
+.bogo-language-switcher .current a {
+  color: #2d287f;
+  font-weight: 700;
+}
+
+.bogo-language-switcher .en-US {
+  position: relative;
+}
+
+.bogo-language-switcher .en-US::before {
+  content: "";
+  width: 1px;
+  height: 65%;
+  background-color: var(--color_text);
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
