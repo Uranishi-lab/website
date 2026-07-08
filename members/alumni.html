@@ -1,0 +1,38 @@
+---
+layout: default
+title: "卒業生・転出者 | Uranishi Lab"
+type: "website"
+---
+
+<main id="main_content" class="l-mainContent l-article">
+  <div class="l-mainContent__inner" data-clarity-region="article">
+    <h1 class="c-pageTitle" data-style="b_bottom"><span class="c-pageTitle__inner">卒業生・転出者</span></h1>
+    <div class="post_content">
+
+      <figure class="wp-block-table is-style-simple">
+        <table>
+          <thead>
+            <tr>
+              <th>Year</th>
+              <th>Name</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for entry in site.data.alumni %}
+            {% for name in entry.names %}
+            <tr>
+              <td>
+                {% if forloop.first %}
+                {{ entry.year }}
+                {% endif %}
+              </td>
+              <td>{{ name }}</td>
+            </tr>
+            {% endfor %}
+            {% endfor %}
+          </tbody>
+        </table>
+      </figure>
+    </div>
+  </div>
+</main>
