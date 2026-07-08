@@ -1,0 +1,92 @@
+---
+layout: default
+title: "メンバー（写真なし） | Uranishi Lab"
+type: "website"
+---
+
+<main id="main_content" class="l-mainContent l-article">
+  <div class="l-mainContent__inner" data-clarity-region="article">
+    <h1 class="c-pageTitle" data-style="b_bottom"><span class="c-pageTitle__inner">メンバー（写真なし）</span></h1>
+    <div class="post_content">
+      <p>※メール送信時の注意：アドレス末尾の osaka-u.ac.jp が省略されています。</p>
+
+      <figure class="wp-block-table is-style-simple u-mb-ctrl u-mb-0">
+        <table>
+          <thead>
+            <tr>
+              <th>名前</th>
+              <th>役職</th>
+              <th>mail / affiliation</th>
+              <th>phone</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% assign section_order = "教職員/スタッフ,共同研究者" | split: "," %}
+            {% for section in section_order %}
+            {% assign section_members = site.data.members | where: "section", section %}
+            {% if section_members.size > 0 %}
+            <tr>
+              <th colspan="4"><strong>{{ section }}</strong></th>
+            </tr>
+            {% for member in section_members %}
+            <tr>
+              <td>
+                {% if member.url %}
+                <a href="{{ member.url }}" target="_blank" rel="noreferrer noopener">{{ member.name }}{% if
+                  member.name_en %} ({{ member.name_en }}){% endif %}</a>
+                {% else %}
+                {{ member.name }}{% if member.name_en %} ({{ member.name_en }}){% endif %}
+                {% endif %}
+              </td>
+              <td>{{ member.role }}</td>
+              <td>{{ member.email | default: member.affiliation | default: "–" }}</td>
+              <td>{{ member.tel | default: "–" }}</td>
+            </tr>
+            {% endfor %}
+            {% endif %}
+            {% endfor %}
+
+            {% assign student_members = site.data.members | where: "section", "学生" %}
+            {% if student_members.size > 0 %}
+            <tr>
+              <th colspan="4"><strong>学生</strong></th>
+            </tr>
+            {% assign student_groups = "博士後期課程,博士前期課程,学部生,研究生" | split: "," %}
+            {% for student_group in student_groups %}
+            {% if student_group == "博士後期課程" %}
+            {% assign grouped_students = student_members | where_exp: "member", "member.role contains '博士後期課程'" %}
+            {% elsif student_group == "博士前期課程" %}
+            {% assign grouped_students = student_members | where_exp: "member", "member.role contains '博士前期課程'" %}
+            {% elsif student_group == "学部生" %}
+            {% assign grouped_students = student_members | where_exp: "member", "member.role contains '学部'" %}
+            {% else %}
+            {% assign grouped_students = student_members | where_exp: "member", "member.role contains '研究生'" %}
+            {% endif %}
+            {% if grouped_students.size > 0 %}
+            <tr>
+              <th colspan="4">{{ student_group }}</th>
+            </tr>
+            {% for member in grouped_students %}
+            <tr>
+              <td>
+                {% if member.url %}
+                <a href="{{ member.url }}" target="_blank" rel="noreferrer noopener">{{ member.name }}{% if
+                  member.name_en %} ({{ member.name_en }}){% endif %}</a>
+                {% else %}
+                {{ member.name }}{% if member.name_en %} ({{ member.name_en }}){% endif %}
+                {% endif %}
+              </td>
+              <td>{{ member.role }}</td>
+              <td>{{ member.email | default: member.affiliation | default: "–" }}</td>
+              <td>{{ member.tel | default: "–" }}</td>
+            </tr>
+            {% endfor %}
+            {% endif %}
+            {% endfor %}
+            {% endif %}
+          </tbody>
+        </table>
+      </figure>
+    </div>
+  </div>
+</main>
