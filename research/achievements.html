@@ -1,0 +1,4051 @@
+---
+layout: default
+title: "研究業績 | Uranishi Lab"
+type: "website"
+---
+
+<script>document.addEventListener('DOMContentLoaded', () => {
+    // すべてのタブボタンを取得
+    const tabButtons = document.querySelectorAll('.c-tabList__button');
+
+    tabButtons.forEach(button => {
+      button.addEventListener('click', (e) => {
+        const clickedTab = e.currentTarget;
+
+        // 既に選択されているタブがクリックされた場合は何もしない
+        if (clickedTab.getAttribute('aria-selected') === 'true') {
+          return;
+        }
+
+        // 1. 現在選択されている（アクティブな）タブとコンテンツをリセットする
+        const tabList = clickedTab.closest('.c-tabList') || clickedTab.closest('ul');
+        if (tabList) {
+          const activeTab = tabList.querySelector('[aria-selected="true"]');
+          if (activeTab) {
+            activeTab.setAttribute('aria-selected', 'false');
+            const activeContentId = activeTab.getAttribute('aria-controls');
+            const activeContent = document.getElementById(activeContentId);
+            if (activeContent) {
+              activeContent.setAttribute('aria-hidden', 'true');
+              activeContent.style.display = 'none'; // 念のためインラインでも非表示
+            }
+          }
+        }
+
+        // 2. クリックされたタブとコンテンツをアクティブにする
+        clickedTab.setAttribute('aria-selected', 'true');
+        const targetContentId = clickedTab.getAttribute('aria-controls');
+        const targetContent = document.getElementById(targetContentId);
+        if (targetContent) {
+          targetContent.setAttribute('aria-hidden', 'false');
+          targetContent.style.display = 'block';
+        }
+      });
+    });
+  });</script>
+
+
+<main id="main_content" class="l-mainContent l-article">
+  <div class="l-mainContent__inner" data-clarity-region="article">
+    <h1 class="c-pageTitle" data-style="b_bottom"><span class="c-pageTitle__inner">研究業績</span></h1>
+    <div class="post_content">
+      <p>2023年以前は竹村研究室としての業績です。</p>
+
+
+
+      <div class="swell-block-tab is-style-bb" data-width-pc="flex-auto" data-width-sp="auto">
+        <ul class="c-tabList" role="tablist">
+          <li class="c-tabList__item" role="presentation"><button role="tab" class="c-tabList__button"
+              aria-selected="true" aria-controls="tab-9041ec6c-0" data-onclick="tabControl">2026</button></li>
+          <li class="c-tabList__item" role="presentation"><button role="tab" class="c-tabList__button"
+              aria-selected="false" aria-controls="tab-9041ec6c-1" data-onclick="tabControl">2025</button></li>
+          <li class="c-tabList__item" role="presentation"><button role="tab" class="c-tabList__button"
+              aria-selected="false" aria-controls="tab-9041ec6c-2" data-onclick="tabControl">2024</button></li>
+          <li class="c-tabList__item" role="presentation"><button role="tab" class="c-tabList__button"
+              aria-selected="false" aria-controls="tab-9041ec6c-3" data-onclick="tabControl">2023</button></li>
+          <li class="c-tabList__item" role="presentation"><button role="tab" class="c-tabList__button"
+              aria-selected="false" aria-controls="tab-9041ec6c-4" data-onclick="tabControl">2022</button></li>
+          <li class="c-tabList__item" role="presentation"><button role="tab" class="c-tabList__button"
+              aria-selected="false" aria-controls="tab-9041ec6c-5" data-onclick="tabControl">2021</button></li>
+          <li class="c-tabList__item" role="presentation"><button role="tab" class="c-tabList__button"
+              aria-selected="false" aria-controls="tab-9041ec6c-6" data-onclick="tabControl">2020</button></li>
+          <li class="c-tabList__item" role="presentation"><button role="tab" class="c-tabList__button"
+              aria-selected="false" aria-controls="tab-9041ec6c-7" data-onclick="tabControl">2019</button></li>
+          <li class="c-tabList__item" role="presentation"><button role="tab" class="c-tabList__button"
+              aria-selected="false" aria-controls="tab-9041ec6c-8" data-onclick="tabControl">2018</button></li>
+          <li class="c-tabList__item" role="presentation"><button role="tab" class="c-tabList__button"
+              aria-selected="false" aria-controls="tab-9041ec6c-9" data-onclick="tabControl">2017</button></li>
+          <li class="c-tabList__item" role="presentation"><button role="tab" class="c-tabList__button"
+              aria-selected="false" aria-controls="tab-9041ec6c-10" data-onclick="tabControl">2016</button></li>
+          <li class="c-tabList__item" role="presentation"><button role="tab" class="c-tabList__button"
+              aria-selected="false" aria-controls="tab-9041ec6c-11" data-onclick="tabControl">2015</button></li>
+          <li class="c-tabList__item" role="presentation"><button role="tab" class="c-tabList__button"
+              aria-selected="false" aria-controls="tab-9041ec6c-12" data-onclick="tabControl">2014</button></li>
+          <li class="c-tabList__item" role="presentation"><button role="tab" class="c-tabList__button"
+              aria-selected="false" aria-controls="tab-9041ec6c-13" data-onclick="tabControl">2013</button></li>
+          <li class="c-tabList__item" role="presentation"><button role="tab" class="c-tabList__button"
+              aria-selected="false" aria-controls="tab-9041ec6c-14" data-onclick="tabControl">2012</button></li>
+          <li class="c-tabList__item" role="presentation"><button role="tab" class="c-tabList__button"
+              aria-selected="false" aria-controls="tab-9041ec6c-15" data-onclick="tabControl">2011</button></li>
+          <li class="c-tabList__item" role="presentation"><button role="tab" class="c-tabList__button"
+              aria-selected="false" aria-controls="tab-9041ec6c-16" data-onclick="tabControl">2010</button></li>
+          <li class="c-tabList__item" role="presentation"><button role="tab" class="c-tabList__button"
+              aria-selected="false" aria-controls="tab-9041ec6c-17" data-onclick="tabControl">2009</button></li>
+          <li class="c-tabList__item" role="presentation"><button role="tab" class="c-tabList__button"
+              aria-selected="false" aria-controls="tab-9041ec6c-18" data-onclick="tabControl">2008</button></li>
+          <li class="c-tabList__item" role="presentation"><button role="tab" class="c-tabList__button"
+              aria-selected="false" aria-controls="tab-9041ec6c-19" data-onclick="tabControl">2007</button></li>
+          <li class="c-tabList__item" role="presentation"><button role="tab" class="c-tabList__button"
+              aria-selected="false" aria-controls="tab-9041ec6c-20" data-onclick="tabControl">2006</button></li>
+          <li class="c-tabList__item" role="presentation"><button role="tab" class="c-tabList__button"
+              aria-selected="false" aria-controls="tab-9041ec6c-21" data-onclick="tabControl">2005</button></li>
+          <li class="c-tabList__item" role="presentation"><button role="tab" class="c-tabList__button"
+              aria-selected="false" aria-controls="tab-9041ec6c-22" data-onclick="tabControl">2004</button></li>
+          <li class="c-tabList__item" role="presentation"><button role="tab" class="c-tabList__button"
+              aria-selected="false" aria-controls="tab-9041ec6c-23" data-onclick="tabControl">2003</button></li>
+        </ul>
+        <div class="c-tabBody">
+          <div id="tab-9041ec6c-0" class="c-tabBody__item" aria-hidden="false">
+            <h3 class="wp-block-heading">Journal (論文誌)</h3>
+            <ul>
+              <li>K. Nishi*,&nbsp;M. Kobayashi*, and Y. Uranishi&nbsp;<a
+                  href="https://mertcookimg.github.io/mr-ubi/">“MR-UBi: Mixed Reality-Based Underwater Robot Arm
+                  Teleoperation System with Reaction Torque Indicator via Bilateral Control”</a>, in&nbsp;<em>IEEE
+                  Access</em>, vol. 14, pp. 40137-40146, 2026.</li>
+
+
+
+              <li>Xuanmeng Sha, Tomohiro Mashita, Naoya Chiba, and Liyun Zhang. 3D Local Feature Learning and Analysis
+                on Point Cloud Parts via Momentum Contrast. Sensors vol. 26, no. 3: 1007. DOI:10.3390/s26031007</li>
+
+
+
+              <li>Hayato M. Yamanouchi, Ryosuke F. Takeuchi, Naoya Chiba, Koichi Hashimoto, Takashi Shimizu, Fumitaka
+                Osakada, Ryoya Tanaka, Azusa Kamikouchi. YORU: Animal behavior detection with object-based approach for
+                real-time closed-loop feedback. Science Advances, vol. 12, issue 7, 2026. DOI:10.1126/sciadv.adw2109
+              </li>
+
+
+
+              <li>K. Momota, S. Shirai, M. Kobayashi, N. Chiba, P. Ratsamee, K. Kiyokawa and Y. Uranishi, “HybridSphere:
+                Enhancing Hybrid Meetings with Avatar-Based VR Environments”, IEEE Transactions on Visualization and
+                Computer Graphics: Special Issue on IEEE Virtual Reality and 3D User Interfaces 2026 (2026.3)</li>
+
+
+
+              <li>T. Nakamura, “Compelling People to Move: Recent Progress in Haptic Technologies for Human Motion
+                Induction in IEEE Transactions on Haptics”, IEEE Transaction on Haptics (ToH), 2026.[<a
+                  href="https://doi.org/10.1109/TOH.2026.3694060" target="_blank" rel="noreferrer noopener">Link</a>]
+              </li>
+
+
+
+              <li>K. Okuda, T. Nakamura, H. Kuzuoka, K. Yamakoshi, Y. Suzuki, “A Wearable Shoulder Skin-Deformation
+                Device Generating Illusory Forces for Posture Correction “,&nbsp; IEEE Transaction on Haptics (ToH),
+                2026. [<a href="https://doi.org/10.1109/TOH.2026.3686631" target="_blank"
+                  rel="noreferrer noopener">Link</a>]</li>
+
+
+
+              <li>Daichi Hirobe, Shizuka Shirai, Jason Orlosky, M. Kobayashi , Yuki Uranishi and Haruo Takemura,
+                “TransPortal: A Portable Portal-Based Locomotion Technique”, IEEE Transactions on Visualization and
+                Computer Graphics, 2026. (accepted)</li>
+            </ul>
+
+
+
+            <h3 class="wp-block-heading">International Conference (国際会議査読あり)</h3>
+
+
+
+            <ul>
+              <li>T. Tsunoori*,&nbsp;M. Kobayashi*, and Y. Uranishi&nbsp;<a
+                  href="https://mertcookimg.github.io/bi-aqua/">“Bi-AQUA: Bilateral Control-Based Imitation Learning for
+                  Underwater Robot Arms via Lighting-Aware Action Chunking with Transformers”</a>, IEEE/RSJ
+                International Conference on Intelligent Robots and Systems (IROS), 2026. (accepted)</li>
+
+
+
+              <li>I. Eduardo*,&nbsp;M. Kobayashi*, and Y. Uranishi&nbsp;<a
+                  href="https://mertcookimg.github.io/mrpos/">“MRPoS: Mixed Reality-Based Robot Navigation Interface
+                  Using Spatial Pointing and Speech with Large Language Model”</a>, IEEE/RSJ International Conference on
+                Intelligent Robots and Systems (IROS), 2026. (accepted)</li>
+
+
+
+              <li>T. Buamanee*,&nbsp;M. Kobayashi*, and Y. Uranishi&nbsp;<a
+                  href="https://mertcookimg.github.io/bi-hil/">“Bi-HIL: Bilateral Control-Based Multimodal Hierarchical
+                  Imitation Learning via Subtask-Level Progress Rate and Keyframe Memory for Long-Horizon Contact-Rich
+                  Robotic Manipulation”</a>, IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS),
+                2026. (accepted)</li>
+
+
+
+              <li>M. Kobayashi,&nbsp;<a href="https://mertcookimg.github.io/emolo/">“EmoLo: Emotion-Inspired Expressive
+                  Locomotion via Single-Policy Reinforcement Learning on Low-Cost Bipedal Robots”</a>, IEEE
+                International Conference on Robot and Human Interactive Communication(RO-MAN), 2026. (accepted)</li>
+
+
+
+              <li>T. Taki*,&nbsp;M. Kobayashi*, and Y. Uranishi&nbsp;<a
+                  href="https://mertcookimg.github.io/mrrep/">“MRReP: Mixed Reality-based Hand-drawn Reference Path
+                  Editing Interface for Mobile Robot Navigation”</a>, IEEE International Conference on Robot and Human
+                Interactive Communication(RO-MAN), 2026. (accepted)</li>
+
+
+
+              <li>M. Kobayashi* and T. Buamanee*&nbsp;<a href="https://mertcookimg.github.io/bi-vla/">“Bi-VLA: Bilateral
+                  Control-Based Imitation Learning via Vision-Language Fusion for Action Generation”</a>, IEEE
+                International Conference on Advanced Robotics and its Social Impact (ARSO), 2026</li>
+
+
+
+              <li>Y. Kitamura, T. Kishimoto, H. Nagataki, S. Kanemune, and S. Shirai, “Enhancing Computer Network
+                Education for high school students with an educational simulator visualizing packet retransmission and
+                routing,” <em>Proceedings of the 57th ACM Technical Symposium on Computer Science Education V.1</em>,
+                pp. 575–581, Feb. 2026. <a href="https://doi.org/10.1145/3770762.3772590" target="_blank"
+                  rel="noreferrer noopener">doi:10.1145/3770762.3772590</a></li>
+            </ul>
+
+
+
+            <h3 class="wp-block-heading">International Conference Non-reviewed (国際会議査読無し)</h3>
+
+
+
+            <ul>
+              <li></li>
+            </ul>
+
+
+
+            <h3 class="wp-block-heading">Domestic Conference (国内学会発表査読あり)</h3>
+
+
+
+            <ul>
+              <li></li>
+            </ul>
+
+
+
+            <h3 class="wp-block-heading">Domestic Conference Non-reviewed (国内学会発表査読無し)</h3>
+
+
+
+            <ul>
+              <li>小林 聖人, Thanpimon Buamanee, 浦西 友樹 ”&nbsp;自然言語・画像情報を活用したロボットアームの階層型バイラテラル制御に基づく模倣学習”, 言語処理学会 第32回年次大会
+                (NLP2026), March, 2026.</li>
+
+
+
+              <li>小林 聖人, “二足歩行ロボットへの音声対話システムの構築と評価”, 言語処理学会 第32回年次大会 (NLP2026), March, 2026.</li>
+
+
+
+              <li>井上大輝，千葉直也，橋本浩一．ロボットの軌道誤差推定と3次元計測点群の形状補正を行う手法．パターン認識・メディア理解研究会（PRMU）2026年1月研究会，2026．</li>
+            </ul>
+
+
+
+            <h3 class="wp-block-heading">Awards(受賞)</h3>
+
+
+
+            <ul>
+              <li></li>
+            </ul>
+          </div>
+
+
+
+          <div id="tab-9041ec6c-1" class="c-tabBody__item" aria-hidden="true">
+            <h3 class="wp-block-heading">Journal (論文誌)</h3>
+
+
+
+            <ul>
+              <li>T. Inui, H. Shimizu, T. Ota, T. Nakamura, M. Tanima, T. Aoyama, “Immediate effects of reciprocal
+                sensation in virtual reality games on patients with shoulder periarthritis”, Virtual Reality, Vol.29,
+                No.4, 2025. [<a href="https://doi.org/10.1007/s10055-025-01242-w" target="_blank"
+                  rel="noreferrer noopener">Link</a>]</li>
+
+
+
+              <li>Y. Suzuki, T. Taniai, R. Igarashi, K. Saito, N. Chiba, Y. Ushiku, K. Ono. “Bridging text and crystal
+                structures: literature-driven contrastive learning for materials science,” Machine Learning: Science and
+                Technology, vol. 6, no. 3, 2025.</li>
+
+
+
+              <li>H. Yang, H. Li, Y. Yang, N. Chiba, S. Kagami, K. Hashimoto, Y. Nagata. “Chaotic map-coded
+                metaheuristics for metameric variable-length problems,” Genetic Programming and Evolvable Machines, vol.
+                26, no. 19, 2025.</li>
+
+
+
+              <li>M. Tanonwong, Y. Zhu, N. Chiba, K. Hashimoto. “Product Engagement Detection Using Multi-Camera 3D
+                Skeleton Reconstruction and Gaze Estimation,” Sensors vol. 25, no. 10, 2025.</li>
+
+
+
+              <li>E. Iglesius*, M. Kobayashi*, Y. Uranishi and H. Takemura, “<a
+                  href="https://mertcookimg.github.io/mrnab/" target="_blank" rel="noreferrer noopener">MRNaB: Mixed
+                  Reality-based Robot Navigation Interface using Optical-see-through MR-beacons</a>”,&nbsp;<em>Advanced
+                  Robotics</em>,&nbsp;<em>39</em>(11), pp. 663–677, 2025.</li>
+
+
+
+              <li>M. Kobayashi, T. Buamanee and T. Kobayashi, “<a href="https://mertcookimg.github.io/alpha-biact/"
+                  data-type="link" data-id="https://ieeexplore.ieee.org/document/10883984">ALPHA- α and Bi-ACT Are All
+                  You Need: Importance of Position and Force Information/ Control for Imitation Learning of Unimanual
+                  and Bimanual Robotic Manipulation With Low-Cost System</a>,” in IEEE Access, vol. 13, pp. 29886-29899,
+                2025</li>
+
+
+
+              <li>白井詩沙香, 松浦敏雄, 中西通雄, 竹村治雄, 清川清, 長瀧寛之, 浦西友樹, “<a href="https://doi.org/10.24669/jacn.29.1_0043"
+                  target="_blank" rel="noreferrer noopener">大阪大学における一般情報教育の変遷と今後の展望</a>“, Vol. 29, No. 1, pp. 81-88,
+                2025.</li>
+
+
+
+              <li>北村祐稀, 岸本有生, 兼宗進, 西田知博, 白井詩沙香, “カードの並べ替えを通じてソートアルゴリズムを体験的に学ぶインタラクティブ教材CardAlgoの開発と評価,”
+                情報処理学会論文誌教育とコンピュータ（TCE）, vol. 11, no. 1, pp. 1-14, 2025.</li>
+
+
+
+              <li>C. Liu, R. Sato, M. Kobayashi, G. Yamamoto, P. Ratsamee, and Y. Uranishi, “<a
+                  href="https://www.jstage.jst.go.jp/article/mta/13/4/13_393/_article/-char/en">Exploring Visual
+                  Augmentation for Soccer Kicking Posture Instruction</a>“, ITE Transactions on Media Technology and
+                Applications, Vol 13, Issue 4, pp 393-404, 2025.</li>
+
+
+
+              <li>T. Asahi, S. Horisawa,&nbsp;T. Nakamura, H. Kajimoto, I. Takumi, “<a
+                  href="https://doi.org/10.7759/cureus.89749">The Treatment of Runner’s Dystonia With Zolpidem and a
+                  Device Inducing Hanger Reflex</a>“, Cureus 17(8): e89749, 2025.</li>
+
+
+
+              <li>D. Lim, S. Shirai, M. Kobayashi, Y. Uranishi and H. Takemura, “<a
+                  href="https://ieeexplore.ieee.org/document/11202441">CaliView: Continuous Viewpoint Calibration Using
+                  Dynamic Rotation Gain Control</a>,” in IEEE Transactions on Visualization and Computer Graphics, doi:
+                10.1109/TVCG.2025.3620419.</li>
+
+
+
+              <li>島 千尋, 横山 吉美, 中村 拓人, 山本 真菜, 矢ケ﨑 悌司, 市川 翔, “Kinect®を用いた頭部姿勢評価システムの再現性の検討”, 日本視能訓練士協会誌, Vol. 55,
+                pp.141-147, 2025. [<a href="https://doi.org/10.4263/jorthoptic.55F115" target="_blank"
+                  rel="noreferrer noopener">Link</a>]</li>
+            </ul>
+
+
+
+            <h3 class="wp-block-heading">International Conference (国際会議査読あり)</h3>
+
+
+
+            <ul>
+              <li>Y. Suzuki, T. Taniai, R. Igarashi, K. Saito, N. Chiba, Y. Ushiku, K. Ono. “Bridging Text and Crystal
+                Structures: Literature-Driven Contrastive Learning for Materials Science,” IEEE/CVF Conference on
+                Computer Vision and Pattern Recognition (CVPR) Workshop on Multimodal Learning for Materials Science
+                (MM4Mat), 2025.</li>
+
+
+
+              <li>Y. Zhu, N. Chiba, K. Hashimoto. “Hierarchical Image-Guided 3D Point Cloud Segmentation in Industrial
+                Scenes via Multi-View Bayesian Fusion,” The British Machine Vision Conference (BMVC), 2025.</li>
+
+
+
+              <li>S. Yousef, C. Han, N. Chiba, K. Hashimoto. “Evaluating Data Quality and Preprocessing Methods to
+                Enhance Skeleton-Based Action Recognition in Retail Environments,” IEEE International Conference on
+                Automatic Face and Gesture Recognition (FG), 2025.</li>
+
+
+
+              <li>M. Tanonwong, N. Chiba, K. Hashimoto. “Accurate Estimation of Fiducial Marker Positions Using Motion
+                Capture System,” IEEE/SICE International Symposium on System Integration (SII), 2025.</li>
+
+
+
+              <li>Y. Zhang, A. Petrilli, N. Chiba, K. Hashimoto. “A Self-Attention Multi-Task Learning Model for Garment
+                Segmentation and Parts Recognition,” IEEE/SICE International Symposium on System Integration (SII),
+                2025.</li>
+
+
+
+              <li>T. Taki*, M. Kobayashi*, E. Iglesius, N. Chiba, S. Shirai, Y. Uranishi, “<a
+                  href="https://mertcookimg.github.io/mrhad/">MRHaD: Mixed Reality-based Hand-Drawn Map Editing
+                  Interface for Mobile Robot Navigation</a>,” IEEE International Conference on Robot and Human
+                Interactive Communication (RO-MAN), 2025. (accepted)&nbsp;</li>
+
+
+
+              <li>T. Kobayashi*, M. Kobayashi*, T. Buamanee, Y. Uranishi, “<a
+                  href="https://mertcookimg.github.io/bi-lat/">Bi-LAT: Bilateral Control-Based Imitation Learning via
+                  Natural Language and Action Chunking with Transformers</a>,” IEEE International Conference on Robot
+                and Human Interactive Communication (RO-MAN), 2025. (accepted)　</li>
+
+
+
+              <li>K. Onishi, Y. Uranishi, M. Kobayashi, C. Liu, G. Yamamoto and P. Ratsamee, “<a
+                  href="https://ieeexplore.ieee.org/document/10896033">Generating Double Dyno Motion for Humanoid Agents
+                  in Simulated Bouldering Environment through Deep Reinforcement Learning</a>,”&nbsp;&nbsp;<em>IEEE
+                  International Conference on Artificial Intelligence and eXtended and Virtual Reality (AIxVR)</em>,
+                Lisbon, Portugal, pp. 441-447, 2025.</li>
+
+
+
+              <li>K. Onishi, Y. Uranishi, M. Kobayashi, C. Liu, G. Yamamoto and P. Ratsamee, “<a
+                  href="https://ieeexplore.ieee.org/document/10934872">Climbing Motion Generation for Humanoid Agents
+                  with Different Skeletal Structures in Bouldering Environments through Deep Reinforcement
+                  Learning</a>,”&nbsp;<em>IEEE International Conference on Mechatronics (ICM)</em>, Wollongong,
+                Australia, pp. 1-6, 2025.</li>
+
+
+
+              <li>M. Kobayashi*, T. Buamanee*, and Y. Uranishi “<a href="https://mertcookimg.github.io/dabi/">DABI:
+                  Evaluation of Data Augmentation Methods Using Downsampling in Bilateral Control-Based Imitation
+                  Learning with Images</a>,”&nbsp;<em>IEEE International Conference on Robotics and Automation
+                  (ICRA)</em>, Atlanta, GA, USA, pp. 16892-16898, 2025.</li>
+
+
+
+              <li>S. Funabashi, A. Hiramoto, N. Chiba, A. Schmitz, S. Kulkarni, T. Ogata “<a
+                  href="https://ieeexplore.ieee.org/document/11127786">Focused Blind Switching Manipulation Based on
+                  Constrained and Regional Touch States of Multi-Fingered Hand Using Deep Learning</a>,”&nbsp;<em>2025
+                  IEEE International Conference on Robotics and Automation (ICRA)</em>, Atlanta, GA, USA, pp.
+                14777-14783, 2025.</li>
+
+
+
+              <li>K. Nakaya, S.Shirai, and M. Murakami, “Exploring the functions of learning analytics dashboard that
+                supports students from both the perspective of self-regulated learning and career planning”, Proceedings
+                of 2025 IEEE International Conference on Advanced Learning Technologies (ICALT), pp. 128-130, 2024.</li>
+
+
+
+              <li>K. Fukuda, K. Aoyama,&nbsp;T. Nakamura, T. Amemiya, T. Narumi, “<a
+                  href="https://doi.org/10.1145/3736702.3744353">Pulling Illusions on Seating Surfaces: Force Feedback
+                  Induced by Distributed Asymmetric Vibrations on Seats</a>“, SAP ’25: ACM Symposium on Applied
+                Perception 2025, Article No.: 10, Pages 1 – 9, 2025.</li>
+
+
+
+              <li>K. Okuda*,&nbsp;T. Nakamura*, H. Kuzuoka, K. Yamakoshi, Y. Suzuki, “<a
+                  href="https://t.co/36tRYMTQvp">A Method for Upper Body Posture Modification Using Skin Deformation
+                  Presentation on the Shoulders</a>“, IEEE World Haptics Conference 2025, 2025.&nbsp;</li>
+
+
+
+              <li>J. Kojima, S. Shirai, N. Chiba and Y. Uranishi, “Which Tile Should I Discard?: Supporting Beginners in
+                Mahjong by Presenting Recommended Discards in Mixed Reality,” 2025 IEEE International Symposium on Mixed
+                and Augmented Reality Adjunct (ISMAR-Adjunct), pp. 739-740, 2025.</li>
+
+
+
+              <li>N. Kinoshita, S. Shirai, M. Kobayashi, N. Chiba and Y. Uranishi, “Real-Time Feedback System for Body
+                Tilt in Archery Shooting,” 2025 IEEE International Symposium on Mixed and Augmented Reality Adjunct
+                (ISMAR-Adjunct), pp. 749-750, 2025.</li>
+
+
+
+              <li>Yuki Kitamura, Hiroyuki Nagataki, Tomonari Kishimoto, Susumu Kanemune, Shizuka Shirai, “Understanding
+                Computer Networks Within an Hour: Evaluation of a Visual Simulator and Autonomous Supports Under
+                Self-Learning Conditions”, Proceedings of 2025 IEEE International Conference on Teaching, Assessment,
+                and Learning for Engineering (TALE), Macao, China, 2025.</li>
+            </ul>
+
+
+
+            <h3 class="wp-block-heading">International Conference Non-reviewed (国際会議査読無し)</h3>
+
+
+
+            <h3 class="wp-block-heading">Domestic Conference (国内学会発表査読あり)</h3>
+
+
+
+            <h3 class="wp-block-heading">Domestic Conference Non-reviewed (国内学会発表査読無し)</h3>
+
+
+
+            <ul>
+              <li>平谷歩香，中村拓人，千葉直也，浦西友樹：VR環境を用いた和太鼓練習支援システムの提案と モチベーションへの影響評価，第30回日本バーチャルリアリティ学会大会, 2025.09. [<a
+                  href="https://conference.vrsj.org/ac2025/program/doc/1B1-09.pdf" target="_blank"
+                  rel="noreferrer noopener">Link</a>]</li>
+
+
+
+              <li>奥田航平，中村拓人，葛岡英明：肩のハンガー反射による知覚力覚の物理量計測による評価，第30回日本バーチャルリアリティ学会大会, 2025.09. [<a
+                  href="https://conference.vrsj.org/ac2025/program/doc/2F1-07.pdf" target="_blank"
+                  rel="noreferrer noopener">Link</a>]</li>
+
+
+
+              <li>福田光輝，中村拓人，青山一真，鳴海拓志，雨宮智浩，葛岡英明：腱への非対称振動刺激を用いた指先非拘束型力覚提示手法の提案，第30回日本バーチャルリアリティ学会大会, 2025.09. [<a
+                  href="https://conference.vrsj.org/ac2025/program/doc/2F1-11.pdf" target="_blank"
+                  rel="noreferrer noopener">Link</a>]</li>
+
+
+
+              <li>浦西友樹, 小林 聖人, 東田学, 中村拓人, 白井詩沙香, 千葉直也, “教育・スポーツトレーニング・医療への XR技術の応用”, 第24回日本VR医学会学術大会, 2025.</li>
+
+
+
+              <li>X. Sha, L. Zhang, T. Mashita, N. Chiba, Y. Uranishi. “Robotics-inspired Control for Audio-driven 3D
+                Facial Motion Synthesis”, 画像の認識・理解シンポジウム (MIRU), 2025.</li>
+
+
+
+              <li>H. Zhang, N. Chiba, T. Mashita. “RegCheckNet: An automatic Point Cloud Registration Discrimination
+                Network”, 画像の認識・理解シンポジウム (MIRU), 2025.</li>
+
+
+
+              <li>佐々木彩, 千葉直也, 橋本浩一, 大澤隼也, 南本高志. “自己教師あり学習とクラスタリングを用いたMVtecADデータセットにおける異常クラスタリング”, 画像の認識・理解シンポジウム (MIRU),
+                2025.</li>
+
+
+
+              <li>吉永紘, 千葉直也, 鏡慎吾, 月足典央, 橋本浩一. “深度画像を用いた複数の線状変形物体認識およびトラッキングシステムの構築”, 画像の認識・理解シンポジウム (MIRU), 2025.</li>
+
+
+
+              <li>D. Soto, S. Shirai, M. Ueda, M. Higashida M. Murakami, and Y. Uranishi, “Exploratory research on
+                learning analytics adoption in Japanese higher educational institutions,” 情報処理学会 第87回全国大会, 2025.</li>
+
+
+
+              <li>多喜 匠, 小林 聖人, Iglesius Eduardo, 千葉 直也, 白井 詩沙香, 浦西 友樹, “自律移動ロボットのための複合現実技術を用いた地図更新システム”, ロボティクス・メカトロニクス
+                講演会, 2025.</li>
+
+
+
+              <li>小林 拓史, 小林 聖人, Thanpimon Buamanee, 浦西 友樹, “言語情報を活用したバイラテラル制御に基づく模倣学習”, ロボティクス・メカトロニクス 講演会, 2025.</li>
+
+
+
+              <li>Iglesius Eduardo, 小林 聖人、浦西 友樹, “複合現実技術と言語指示に基づく自律移動ロボットインタフェース”, ロボティクス・メカトロニクス 講演会, 2025.</li>
+
+
+
+              <li>木下夏綺, 白井詩沙香, 小林聖人, 千葉直也, 浦西友樹, “アーチェリー行射における身体傾斜情報の即時提示システムの提案”, 情報処理学会第213回ヒューマンコンピュータインタラクション研究会, 東京
+                (2025.6) </li>
+
+
+
+              <li>小島隼, 白井詩沙香, 千葉直也, 浦西友樹, “複合現実技術を用いた推奨打牌情報の提示による麻雀支援システムの提案”, 情報処理学会第213回ヒューマンコンピュータインタラクション研究会, 東京
+                (2025.6)</li>
+
+
+
+              <li>北村 祐稀, 長瀧 寛之, 岸本 有生, 兼宗 進, 白井 詩沙香, “ProtoSimの評価・改善を通じたインタラクティブ学習環境で自己学習を促す要素の分析”, 情報教育シンポジウム2025,
+                東京（2025.8）</li>
+
+
+
+              <li>白井詩沙香, 中村拓人, 田中冬彦, 千葉直也, 東田学, 小林聖人, 長瀧寛之, 村上正行, 西田知博, 小野淳, 天野由貴, 竹村治雄, 浦西友樹,
+                大阪大学における一般情報教育の改定に向けた取り組み：高等学校「情報I」への対応, 大学ICT推進協議会年次大会論文集, pp. 245-246, 2025.</li>
+
+
+
+              <li>長瀧寛之, 白井詩沙香, 中村拓人, 浦西 友樹, “大阪大学の2025年度新入生に対する高等学校情報科の学びに関するアンケート調査報告”, 大学ICT推進協議会年次大会論文集, pp. 247-248,
+                2025.</li>
+
+
+
+              <li>浦西友樹, 小林 聖人, 東田学, 中村拓人, 白井詩沙香, 千葉直也, “教育・スポーツトレーニング・医療への XR技術の応用”, 第24回日本VR医学会学術大会, 2025.</li>
+            </ul>
+
+
+
+            <h3 class="wp-block-heading">Awards(受賞)</h3>
+
+
+
+            <ul>
+              <li>受賞者：大阪大学 浦西研究室（代表：D1 北村祐稀） <br>賞名： <a href="https://ligp.gingerapp.co.jp/" target="_blank"
+                  rel="noopener">ラーニングイノベーショングランプリ2025 優秀ラーニングイノベーション賞</a><br>受賞年月：2025年7月
+                <br>研究課題名：ネットワークの仕組みを体験的・自律的に学べるWeb教材：通信プロトコルシミュレータProtoSim
+              </li>
+
+
+
+              <li>受賞者：北村 祐稀, 長瀧 寛之, 岸本 有生, 兼宗 進, 白井 詩沙香 <br>賞名： 優秀デモ・ポスター賞（<a
+                  href="https://ce.eplang.jp/index.php?SSS2025">情報処理学会 情報教育シンポジウム2025</a>） <br>受賞年月：2025年8月
+                <br>研究課題名：ProtoSimの評価・改善を通じたインタラクティブ学習環境で自己学習を促す要素の分析
+              </li>
+            </ul>
+          </div>
+
+
+
+          <div id="tab-9041ec6c-2" class="c-tabBody__item" aria-hidden="true">
+            <h3 class="wp-block-heading">Journal (論文誌)</h3>
+
+
+
+            <ul>
+              <li>椿 崇裕, 小林 聖人, 上田 好寛, 元井 直樹, “<a
+                  href="https://www.jstage.jst.go.jp/article/ieejeiss/144/1/144_28/_article/-char/ja">“バイラテラル制御における周波数修正法の有効性検証</a>,”
+                電気学会論文誌Ｃ（電子・情報・システム部門誌）, Vol. 144, No. 1, pp. 28-34, 2024.</li>
+
+
+
+              <li>N. Thanyawet, P. Ratsamee, Y. Uranishi, M. Kobayashi and H. Takemura, “<a
+                  href="https://ieeexplore.ieee.org/abstract/document/10634520">Identifying Disaster Regions in Images
+                  Through Attention Shifting with a Retarget Network</a>,” in IEEE Access, vol. 12, pp. 143754-143766,
+                2024.&nbsp;</li>
+
+
+
+              <li>M. Kobayashi, T. Buamanee, Y. Uranishi, H. Takemura, “<a
+                  href="https://mertcookimg.github.io/ilbit/">ILBiT: Imitation Learning for Robot Using Position and
+                  Torque Information based on Bilateral Control with Transformer</a>“, IEEJ Journal of Industry
+                Applications, pp. 1-8, 2024.</li>
+
+
+
+              <li>H. Daichi, S. Shirai, J. Orlosky, M. Alizadeh, M. Kobayashi, Y. Uranishi, P. Ratsamee, H. Takemura,
+                “<a href="http://dx.doi.org/10.1109/TG.2024.3498325">User-Centric Locomotion Techniques for Virtual
+                  Reality Games: A Survey of User Needs and Issues</a>“, in IEEE Transactions on Games, 2024.</li>
+
+
+
+              <li>D. Soto, S. Shirai, M. Ueda, M. Higashida, Y. Uranishi, H. Takemura, “<a
+                  href="http://dx.doi.org/10.1109/ACCESS.2024.3493422">Cloud Computing Challenges and Needs in Higher
+                  Education Institutions in Post-COVID-19 Times: A Case of a Japanese Survey</a>,” in IEEE Access, 2024.
+              </li>
+
+
+
+              <li>O. Viberg, M. Cukurova, Y. Feldman-Maggor, G. Alexandron, S. Shirai, S. Kanemune, W. Barbara, C.
+                Tomte, D. Spikol, M, Milrad, R. Coelho &amp; R. F. Kizilcec, “<a
+                  href="https://doi.org/10.1007/s40593-024-00433-x">What Explains Teachers’ Trust in AI in Education
+                  Across Six Countries?</a>, ” International Journal of Artificial Intelligence in Education, 1-29,
+                2024.</li>
+            </ul>
+
+
+
+            <h3 class="wp-block-heading">International Conference (国際会議査読あり)</h3>
+
+
+
+            <ul>
+              <li>M. Higashida, D. Soto, S. Shirai, M. Ueda, “Exploring Learning Analytics Approach Using Log Data of
+                Programming Environment Integrating Generative AI,” Companion Proceedings of the 14th International
+                Learning Analytics and Knowledge Conference (LAK’24), 2024, pp. 227-229.</li>
+
+
+
+              <li>T. Buamanee *, M. Kobayashi * , Y. Uranishi, and H. Takemura, “Bi-ACT: Bilateral Control-Based
+                Imitation Learning via Action Chunking with Transformer,” ICRA Workshop:A Future Roadmap for
+                Sensorimotor Skill Learning for Robot Manipulation, 2024.</li>
+
+
+
+              <li>So Kuroki, Jiaxian Guo, Tatsuya Matsushima, Takuya Okubo, Masato Kobayashi, Yuya Ikeda, Ryosuke
+                Takanami, Paul Yoo, Yutaka Matsuo, Yusuke Iwasawa.&nbsp;<a
+                  href="https://sites.google.com/view/gendom/home">“GenDOM: Generalizable One-shot Deformable Object
+                  Manipulation with Parameter-Aware Policy”.&nbsp;</a>Proceedings of IEEE International Conference on
+                Robotics and Automation（ICRA2024）, 2024.</li>
+
+
+
+              <li>T. Buamanee* , M. Kobayashi* , Y. Uranishi, and H. Takemura, “<a
+                  href="https://mertcookimg.github.io/bi-act/" target="_blank" rel="noreferrer noopener">Bi-ACT:
+                  Bilateral Control-Based Imitation Learning via Action Chunking with Transformer</a>,” Proceedings of
+                IEEE/ASME International Conference on Advanced Intelligent Mechatronics(AIM), pp. 385 – 390, 2024.</li>
+
+
+
+              <li>T. Fukui and S. Shirai, “Feature Expansion of Rich-text Editor for Supporting to Create STEAM
+                Educational Materials,” The 15th International Congress on Mathematical Education (ICME-15), 2024.</li>
+
+
+
+              <li>D. Soto, M. Higashida, S. Shirai, M. Ueda, Y. Uranishi, “Enhancing Learning Dynamics: Integrating
+                Interactive Learning Environments and ChatGPT for Computer Networking Lessons, ” Proceedings of the 28th
+                International Conference on Knowledge-Based and Intelligent Information &amp; Engineering Systems
+                (KES’24), 2024</li>
+
+
+
+              <li>Floris Erich, Naoya Chiba, Yusuke Yoshiyasu, Noriaki Ando, Ryo Hanai, Yukiyasu Domae. “<a
+                  href="https://florise.github.io/neural_labeling_web/">NeuralLabeling: A versatile toolset for labeling
+                  vision datasets using Neural Radiance Fields</a>”. IEEE/RSJ International Conference on Intelligent
+                Robots and Systems (IROS), 2024.</li>
+
+
+
+              <li>H. Ishizuka, K. Sakamoto, S. Shirai, Y. Hirao, M. Perusquia-Hernandez, H. Uchiyama and K. Kiyokawa,
+                “Estimation of Difficulty When Reading VR-based Educational Comics Using Gaze, Facial Movement, Heart
+                Rate, and Electroencephalography,” The 16th Asia-Pacific Workshop on Mixed and Augmented Reality
+                (APMAR2024), 2024.</li>
+
+
+
+              <li>A. Ashida, R. Kawamura, S. Shirai, N. Takemura, M. Alizadeh, H. Hayashi and H. Nagahara, “Is Internal
+                State Feedback in an E-Learning Environment Acceptable to People?,” The 32nd International Conference on
+                Computers in Education, Vol. 1, pp. 89-94, 2024.</li>
+
+
+
+              <li>Guanghan Zhao, Jason Orlosky, Kiyoshi Kiyokawa and Yuki Uranishi, “GlanXR: A Hands-Free Fast Switching
+                System for Virtual Screens”, Proceedings of the 23rd International Symposium on Mixed and Augmented
+                Reality (ISMAR2024), 2024.</li>
+            </ul>
+
+
+
+            <h3 class="wp-block-heading">International Conference Non-reviewed (国際会議査読無し)</h3>
+
+
+
+            <h3 class="wp-block-heading">Domestic Conference (国内学会発表査読あり)</h3>
+
+
+
+            <ul>
+              <li>北村 祐稀, 長瀧 寛之, 井手 広康, 兼宗 進, 岸本 有生, 白井 詩沙香, “すぐ使える！　通信プロトコルシミュレータProtoSim（プロトシム）　〜実践結果2023＆展望2024〜”,
+                第17回全国高等学校情報教育研究会全国大会（愛知大会）, 2024.</li>
+
+
+
+              <li>井手 広康, 白井 詩沙香, 長瀧 寛之, “公開鍵暗号を体験的に学習できるWebツールを用いた教育実践”, 第17回全国高等学校情報教育研究会全国大会（愛知大会）, 2024.</li>
+
+
+
+              <li>北村祐稀, 長瀧寛之, 井手広康, 兼宗進, 白井詩沙香, “TCP/IPの仕組みを体験的に学ぶシミュレータ教材を活用した授業の提案,” 情報処理学会 情報教育シンポジウム (SSS2024),
+                情報教育シンポジウム論文集, Vol. 2024, pp. 124-131, 2024</li>
+
+
+
+              <li>藤岡 怜生, 二見 堅太, 糸園 朔 , 松崎 史弥 , 片岡 大哉 , 小林 聖人, “<a href="https://roscon.jp/" target="_blank"
+                  rel="noreferrer noopener">Martime RobotX Challenge2024に向けた自律航行ハードウェアとROS 2とのインテグレーション</a>“, ROSCon JP
+                2024.</li>
+            </ul>
+
+
+
+            <h3 class="wp-block-heading">Domestic Conference Non-reviewed (国内学会発表査読無し)</h3>
+
+
+
+            <ul>
+              <li>白井詩沙香, 中原 敬広, 福井 哲夫, “数式を含む文書作成のためのリッチテキストエディタプラグインの開発,” 2024 年日本ムードルムート, 2024年.</li>
+
+
+
+              <li>小林 聖人, Thanpimon Buamanee, 浦西 友樹, “視覚・力触覚情報を活用したバイラテラル制御に基づく模倣学習によるロボットアームの行動生成手法に関する研究”,
+                日本ロボット学会学術講演会, 2024.</li>
+
+
+
+              <li>西 滉平. 小林 聖人, 浦西 友樹, “バイラテラル制御を用いた水中多自由度ロボットアームの遠隔操作システムに関する基礎的研究”, 日本ロボット学会学術講演会, 2024.</li>
+
+
+
+              <li>石塚 裕之, 坂本 賢哉, 白井 詩沙香, Jason Orlosky, 平尾 悠太朗, Monica Perusquia Hernandez, 磯山 直也, 内山 英昭, 清川　清, ”
+                視線，表情，心拍，脳波を用いたVR空間でのマンガ教材読書時の主観的難易度推定”, 電子情報通信学会MVE研究会, vol. 123, no. 433, MVE2023-42, pp. 1-6.</li>
+
+
+
+              <li>Floris Erich, Naoya Chiba, Abdullah Mustafa, Tomohiro Motoda, Ryo Hanai, Yukiyasu Domae.
+                “Language-Based Pose Estimation of Convenience Store Objects”. 第42回日本ロボット学会学術講演会 (RSJ), 2024.</li>
+
+
+
+              <li>鈴木 雄太，谷合 竜典，五十嵐 亮，斉藤 耕太郎，千葉 直也，牛久 祥孝，小野 寛太．“テキストと結晶構造の対照学習による材料の埋め込み表現と応用”．第85回応用物理学会秋季学術講演会，2024．
+              </li>
+            </ul>
+
+
+
+            <h3 class="wp-block-heading">Awards(受賞)</h3>
+
+
+
+            <ul>
+              <li>受賞者：小林 聖人<br>賞名：優秀論文発表賞
+                (電気学会産業計測制御技術委員会)<br>受賞年月：2024年1月<br>研究課題名：バイラテラル制御に基づく模倣学習におけるロボットアームの動作生成手法に関する研究</li>
+
+
+
+              <li>受賞者：白井詩沙香, 中原敬広, 福井哲夫<br>賞名：2023年度ベスト・ムードル・イノベーション賞 準優勝賞<br>受賞年月：2024年2月<br>研究課題名： MathTOUCH Editor:
+                Rich-text Editor Plugin for Math E-learning</li>
+
+
+
+              <li>受賞者：小林 聖人<br>賞名：優秀論文発表賞 (電気学会産業応用部門)<br>受賞年月：2024年3月<br>研究課題名：バイラテラル制御に基づく模倣学習におけるロボットアームの動作生成手法に関する研究
+              </li>
+
+
+
+              <li>受賞者：横山 真由子（京都産業大学）, 山口 史弥（京都産業大学）, 上田 真由美（流通科学大学, 大阪大学), 中島 伸介（京都産業大学）<br>賞名：<a
+                  href="https://confit.atlas.jp/guide/event/deim2024/static/awards" target="_blank"
+                  rel="noreferrer noopener">優秀インタラクティブ賞</a><br>受賞年月：2024年3月<br>研究課題名：レビュー分析に基づくヘアケアアイテムの香り可視化手法の提案</li>
+
+
+
+              <li>受賞者：北村祐稀, 長瀧寛之, 井手広康, 兼宗進, 白井詩沙香 <br>章名：<a
+                  href="https://ce.eplang.jp/index.php?SSS2024#:~:text=%E5%8F%97%E8%B3%9E%E8%80%85%20%C2%A7-,%E6%9C%80%E5%84%AA%E7%A7%80%E8%AB%96%E6%96%87%E8%B3%9E,-5%2D1%EF%BC%9A"
+                  data-type="link"
+                  data-id="https://ce.eplang.jp/index.php?SSS2024#:~:text=%E5%8F%97%E8%B3%9E%E8%80%85%20%C2%A7-,%E6%9C%80%E5%84%AA%E7%A7%80%E8%AB%96%E6%96%87%E8%B3%9E,-5%2D1%EF%BC%9A"
+                  target="_blank" rel="noreferrer noopener">最優秀論文賞</a> <br>受賞年月：2024年8月
+                <br>研究課題名：TCP/IPの仕組みを体験的に学ぶシミュレータ教材を活用した授業の提案
+              </li>
+
+
+
+              <li>受賞者：井上沙紀氏（関西学院大学），王元元氏（山口大学），河合由起子氏（京都産業大学／大阪大学），白井詩沙香氏（大阪大学），角谷和俊氏（関西学院大学）賞名：<a
+                  href="https://www.nii.ac.jp/dsc/idr/userforum/2024.html" target="_blank"
+                  rel="noreferrer noopener">企業賞</a><br>受賞年月：2024年12月<br>研究課題名：Eval-QUEST:
+                学生の発問を促進するリアルタイム質問投稿と学生間相互評価の実践</li>
+            </ul>
+          </div>
+
+
+
+          <div id="tab-9041ec6c-3" class="c-tabBody__item" aria-hidden="true">
+            <h3 class="wp-block-heading">Journal (論文誌)</h3>
+
+
+
+            <ul>
+              <li>K. Sakamoto, S. Shirai, N. Takemura, J. Orlosky, H. Nagataki, M. Ueda, Y. Uranishi and H. Takemura,
+                “Subjective Difficulty Estimation of Educational Comics Using Gaze Features,” IEICE Transactions on
+                Information and Systems, vol. E106-D, no. 5, pp. 1038-1048, 2023.</li>
+
+
+
+              <li>D. Ishimaru, H. Adachi, T. Mizumoto, V. Erdelyi, H. Nagahara, S. Shirai, H. Takemura, N. Takemura, M.
+                Alizadeh, T. Higashino, Y. Yagi and M. Ikeda, “Criteria for detection of possible risk factors for
+                mental health problems in undergraduate university students,” Frontiers in Psychiatry, vol. 14, 1184156.
+                doi: 10.3389/fpsyt.2023.1184156</li>
+
+
+
+              <li>Masato Kobayashi, Naoki Motoi,&nbsp;<a href="https://ieeexplore.ieee.org/document/10243036">“BSL:
+                  Navigation Method Considering Blind Spots Based on ROS Navigation Stack and Blind Spots Layer for
+                  Mobile Robot,”</a>&nbsp;IEEE Transactions on Industry Applications, 2023.</li>
+
+
+
+              <li>Masato Kobayashi, Hiroka Zushi, Tomoaki Nakamura, Naoki Motoi,&nbsp;<a
+                  href="https://ieeexplore.ieee.org/document/10237217">“Local Path Planning: Dynamic Window Approach
+                  with Q-learning Considering Congestion Environments for Mobile Robot,”</a>&nbsp;IEEE Access, Vol. 11,
+                pp. 96733 – 96742, 2023.</li>
+
+
+
+              <li>S. Shirai, T. Nakahara, T. Fukui, “MathTOUCH Editor: Rich-text Editor for Math E-learning Using an
+                Intelligent Math Input Interface,” Journal of Information Processing, 2023, Volume 31, Pages 775-785,
+                Released on J-STAGE November 15, 2023, Online ISSN 1882-6652, https://doi.org/10.2197/ipsjjip.31.775
+              </li>
+            </ul>
+
+
+
+            <h3 class="wp-block-heading">International Conference (国際会議査読あり)</h3>
+
+
+
+            <ul>
+              <li>M. Kobayashi, H. Zushi, T. Nakamura and N. Motoi, “DQDWA: Dynamic Weight Coefficients Based on
+                Q-learning for Dynamic Window Approach Considering Environmental Situations,” 2023 IEEE/ASME
+                International Conference on Advanced Intelligent Mechatronics (AIM), Seattle, WA, USA, 2023, pp.
+                1141-1146, doi: 10.1109/AIM46323.2023.10196198.</li>
+
+
+
+              <li>L. Zhang, P. Ratsamee, B. Wang, M. Higashida, Y. Uranishi and H. Takemura, “Panoptic-based Object
+                Style-Align for Thermal-to-Color Image Translation,” IEEE/CVF Winter Conference on Applications of
+                Computer Vision (WACV2023), Waikoloa, HW, USA, 2023.</li>
+
+
+
+              <li>D.Soto, S.Shirai, M. Ueda, M. Higashida, and H. Takemura, “Describing the Factors Influencing the
+                Adoption of Cloud Computing in Higher Education Institutions: A Technology-Organization-Environment
+                (TOE) Model Based Exploratory Study in the Dominican Republic,” EdMedia + Innovate Learning, Austria,
+                2023, pp. 1-10.</li>
+
+
+
+              <li>N. Takemura, H. Sakashita, S. Shirai, M. Alizadeh, and H. Nagahara, “Person segmentation and
+                identification across multiple wearable cameras”, Sixteenth International Conference on Quality Control
+                by Artificial Vision (QCAV’ 2023), Albi, France, 2023.</li>
+
+
+
+              <li>R. Takahashi, S. Shirai, H. Nagataki, T. Amano, M. Alizadeh, M. Ueda, N. Takemura, M. Cukurova, H.
+                Nagahara, H. Takemura, “Exploring Mixed Reality Group Activity Visualisations for Teaching Assistants to
+                Support Collaborative Learning,” 25th international conference on human-computer interaction,
+                Copenhagen, Denmark, 2023.</li>
+
+
+
+              <li>N. Motoi, T. Okada, and M. Kobayashi, “Experimental Verification of Underwater 2-Ch Bilateral
+                Controller With Disturbance Observer,” Proceedings of IEEE International Workshop on Metrology for the
+                Sea; Learning to Measure Sea Health Parameters (MetroSea), 2023</li>
+
+
+
+              <li>A. Sugiura, M. Kobayashi, and N. Motoi, “Force Sensorless Control by Reaction Force Observer with Deep
+                Neural Network in Linear Motor,” Proceedings of Mecatronics and AISM, 2023.</li>
+
+
+
+              <li>T. Kowada, Y. Uranishi, C. Liu, G. Yamamoto, P. Ratsamee, “Real-time Alert of Excessive Force Based on
+                Forearm Muscle Activity for Wall Climbing,” IEEE International Symposium on Mixed and Augmented Reality
+                Adjunct (ISMAR-Adjunct), 2023</li>
+
+
+
+              <li>K. Momota, Y. Uranishi, K. Kiyokawa, J. Orlosky, P. Ratsamee, M. Kobayashi, “Virtual Zoomorphic
+                Accessories for Enhancing Perception of Vehicle Dynamics in Real-Time,” International Conference on
+                Artificial Reality and Telexistence &amp; Eurographics Symposium on Virtual Environments (ICAT-EGVE
+                2023).</li>
+
+
+
+              <li>M. Kobayashi*, J. Yamada*, M. Hamaya, and K. Tanaka, “LfDT: Learning Dual-Arm Manipulation from
+                Demonstration Translated from a Human and Robotic Arm,” Proceedings of IEEE-RAS International Conference
+                on Humanoid Robots (Humanoids 2023), 2023. *Equal contribution</li>
+
+
+
+              <li>H. Nagataki, S. Shirai, T. Nishida, A. Ono, H. Takemura, “Hands-on Activities for Learning Computer
+                Networks and Information Security in CS0 Course,” IEEE TALE 2023, Auckland, New Zealand, 2023.</li>
+
+
+
+              <li>S. Shirai, M. Pollanen, K. Sohee, T. Fukui, “Feature Expansion of the Equation Editor in Mathematics
+                Classroom Collaborator (MC2) for Smartphones,” IEEE TALE 2023, Auckland, New Zealand, 2023.</li>
+            </ul>
+
+
+
+            <h3 class="wp-block-heading">International Conference Non-reviewed (国際会議査読無し)</h3>
+
+
+
+            <h3 class="wp-block-heading">Domestic Conference (国内学会発表査読あり)</h3>
+
+
+
+            <ul>
+              <li>北村祐稀, 長瀧寛之, 井手広康, 兼宗進, 白井詩沙香, “シミュレータ教材ProtoSimを活用したTCP/IPの仕組みと重要性を体験的に学ぶ授業の提案”,
+                第16回全国高等学校情報教育研究会全国大会（東京大会）, Aug. 2023.</li>
+
+
+
+              <li>長尾悠世, 岡本健太, 小林聖人, 吉本幸太郎, 永田暁久, 溝口裕介, 黒田和輝, 荒井杏真, 松崎史弥, 糸園朔, 湯浅拓海, 真田辰哉, 松本拓実, 坂本航, 坂本琢磨, 小林聡太, 西野光,
+                宮川大樹, 田中俊哉, 小田拓海, 西村樹希, 吉田圭佑, 金城たくと, “水上AIロボットにおける三次元環境認識 “, ROSCon JP 2023.</li>
+
+
+
+              <li>北村祐稀, 長瀧寛之, 井手広康, 兼宗進, 白井詩沙香, “初学者を対象としたTCP/IPの仕組みと重要性を体験的に学ぶシミュレータ教材の開発”, 情報処理学会 情報教育シンポジウム
+                (SSS2023), 情報教育シンポジウム論文集, Vol. 2023, pp. 249-253, 2023.</li>
+            </ul>
+
+
+
+            <h3 class="wp-block-heading">Domestic Conference Non-reviewed (国内学会発表査読無し)</h3>
+
+
+
+            <ul>
+              <li>髙波 亮介, 小林 聖人, 松嶋 達也, 池田 悠也, 石本 幸暉, 岩澤 有祐, 松尾 豊. (2023)&nbsp;<a
+                  href="https://confit.atlas.jp/guide/event/jsai2023/subject/2G6-OS-21f-03/tables?cryptoId=">“環境の意味情報と半自律支援動作を活用したモバイルマニピュレータの遠隔操作システムの開発”</a>,
+                第37回 人工知能学会全国大会論文集, OS-21 世界モデルと知能.</li>
+
+
+
+              <li>白井詩沙香, 中原敬広, 福井哲夫, “数式を含む講義動画に対応した字幕表示システムの構築,” 情報処理学会 第85回全国大会, no. 1, pp. 437-438, 2023.</li>
+
+
+
+              <li>石丸琴海, 妹尾美侑, 白井詩沙香, 福井哲夫, “日本語音声認識とGUIによるマルチモーダル数式入力方式の試作,” 情報処理学会 第85回全国大会, no. 1, pp. 785-786, 2023.
+              </li>
+
+
+
+              <li>城彰彦, 浦西友樹, 長原一, “微分可能レンダリングを用いた透明物体の自由視点画像生成,” 情報処理学会コンピュータビジョンとイメージメディア (CVIM), vol. 2023-CVIM-232,
+                no. 23, pp. 1-8, 2023.</li>
+
+
+
+              <li>古川雅子, 白井詩沙香, 竹村治雄, 喜多敏博, 長岡千香子, 山地一禎, “LTI連携による再利用可能なマイクロコンテンツ教材システムの構築”, 第48回教育システム情報学会 全国大会論文集, pp.
+                309-310.</li>
+
+
+
+              <li>松崎 史弥, 岡本 健太, 吉本 幸太郎, 小林 聖人, 片岡 大哉, 永田 暁久, 西田 祐也, “Maritime RobotXへの挑戦を通じた技術活動”, 日本ロボット学会学術講演会, 2023.
+              </li>
+
+
+
+              <li>西 滉平, 小林 聖人 , 元井 直樹 , 浦西 友樹, 竹村 治雄, “水中におけるバイラテラル制御に基づく遠隔操作ロボットシステムの基礎検討”, 電気学会 産業計測制御研究会 ,
+                IIC-23-032, 2023.</li>
+
+
+
+              <li>小林 聖人, Thanpimon Buamanee, Iglesius Eduardo, 西 滉平 , 浦西 友樹, 竹村 治雄,
+                “バイラテラル制御に基づく模倣学習におけるロボットアームの動作生成手法に関する研究”, 電気学会 産業計測制御研究会, IIC-23-033, 2023.</li>
+
+
+
+              <li>北村祐稀, 白井詩沙香, 西田知博, 兼宗進, 長瀧寛之, 小野淳, 竹村治雄, “インタラクティブなソートアルゴリズム演習ツールを取り入れた一般情報教育における授業実践”,
+                研究報告コンピュータと教育（CE）, Vol. 2023-CE-172, 16, 1-8.</li>
+            </ul>
+
+
+
+            <h3 class="wp-block-heading">Awards(受賞)</h3>
+
+
+
+            <ul>
+              <li>受賞者：北村祐稀<br>賞名：学生奨励賞<br>受賞年月：2023年8月<br>研究課題名： 初学者を対象としたTCP/IPの仕組みと重要性を体験的に学ぶシミュレータ教材の開発</li>
+
+
+
+              <li>受賞者：古和田徹, 友弘大暉, 百田浩二<br>賞名：GREE賞 (IVRC)<br>受賞年月：2023年6月<br>作品タイトル名： テレビの向こう側へ</li>
+
+
+
+              <li>受賞者：古和田徹, 友弘大暉, 百田浩二<br>賞名：VR学会賞 (IVRC)<br>受賞年月：2023年11月<br>作品タイトル名： テレビの向こう側へ</li>
+
+
+
+              <li>受賞者：古和田徹, 友弘大暉, 百田浩二<br>賞名：石戸奈々子賞 (IVRC)<br>受賞年月：2023年11月<br>作品タイトル名： テレビの向こう側へ</li>
+
+
+
+              <li>受賞者：古和田徹, 友弘大暉, 百田浩二<br>賞名：Unityプラチナ賞 (IVRC)<br>受賞年月：2023年11月<br>作品タイトル名： テレビの向こう側へ</li>
+            </ul>
+          </div>
+
+
+
+          <div id="tab-9041ec6c-4" class="c-tabBody__item" aria-hidden="true">
+            <h3 class="wp-block-heading">Journal (論文誌)</h3>
+
+
+
+            <ul>
+              <li>K. Tamata, T. Mashita. (2022). “Feature Description with Feature Point Registration Error using Local
+                and Global Point Cloud Encoders,” IEICE Trans. Information and Systems, E105-D(1), pp.134-140.</li>
+
+
+
+              <li>S. Shoman, T. Mashita, A. Plopski, P. Ratsamee, Y. Uranishi. (2022). “Real-to-Synthetic Feature
+                Transform for Illumination Invariant Camera Localization,” IEEE Computer Graphics and Applications,
+                Vol.42, No.1, pp.47-55</li>
+
+
+
+              <li>大西和歩, 浦西友樹, 劉暢, Photchara Ratsamee, 東田学, 山本豪志朗, 竹村治雄, “ホールド難度と配置を考慮したボルダリング課題の自動難度推定,”
+                日本バーチャルリアリティ学会論文誌, vol. 27, no. 4, pp. 331-340, 2022.</li>
+
+
+
+              <li>G. Zhao, J. Orlosky, S. Feiner, P. Ratsamee and Y. Uranishi, “Mitigation of VR Sickness during
+                Locomotion with a Motion-Based Dynamic Vision Modulator,” IEEE Transactions on Visualization and
+                Computer Graphics (Early Access), pp. 1-13, 2022.</li>
+            </ul>
+
+
+
+            <h3 class="wp-block-heading">International Conference (国際会議査読あり)</h3>
+
+
+
+            <ul>
+              <li>S. Shirai, M. Hori, M. Furukawa, M. Alizadeh, N, Takemura, H. Takemura, and H. Nagahara. (2022).
+                “Design of open-source video viewing behavior analysis system,” in Companion Proceedings of the 12th
+                International Conference on Learning Analytics &amp; Knowledge (LAK22)</li>
+
+
+
+              <li>D. Lim, S. Shirai, J. Orlosky, P. Ratsamee, Y. Uranishi, H. Takemura. (2022). “Exploring
+                Three-Dimensional Locomotion Techniques in Virtual Reality,” IEEE International Symposium on Mixed and
+                Augmented Reality Adjunct (ISMAR-Adjunct)</li>
+
+
+
+              <li>D. Hirobe, Y. Uranishi, J. Orlosky, S. Shirai, P. Ratsamee, H. Takemura. (2022). “Objective
+                Measurements of Background Color Shifts Caused by Optical See-Through Head-Mounted Displays,” IEEE
+                International Symposium on Mixed and Augmented Reality Adjunct (ISMAR-Adjunct)</li>
+
+
+
+              <li>Y. Kitamura, K. Hirose, S. Kanemune, T. Nishida, S. Shirai. (2022). “How Elementary School Students
+                Experienced Algorithms: Using Sorting Algorithms Online Learning Tool,” World Conference on Computers in
+                Education (IFIP WCCE 2022)</li>
+
+
+
+              <li>D. Lim, S. Shirai, J. Orlosky, P. Ratsamee, Y. Uranishi, H. Takemura. (2022). “Evaluation of User
+                Interfaces for Three-Dimensional Locomotion in Virtual Reality,” In Symposium on Spatial User
+                Interaction (SUI ’22). Association for Computing Machinery, New York, NY, USA, Article 8, 1–9.</li>
+
+
+
+              <li>D. Hirobe, Y. Uranishi, J. Orlosky, S. Shirai, P. Ratsamee, H. Takemura. (2022). “Characteristics of
+                Background Color Shifts Caused by Optical See-Through Head-Mounted Displays,” International Conference
+                on Artificial Reality and Telexistence and Eurographics Symposium on Virtual Environments (ICAT-EGVE
+                2022)</li>
+
+
+
+              <li>T. Fukui and S. Shirai, “Development of Online Support Tools for Creating STEM Educational Materials,”
+                2022 IEEE International Conference on Teaching, Assessment and Learning for Engineering (TALE), Hung
+                Hom, Hong Kong, 2022, pp. 736-739.</li>
+
+
+
+              <li>D. Soto, S. Shirai, M. Ueda, M. Higashida and H. Takemura, “The Adoption of Learning Analytics in
+                Higher Education: An Exploratory Study in the Dominican Republic,” The 13th International Learning
+                Analytics and Knowledge Conference (LAK23), Texas, USA, 2023, pp. 77-79.</li>
+
+
+
+              <li>L. Zhang, P. Ratsamee, Y. Uranishi, M. Higashida and H. Takemura, “Thermal-to-Color Image Translation
+                for Enhancing Visual Odometry of Thermal Vision,” The 2022 IEEE International Symposium on Safety,
+                Security, and Rescue Robotics (SSRR2022), Seville, Spain, 2022.</li>
+            </ul>
+
+
+
+            <h3 class="wp-block-heading">International Conference Non-reviewed (国際会議査読無し)</h3>
+
+
+
+            <h3 class="wp-block-heading">Domestic Conference (国内学会発表査読あり)</h3>
+
+
+
+            <h3 class="wp-block-heading">Domestic Conference Non-reviewed (国内学会発表査読無し)</h3>
+
+
+
+            <ul>
+              <li>白井詩沙香, 中原敬広, 福井哲夫. (2022). “数学eラーニングのための数式予測変換方式によるリッチテキストエディタの試作と評価,” 情報処理学会 研究報告教育学習支援情報システム (CLE),
+                Vol. 2022-CLE-36, 2, 1-6.</li>
+
+
+
+              <li>北村祐稀, 岸本有生, 兼宗進, 西田知博, 白井 詩沙香. (2022).&nbsp; “CSアンプラグドを活用したソートアルゴリズムオンライン学習教材の開発,” 情報処理学会
+                研究報告コンピュータと教育 (CE), Vol. 2022-CE-163, 4, 1-7.</li>
+
+
+
+              <li>坂本賢哉, 白井詩沙香, 武村紀子, Orlosky Jason, 長瀧寛之, 上田真由美, 浦西友樹, 竹村治雄. (2022).
+                “マンガ教材読書時のリアルタイム難易度推定に向けた視線ヒートマップ分解能の検討,” 第27回日本バーチャルリアリティ学会大会論文集</li>
+
+
+
+              <li>白井詩沙香, 中原敬広, 福井哲夫, “数式を含む講義動画に対応した字幕表示システムの構築,” 情報処理学会 第85回全国大会, no. 1, pp. 437-438, 2023.</li>
+
+
+
+              <li>石丸琴海, 妹尾美侑, 白井詩沙香, 福井哲夫, “日本語音声認識とGUIによるマルチモーダル数式入力方式の試作,” 情報処理学会 第85回全国大会, no. 1, pp. 785-786, 2023.
+              </li>
+
+
+
+              <li>東田学, David Enmanuel Soto Campusano, 白井詩沙香, 上田真由美, “データサイエンスのエコシステムによる拡張可能なプログラミング授業環境の構築”, 情報処理学会
+                研究報告教育学習支援情報システム（CLE）, vol. 2022-CLE-37, vol. 2022, no. 8, pp.1-7, 2022.</li>
+
+
+
+              <li>永井孝幸, 長瀧寛之, 白井詩沙香, “情報処理学会論文誌「教育とコンピュータ」における Moodle3 を用いた論文査読システムの構築,” 日本ムードル協会全国大会(2022)発表論文集 , pp.
+                32-42, 2022.</li>
+
+
+
+              <li>佐藤僚太, 浦西友樹, Photchara Ratsamee, 東田学, 竹村治雄, “プロジェクションマッピングを用いたボールのキックフォーム学習支援,”
+                第66回システム制御情報学会研究発表講演会論文集, 312-4, 2022.</li>
+            </ul>
+
+
+
+            <h3 class="wp-block-heading">Awards(受賞)</h3>
+
+
+
+            <p>受賞者：北村祐稀<br>賞名：学生奨励賞<br>受賞年月：2022年2月<br>研究課題名： CSアンプラグドを活用したソートアルゴリズムオンライン学習教材の開発</p>
+          </div>
+
+
+
+          <div id="tab-9041ec6c-5" class="c-tabBody__item" aria-hidden="true">
+            <h3 class="wp-block-heading">Journal (論文誌)</h3>
+
+
+
+            <ul>
+              <li>D. Ishimaru, H. Adachi, H. Nagahara, S. Shirai, H. Takemura, N. Takemura, A. Mehrasa, T. Higashino, Y.
+                Yagi, M. Ikeda. (2021). “Characteristics of Adaptation in Undergraduate University Students Suddenly
+                Exposed to Fully Online Education During the COVID-19 Pandemic,” Frontiers in Psychiatry, 1517.</li>
+
+
+
+              <li>R. Kawamura, S. Shirai, N. Takemura, M. Alizadeh, M. Cukurova, H. Takemura and H. Nagahara. (2021).
+                “Detecting Drowsy Learners at the Wheel of e-Learning Platforms With Multimodal Learning Analytics,”
+                IEEE Access, 9, 115165-115174.</li>
+
+
+
+              <li>M. Alizadeh, T. Omae, S. Shirai and N. Takemura. (2021). “Evaluating a Collaborative Learning Card
+                Game for Pre-Intermediate Language Learners in Face-to-Face and Online Settings,” e-Learning教育研究, 15,
+                25-35.</li>
+
+
+
+              <li>A. C. S. Medeiros, P. Ratsamee, J. Orlosky, Y. Uranishi, M. Higashida, H. Takemura. (2021). “3D
+                Pointing Gestures as Target Selection Tools: Guiding Monocular UAVs during Window Selection in an
+                Outdoor Environment,” ROBOMECH Journal, Vol.8, No.4.</li>
+
+
+
+              <li>S. Nishiyama, C. Lee, T. Mashita. (2021). “Solving 3D Container Loading Problems using Physics
+                Simulation for Genetic Algorithm Evaluation,” IEICE Trans. Information and Systems, E104-D(11), pp.
+                1913-1922.</li>
+
+
+
+              <li>Y. Takayama, P. Ratsamee, T. Mashita. (2021). “Reduced Simulation: Real-to-Sim Approach toward
+                Collision Detection in Narrowly Confined Environments,” Robotics, 10(4) 131.</li>
+            </ul>
+
+
+
+            <h3 class="wp-block-heading">International Conference (国際会議査読あり)</h3>
+
+
+
+            <ul>
+              <li>A. C. S. Medeiros, P. Ratsamee, J. Orlosky, Y. Uranishi, M. Higashida, H. Takemura. (2021). “UAV
+                Target-Selection: 3D Pointing Interface System for Large-Scale Environment,” Proceedings of the 2021
+                International Conference on Robotics and Automation (ICRA2021)</li>
+
+
+
+              <li>H. Sison, P. Ratsamee, M. Higashida, T. Mashita, Y. Uranishi, H. Takemura. (2021). “Spherical Magnetic
+                Joint for Inverted Locomotion of Multi-Legged Robot”, Proceedings of the 2021 International Conference
+                on Robotics and Automation (ICRA2021),</li>
+
+
+
+              <li>R. Takahashi, S. Shirai, J. Orlosky, Y. Uranishi and H. Takemura. (2021). “A Japanese Character
+                Flick-Input Interface for Entering Text in VR,” 2021 IEEE International Symposium on Mixed and Augmented
+                Reality Adjunct (ISMAR-Adjunct), 251-253.</li>
+
+
+
+              <li>T. Ogawa and T. Mashita. (2021). “Occlusion Handling in Outdoor Augmented Reality using a Combination
+                of Map Data and Instance Segmentation,” 2021 IEEE International Symposium on Mixed and Augmented Reality
+                (ISMAR 2021).</li>
+
+
+
+              <li>Y. Nakamura, T. Nakahara, M. Kawazoe, K. Yoshitomi, T. Fukui, S. Shirai, K. Kato and T. Taniguchi.
+                (2021). “Math E-learning Question Specification and XML Exporter for STACK by Using Visual Programming
+                Language,” The 14th International Congress on Mathematical Education (ICMS-14)</li>
+
+
+
+              <li>N. Techasarntikul, K. Tsuchida, T. Mashita. (2021). “Room Layout Estimation using a Machine Learning
+                Technique,” International Conference on Electrical, Computer and Energy Technologies (ICECET).</li>
+
+
+
+              <li>N. Techasarntikul, T. Mashita. (2021). “Instance Segmentation of Images Above the Ceiling using Mask
+                R-CNN,” International Conference on Electrical, Computer and Energy Technologies (ICECET).</li>
+            </ul>
+
+
+
+            <h3 class="wp-block-heading">International Conference Non-reviewed (国際会議査読無し)</h3>
+
+
+
+            <h3 class="wp-block-heading">Domestic Conference (国内学会発表査読あり)</h3>
+
+
+
+            <h3 class="wp-block-heading">Domestic Conference Non-reviewed (国内学会発表査読無し)</h3>
+
+
+
+            <ul>
+              <li>浦西友樹, 長濱愛珠咲, 大西和歩, 浜本多聞, オーロスキ ジェーソン, ラサミー ポチャラ, 竹村治雄. (2021). ClimbAR: クライミングにおける暗黙知の定量化と拡張現実による情報提示,
+                第65回システム制御情報学会研究発表講演会 論文集, TS12-02-2</li>
+
+
+
+              <li>吉見光平, ラサミー ポチャラ, 浦西友樹, 東田学, オーロスキ ジェーソン, 竹村治雄. (2021). GhostReplay:
+                人体モデルアニメーションを用いた3次元リプレイ提示によるスポーツにおける技能向上支援システム, 第65回システム制御情報学会研究発表講演会 論文集, TS12-02-3</li>
+
+
+
+              <li>陶涛, ラサミー ポチャラ, 浦西友樹, オーロスキ ジェーソン, 東田学, 竹村治雄. (2021). SmartVP: An autonomous Viewpoint Selection for
+                Watching a Boxing Game in Virtual Reality, 第65回システム制御情報学会研究発表講演会 論文集, TS12-02-4</li>
+
+
+
+              <li>塚越優治, 浦西友樹, オーロスキ ジェーソン. (2021). 構造色パターンを利用した光源方向および分光分布推定に関する検討, 第24回画像の認識・理解シンポジウム Extended
+                Abstract, I11-25</li>
+
+
+
+              <li>城彰彦, 浦西友樹, オーロスキ ジェーソン, 塚越優治. (2021). RGB画像と熱画像を併用した透明物体の三次元形状復元, 第24回画像の認識・理解シンポジウム Extended
+                Abstract, I11-33</li>
+
+
+
+              <li>福井嵐士, 武村紀子, アリザデメラサ, 白井詩沙香, 長原一, (2021). グラフ畳み込みネットワークを用いたグループ学習時の活性度推定, 第24回 画像の認識・理解シンポジウム, July.
+                2021, 1-4.</li>
+
+
+
+              <li>坂本賢哉, 白井詩沙香, 武村紀子, 長瀧寛之, 上田真由美, 浦西友樹, 竹村治雄. (2021). 視線情報に基づく VR 空間でのマンガ教材読書時の主観的難易度推定.
+                研究報告エンタテインメントコンピューティング (EC), 2021(10), 1-6.</li>
+            </ul>
+
+
+
+            <h3 class="wp-block-heading">Awards(受賞)</h3>
+          </div>
+
+
+
+          <div id="tab-9041ec6c-6" class="c-tabBody__item" aria-hidden="true">
+            <h3 class="wp-block-heading">Journal (論文誌)</h3>
+
+
+
+            <ul>
+              <li>Chang Liu, Alexander Plopski, Jason Orlosky, “OrthoGaze: Gaze-based Three-dimensional Object
+                Manipulation using Orthogonal Planes,” Computers &amp; Graphics, Vol. 89, pp. 1-10, 2020.</li>
+
+
+
+              <li>Kenji Fujimoto, Shigeto Seno, Hironori Shigeta, Tomohiro Mashita, Masaru Ishii, Hideo Matsuda,
+                “Tracking and Analysis of FUCCI-Labeled Cells Based on Particle Filters and Time-to-Event Analysis,”
+                International Journal of Bioscience, Biochemistry and Bioinformatics, Vol. 10, No. 2, pp. 94-109, April
+                2020.</li>
+
+
+
+              <li>村上正行, 佐藤浩章, 大山牧子, 権藤千恵, 浦田悠, 根岸千悠, 浦西友樹, 竹村治雄 (2020). 大阪大学におけるメディア授業実施に関する全学的な支援体制の整備と新入生支援の取り組み.
+                教育システム情報学会誌. 37, 4, 276-285.</li>
+
+
+
+              <li>Tao, T., Ratsamee, P., Orlosky, J., Uranishi, Y. and Takemura, H (2020). MomentViz: An Interactive 3D
+                Vision Augmentation Framework for Rapid Motion. Transactions of the Virtual Reality Society of Japan.
+                25, 2, 158-168.</li>
+
+
+
+              <li>Tomohiro Mashita, Tetsuya Kanayama, and Photchara Ratsamee, (2020), “Personal Atmosphere: Estimation
+                of Air Conditioner Parameters for Personalizing Thermal Comfort,” Applied Sciences, 10(22), 8067.</li>
+
+
+
+              <li>Tomohiro Mashita, Koichi Shintani, Kiyoshi Kiyokawa, (2020), “Improving pointing direction estimation
+                by considering hand- and ocular-dominance,” IEICE Transaction on Information and Systems, E103-D(10),
+                2168-2177.</li>
+
+
+
+              <li>谷口哲也, 川添充, 吉冨賢太郎, 中村泰之, 福井哲夫, 白井詩沙香, 加藤克也 &amp; 中原敬広 (2020). 標準仕様による数学オンラインテストの問題実装と実用性の検証. コンピュータ
+                &amp; エデュケーション. 48, 47-52.</li>
+            </ul>
+
+
+
+            <h3 class="wp-block-heading">International Conference (国際会議査読あり)</h3>
+
+
+
+            <ul>
+              <li>Chang Liu, Jason Orlosky, Alexander Plopski, “Eye Gaze-based Object Rotation for Head-mounted
+                Displays,” ACM Symposium on Spatial User Interaction (SUI) 2020, pp. 1-9, Canada (Virtual), October
+                2020.</li>
+
+
+
+              <li>Yuya Komabashiri, Tomohiro Mashita, Ratsamee Photchara, Yuki Uranishi, Masahide Koike, Kiyoyasu
+                Maruyama, “Optimal Arrangement of Surveillance Cameras Using Space Division and a Genetic Algorithm,”
+                International Conference on Intelligent User Interfaces Companion(IUI2020), pp. 99–100, Italy, March
+                2020.</li>
+
+
+
+              <li>Shuhei Nishiyama, Chonho Lee, Tomohiro Mashita, “Designing a Flexible Evaluation of Container Loading
+                Using Physics Simulation,” International Conference on Optimization and Learning (OLA2020)</li>
+
+
+
+              <li>Shogo Terai, Shizuka Shirai, Mehrasa Alizadeh, Ryosuke Kawamura, Noriko Takemura, Yuki Uranishi, Haruo
+                Takemura, Hajime Nagahara, “Detecting Learner Drowsiness Based on Facial Expressions and Head Movements
+                in Online Courses”, International Conference on Intelligent User Interfaces Companion(IUI2020),
+                pp.124-125, Italy, March 2020.</li>
+
+
+
+              <li>Tsukagoshi, Y., Uranishi, Y., Orlosky, J., Ito, K. &amp; Takemura, H. (2020). Rainbow Learner:
+                Lighting Environment Estimation from a Structural-Color Based AR Marker. In: Proceedings of the IEEE 3rd
+                International Conference on Artificial Intelligence &amp; Virtual Reality, 362-365.</li>
+
+
+
+              <li>Medeiros, A. C. S., Ratsamee, P., Uranishi, Y., Mashita, T. &amp; Takemura, H (2020). Human-Drone
+                Interaction: Using Pointing Gesture to Define a Target Object. In: Proceedings of HCI International
+                2020. Part 2, 688-705.</li>
+
+
+
+              <li>Huynh, B., Orlosky, J., &amp; Höllerer, T. (2020). Designing a Multitasking Interface for Object-aware
+                AR applications. In: 2020 IEEE International Symposium on Mixed and Augmented Reality Adjunct
+                (ISMAR-Adjunct), 39-40.</li>
+
+
+
+              <li>Kawamura, R., Shirai, S., Alizadeh, M., Takemura, N. &amp; Nagahara, H. (2020). Estimation of
+                wakefulness in video-based lectures based on multimodal data fusion. In: Adjunct Proceedings of the 2020
+                ACM International Joint Conference on Pervasive and Ubiquitous Computing and Proceedings of the 2020 ACM
+                International Symposium on Wearable Computers, 50-53.</li>
+            </ul>
+
+
+
+            <h3 class="wp-block-heading">International Conference Non-reviewed (国際会議査読無し)</h3>
+
+
+
+            <h3 class="wp-block-heading">Domestic Conference (国内学会発表査読あり)</h3>
+
+
+
+            <ul>
+              <li>塚越 優治 &amp; 浦西 友樹 (2020). Rainbow Learner: 構造色パターンから光源環境を実時間推定可能なARマーカ. 第23回画像の認識・理解シンポジウム Extended
+                Abstract. OS1-2B-5.</li>
+            </ul>
+
+
+
+            <h3 class="wp-block-heading">Domestic Conference Non-reviewed (国内学会発表査読無し)</h3>
+
+
+
+            <ul>
+              <li>白井 詩沙香，福井 哲夫，中原 敬広，中村 泰之，吉冨 賢太郎，宮崎 佳典，古川 雅子，Sohee Kang, Marco Pollanen, Mathematics Classroom
+                Collaborator（MC2）の数式入力機能の拡張, 情報処理学会第82回全国大会論文集, pp.273-274(2020)</li>
+
+
+
+              <li>寺井 省吾，川村 亮介，白井 詩沙香，メラサ アリザデ，武村 紀子，浦西 友樹，長原 一，竹村 治雄，“顔表情および頭部動作に基づくeラーニング時の覚醒度推定“, 情報処理学会第82回全国大会論文集,
+                pp.421-422(2020)</li>
+
+
+
+              <li>長瀧 寛之, 白井 詩沙香, 情報教育における学習支援ツールの提供・提案状況に関する現状調査, 研究報告コンピュータと教育（CE）,2020-CE-154(15),pp.1-5(2020)</li>
+
+
+
+              <li>長濱 愛珠咲, 浦西 友樹, Ratsamee, P., Orlosky, J. &amp; 竹村 治雄 (2020). 登攀動作に内在する練度の定量化, 日本バーチャルリアリティ学会 複合現実感研究会.
+                MR2020-14.</li>
+
+
+
+              <li>谷本 識心, Ratsamee, P., Orlosky, J., 浦西 友樹 &amp; 竹村 治雄 (2020). 坂道の昇降感覚を提示する靴型デバイスの開発. 日本バーチャルリアリティ学会
+                複合現実感研究会. MR2020-18.</li>
+
+
+
+              <li>坂下 晴哉, 武村 紀子, 白井 詩沙香, アリザデ メラサ &amp; 長原 一 (2020). 複数ウェアラブルカメラ映像の人物識別とセグメンテーション,
+                研究報告コンピュータビジョンとイメージメディア（CVIM）. 2021-CVIM-224, 1, 1-8.</li>
+
+
+
+              <li>近藤 颯人, 白井 詩沙香, アリザデ メラサ, 岩居 弘樹 &amp; 竹村 治雄 (2020). 外国語学習における遠隔型協調学習支援に向けた360度画像が及ぼす影響の検討.
+                研究報告コンピュータと教育（CE）. 2020-CE-157, 1, 1-7.</li>
+
+
+
+              <li>白井 詩沙香, 東田 学, 小島 一秀, 浦西 友樹, 上田 佑樹, 宮永 勢次 &amp; 竹村 治雄 (2020). 大阪大学におけるオンライン授業支援の取り組み. AXIES2021年次大会論文集,
+                385–390.</li>
+            </ul>
+
+
+
+            <h3 class="wp-block-heading">Awards(受賞)</h3>
+          </div>
+
+
+
+          <div id="tab-9041ec6c-7" class="c-tabBody__item" aria-hidden="true">
+            <h3 class="wp-block-heading">Journal (論文誌)</h3>
+
+
+
+            <ul>
+              <li>嶋田 彩人 , 瀬尾 茂人 , 繁田 浩功 , 間下 以大 , 内田 穣 , 石井 優 , 松田
+                秀雄,<br>“生体蛍光観察動画像の深度を考慮した深層学習による細胞追跡精度の改善”,<br>情報処理学会論文誌数理モデル化と応用（TOM）,12(2),82-91 (2019-07-17) ,
+                1882-7780</li>
+
+
+
+              <li>Mitsuru Kawazoe, Kentaro Yoshitomi, Yasuyuki Nakamura, Tetsuo Fukui, Shizuka Shirai, Takahiro
+                Nakahara, Katsuya Kato, and Tetsuya Taniguchi (2019).<br>“Developing a math e-learning question
+                specification to facilitate sharing questions between different systems.”<br>MSOR Connections, Vol.17,
+                No.3, pp.49-56.</li>
+
+
+
+              <li>白井詩沙香, 長瀧寛之, 竹中一平, 武本康宏, 田邊則彦, 兼宗進, “情報システムにおけるデータベースの仕組みを学ぶ共通教科「情報」授業の提案と実践“,
+                情報処理学会論文誌教育とコンピュータ（TCE），5(3), pp. 23-34 (2019)</li>
+            </ul>
+
+
+
+            <h3 class="wp-block-heading">International Conference (国際会議査読あり)</h3>
+
+
+
+            <ul>
+              <li>Anna Carolina Soares Medeiros, Photchara Ratsamee, Yuki Uranishi, Tomohiro Mashita, Haruo Takemura,
+                Tatiana Aires Tavares,<br>“3D Gesture Interface: Japan-Brazil Perceptions”, 21st International
+                Conference on Human-computer Interaction”,<br>Orlando, Florida, USA, 26-31 July 2019</li>
+
+
+
+              <li>Nattaon Techasarntikul, Photchara Ratsamee, Jason Orlosky, Tomohiro Mashita, Yuki Uranishi , Kiyoshi
+                Kiyokawa , Haruo Takemura,<br>“Evaluation of Pointing Interfaces with an AR Agent for Multi-section
+                Information Guidance”,<br>IEEE VR 2019, Osaka, Mar. 24, 2019.</li>
+
+
+
+              <li>Shizuka Shirai and Tetsuo Fukui,<br>“Evaluation of intelligent input interface for entering equations
+                on smartphone”,<br>IUI ’19 Proceedings of the 24th International Conference on Intelligent User
+                Interfaces: Companion, 9-10 ,LA, March, 16-20, 2019.</li>
+
+
+
+              <li>Shizuka Shirai, Noriko Takemura, Yuta Nakashima, Hajime Nagahara and Haruo Takemura ,<br>“Multimodal
+                Learning Analytics: Society 5.0 project in Japan”,<br>Companion Proceedings of the 9th International
+                Conference on Learning Analytics &amp; Knowledge, pp.170-171, Munich Tempe, Arizona, March, 4-8, 2019.
+              </li>
+            </ul>
+
+
+
+            <h3 class="wp-block-heading">International Conference Non-reviewed (国際会議査読無し)</h3>
+
+
+
+            <ul>
+              <li>K Fujimoto, S Seno, H Shigeta, T Mashita, Y Uchida, M Ishii and H Matsuda,<br>“Data Augmentation for
+                Immune Cell Tracking using Random Walk Models and Generative Adversarial, Networks, BioImage
+                Informatics”,<br>Seattle, USA, Oct. 2, 2019.</li>
+            </ul>
+
+
+
+            <h3 class="wp-block-heading">Domestic Conference (国内学会発表査読あり)</h3>
+
+
+
+            <ul>
+              <li>長瀧 寛之, 白井 詩沙香 , Mehrasa Alizadeh , 竹村 治雄 (2019).<br>“情報のディジタル化の理解をめざす反転学習的アプローチの授業の設計,
+                情報教育シンポジウム論文集”,<br>Vol. 2019, pp.313-316</li>
+            </ul>
+
+
+
+            <h3 class="wp-block-heading">Domestic Conference Non-reviewed (国内学会発表査読無し)</h3>
+
+
+
+            <ul>
+              <li>白井 詩沙香, 福井 哲夫:<br>“数式曖昧入力変換方式による音声入力機能の開発”,<br>研究報告教育学習支援情報システム（CLE）, 2019-CLE-27, No.19, pp.1-4
+                (2019).</li>
+
+
+
+              <li>目黒 僚，Photchara Ratsamee，間下 以大，浦西 友樹，竹村 治雄,<br>“FrictionHaptics: 摩擦力提示のためのハプティックデバイス”,<br>第59回
+                日本バーチャルリアリティ学会　複合現実感研究会, 札幌, Oct 11, 2019.</li>
+
+
+
+              <li>田又 健士朗，間下 以大，浦西 友樹，Photchara Ratsamee,<br>“点群の位置合わせのためのローカルパッチ類似度推測”,<br>第59回 日本バーチャルリアリティ学会　複合現実感研究会,
+                札幌, Oct 11, 2019</li>
+
+
+
+              <li>藤本 健二, 瀬尾 茂人, 渡邊 誓旅, 繁田 浩功, 間下 以大, 松田 秀雄,<br>“細胞画像の領域分割のための敵対的生成ネットワークを用いた訓練データ生成手法”,<br>第22回
+                画像の認識・理解シンポジウム (MIRU2019), 大阪, Aug. 1, 2019.</li>
+
+
+
+              <li>浦西 友樹, 伊藤 澄美, 間下 以大, ラサミー ポチャラ, 竹村 治雄,<br>“写実的拡張現実環境に向けた構造色パターンからの学習ベース光源分布推定”,<br>第22回 画像の認識・理解シンポジウム
+                (MIRU2019), 大阪, June 31, 2019.</li>
+
+
+
+              <li>萓谷勇太, 大谷まゆ, Chu Chenhui, 中島悠太, 竹村治雄,<br>“コメディドラマにおける字幕と表情を用いた笑い予測”,<br>2019年度人工知能学会全国大会, 新潟, June 6,
+                2019.</li>
+
+
+
+              <li>小川和樹, 間下以大, 浦西友樹, Ratsamee Photchara, 竹村治雄,<br>“天井裏における偏光情報を用いた特徴点対応の評価”,<br>情報処理学会研究報告, Vol.
+                2019-CVIM-217, No. 32, 東京, May 30, 2019.</li>
+
+
+
+              <li>小川敬也, 間下以大, 浦西友樹, ラサミーポチャラ, 竹村治雄,<br>“拡張現実感におけるRGBカメラ画像に整合した陰影付け”,<br>情報処理学会研究報告, Vol. 2019-CVIM-217,
+                No. 21, 東京, May 30, 2019.</li>
+
+
+
+              <li>嶋田 彩人, 瀬尾 茂人, 繁田 浩功, 間下 以大, 内田 穣, 石井優, 松田
+                秀雄,<br>“体蛍光観察動画像の深度を考慮した深層学習による細胞追跡精度の改善,<br>第122回数理モデル化と問題解決研究会(MPS研究会) ，大分，Feb. 28, 2019.</li>
+            </ul>
+
+
+
+            <h3 class="wp-block-heading">Awards(受賞)</h3>
+
+
+
+            <ul>
+              <li>受賞者：岡本 拓朗，浦西 友樹，間下 以大，Photchara Ratsamee，竹村 治雄 (大阪大学)<br>賞名：日本バーチャルリアリティ学会
+                SIG-MR賞<br>受賞年月：2019年10月<br>研究課題名： 透明感操作のためのcGANsによる集光模様の実時間生成</li>
+            </ul>
+          </div>
+
+
+
+          <div id="tab-9041ec6c-8" class="c-tabBody__item" aria-hidden="true">
+            <h3 class="wp-block-heading">Journal (論文誌)</h3>
+
+
+
+            <ul>
+              <li>白井 詩沙香, 竹中 一平, 長瀧 寛之, 兼宗 進,<br>データベース導入学習のためのマンガ教材の開発と評価,<br>日本教育工学会論文誌, Vol.42(Suppl.),&nbsp;pp.
+                109-112, 2018.</li>
+
+
+
+              <li>Yasuyuki Nakamura, Kentaro Yoshitomi, Mitsuru Kawazoe, Tetsuo Fukui, Shizuka Shirai, Takahiro
+                Nakahara, Katsuya Kato and Tetsuya Taniguchi,<br>Effective Use of Math E-Learning with Questions
+                Specification, Distance Learning, E-Learning and Blended Learning in Mathematics Education,<br>ICME-13
+                Monographs, pp.133-148, 2018. DOI:10.1007/978-3-319-90790-1_8</li>
+
+
+
+              <li>Ginga Kato, Yoshihiro Kuroda, Kiyoshi Kiyokawa, and Haruo Takemura,<br>“Force Rendering and Its
+                Evaluation of a Friction-based WalkingSensation Display for a Seated User,”<br>IEEE Transactions
+                onVisualization and Computer Graphics (TVCG), Mar., 2018.</li>
+            </ul>
+
+
+
+            <h3 class="wp-block-heading">International Conference (国際会議査読あり)</h3>
+
+
+
+            <ul>
+              <li>Chang Liu, Alexander Plopski, Kiyoshi Kiyokawa, Photchara Ratsamee, and Jason
+                Orlosky,<br>“Intellipupil: pupillometric light modulation for optical see-through head-mounted
+                displays,”<br>INTERNATIONAL SYMPOSIUM ON MIXED AND AUGMENTED REALITY, Munich Germany, Oct 18, 2018.</li>
+
+
+
+              <li>Sota Shoman, Tomohiro Mashita, Alexander Plopski, Photchara Ratsamee, Yuki Uranishi, and Haruo
+                Takemura,<br>“Illumination invariant camera localization using synthetic images,”<br>17TH IEEE
+                INTERNATIONAL SYMPOSIUM ON MIXED AND AUGMENTED REALITY, Munich Germany, Oct 17, 2018.</li>
+
+
+
+              <li>Shizuka Shirai, Tetsuo Fukui, Kentaro Yoshitomi, Mitsuru Kawazoe, Takahiro Nakahara, Yasuyuki
+                Nakamura, Katsuya Kato and Tetsuya Taniguchi:<br>Intelligent Editor for Authoring Educational Materials
+                in Mathematics e-Learning Systems,<br>International Congress on Mathematical Software 2018,<br>Lecture
+                Notes in Computer Science, Vol.10931, pp.431-437, South Bend, United States, July 24-27, 2018.</li>
+
+
+
+              <li>Fumiya Kobayashi, Shizuka Shirai and Susumu Kanemune:<br>Proposed Data Science Library for Computer
+                Science Education in High Schools,<br>10th International Conference on Teaching Statistics (ICOTS 10),
+                Kyoto, Japan, July, 8-13, 2018.</li>
+
+
+
+              <li>Yuki Kobayashi, Susumu Kanemune, Shizuka Shirai, Hidenari Usui, Takumi Shimizu:<br>Three Types of
+                Practical Examples of Programming Education at Elementary Schools in Japan,<br>Proceedings of EdMedia:
+                World Conference on Educational Media and Technology, pp. 455–460,<br>Amsterdam, Netherlands, June,
+                25-29, 2018.</li>
+
+
+
+              <li>Tao Tao, Photchara Ratsamee, Yuki Uranishi, Kiyoshi Kiyokawa, Tomohiro Mashita, and Haruo
+                Takemura,<br>“An Interactive 4D Vision Augmentation of Rapid Motion,”<br>Proc. Augmented Human 2018,
+                Seuol, Feb. 2018.</li>
+
+
+
+              <li>Peter Kim, Jason Orlosky and Kiyoshi Kiyokawa,<br>“AR Timewarping: A Temporal Synchronization
+                Framework for Real-Time Sensor Fusion in Head-Mounted Displays,”<br>Proc. Augmented Human 2018, Seuol,
+                Feb. 2018.</li>
+            </ul>
+
+
+
+            <h3 class="wp-block-heading">International Conference Non-reviewed (国際会議査読無し)</h3>
+
+
+
+            <h3 class="wp-block-heading">Domestic Conference (国内学会発表査読あり)</h3>
+
+
+
+            <ul>
+              <li>小林史弥, 本多 佑希, 白井詩沙香, 兼宗進:<br>オンライン版ドリトルを用いたデータ分析学習環境の開発,<br>情報処理学会 情報教育シンポジウム2018(SSS2018), 熊本, Aug.
+                19, 2018.</li>
+            </ul>
+
+
+
+            <h3 class="wp-block-heading">Domestic Conference Non-reviewed (国内学会発表査読無し)</h3>
+
+
+
+            <ul>
+              <li>岡本 拓朗，浦西 友樹，間下 以大，Photchara Ratsamee，竹村 治雄,<br>透明感操作のためのcGANsによる集光模様の実時間生成,<br>第56回
+                日本バーチャルリアリティ学会　複合現実感研究会, 札幌, Oct 26, 2018</li>
+
+
+
+              <li>伊藤 澄美，浦西 友樹，Photchara Ratsamee，間下 以大，竹村 治雄,<br>構造色パターンから光源方向を推定可能なARマーカ,<br>第56回
+                日本バーチャルリアリティ学会　複合現実感研究会, 札幌, Oct 26, 2018</li>
+
+
+
+              <li>白井 詩沙香, 津田井 美香, 竹中 一平, 森本 真, 井上 雅人,<br>パッケージデザインに関わるメディア・リテラシー育成授業の実践,<br>日本教育工学会 第34回全国大会,
+                P1p-C102-05, 宮城, Sep. 28, 2018.</li>
+
+
+
+              <li>金山哲也，間下以大，浦西友樹，Photchara Ratsamee，竹村治雄,<br>気流の可視化に伴い変化する温度感の評価<br>第 23 回日本バーチャルリアリティ学会大会論文集, 33B-5,
+                仙台, Sep 21, 2018.</li>
+
+
+
+              <li>駒走友哉，小池正英，Photchara Ratsamee，間下以大，浦西友樹，竹村治雄,<br>映像監視空間の構築を支援するHMDを用いた3Dユーザインタフェース<br>第 23
+                回日本バーチャルリアリティ学会大会論文集, 21E-6, Sep 20, 2018.</li>
+
+
+
+              <li>吉冨 賢太郎, 川添 充, 中原 敬広, 中村 泰之, 福井 哲夫, 白井 詩沙香, 加藤 克也, 谷口 哲也,<br>数式オンラインテストの標準仕様 MeLQS
+                に基づく問題実装,<br>第43回教育システム情報学会 全国大会, P2-17, 北海道, Sep. 5, 2018.</li>
+
+
+
+              <li>白井 詩沙香, 福井 哲夫,<br>数式曖昧入力変換方式による 数式入力インタフェースのスマートデバイス向けUIの試作,<br>第43回教育システム情報学会 全国大会, G4-3, 北海道, Sep.
+                5, 2018.</li>
+
+
+
+              <li>赤沢 秀樹, 渡邊 誓旅, 繁田 浩功, 間下 以大, 瀬尾 茂人, 松田
+                秀雄,<br>細胞画像のセグメンテーション精度向上のための画像類推を用いた学習データ拡張<br>画像の認識理解シンポジウム(MIRU 2018), PS2-22, 札幌，Aug 7, 2018.</li>
+
+
+
+              <li>田又 健士朗, 間下 以大, 浦西 友樹, ラサミー ポチャラ, 竹村 治雄<br>断続的に撮影された点群間の位置合わせ<br>情報処理学会研究報告, Vol. 2018-CVIM-212, No.
+                30, 大阪, May 10, 2018.</li>
+
+
+
+              <li>土田 知実, 間下 以大, 浦西 友樹, Ratsamee Photchara, 竹村 治雄,<br>携帯端末による屋内構造の計測と直方体モデルのフィッティング<br>情報処理学会研究報告, Vol.
+                2018-CVIM-212, No. 32, 大阪, May 10, 2018.</li>
+            </ul>
+
+
+
+            <h3 class="wp-block-heading">Awards(受賞)</h3>
+
+
+
+            <ul>
+              <li>受賞者：井手口 裕太, 川口 純輝, 浦西 友樹, 吉元 俊輔, 黒田 嘉宏, 井村 誠孝, 大城 理<br>賞名：芸術科学会 論文賞<br>受賞年月：2018年11月<br>研究課題名：Oil
+                Bubble Display: 油を投影面とした変形・結合・分裂が可能なディスプレイ</li>
+
+
+
+              <li>受賞者：田村 祐樹, 間下 以大, 黒田 嘉宏, 浦西 友樹, 清川 清, 竹村 治雄,<br>賞名：日本バーチャルリアリティ学会 SIG-MR賞<br>受賞年月：2018年10月<br>研究課題名：
+                狭帯域多波長画像ピラミッドを用いた生体マッチング方法の検討</li>
+
+
+
+              <li>受賞者：白井　詩沙香<br>賞名：山下記念研究賞<br>受賞年月：2018年8月<br>研究課題名：情報システムにおけるデータベースの仕組みを学ぶ共通教科「情報」授業の提案と実践</li>
+            </ul>
+          </div>
+
+
+
+          <div id="tab-9041ec6c-9" class="c-tabBody__item" aria-hidden="true">
+            <h3 class="wp-block-heading">Journal (論文誌)</h3>
+
+
+
+            <ul>
+              <li>Hironori Shigeta, Tomohiro Mashita, Junichi Kikuta, Shigeto Seno, Haruo Takemura, Masaru Ishii, and
+                Hideo Matsuda<br>“Bone Marrow Cavity Segmentation using Graph-cuts with Wavelet-Based Texture
+                Feature,”<br>Journal of Bioinformatics and Computational Biology (JBCB), Vol.15, No.5, pp.174004-1-16,
+                Sep 2017.</li>
+
+
+
+              <li>Alizadeh, M., Brunotte, J., Hastings, C., Hawkinson, E., Mehran, P. (2017).<br>Mixed, augmented, and
+                virtual realities (MAVR) SIG: Significance and potential contribution.<br>The Language Teacher, 41(5),
+                49-50.</li>
+
+
+
+              <li>浦西友樹, 丸山裕, 内藤知佐子, 岡本和也, 田村寛, 加藤源太, 黒田知宏,<br>“失敗を可視化する採血トレーナ”,<br>日本バーチャルリアリティ学会論文誌, Vol.22, No.2,
+                pp.217-227 (2017.6) DOI:10.18974/tvrsj.22.2_217</li>
+
+
+
+              <li>Bui Minh Khuong, Kiyoshi Kiyokawa, Tomohiro Mashita, and Haruo Takemura,<br>“Hybrid Object and Screen
+                Stabilized Visualization Techniques for an AR Assembly Support System,”<br>Transactions of the Virtual
+                Reality Society of Japan, Vol. 22, No. 2, pp. 167-174, June 30, 2017.</li>
+
+
+
+              <li>Tomohiro Mashita, Alexander Plopski, Akira Kudo, Tobias Hollerer, Kiyoshi Kiyokawa, and Haruo
+                Takemura,<br>“Camera Localization under a Variable Lighting Environment using Parametric Feature
+                Database based on Lighting Simulation,”<br>Transactions of the Virtual Reality Society of Japan, Vol.
+                22, No. 2, pp. 177-187, June 30, 2017.</li>
+
+
+
+              <li>森 磨美, 間下 以大, 黒田 嘉宏, 清川 清, 竹村 治雄,<br>“補助視点推薦機能を有するAR家具配置システム”,<br>バーチャルリアリティ学会論文誌, Vol. 22, No. 2, pp.
+                157-164, June 30, 2017.</li>
+
+
+
+              <li>Yoshihiro Kuroda, Kazuteru Seki, Kiyoshi Kiyokawa, and Haruo Takemura,<br>“Non-grounded Haptic Display
+                by Controlling Wind Direction,”<br>IEEJ Transactions on Electrical and Electronic Engineering, Vol. 12,
+                No. 3, pp. 404-411, May, 2017.</li>
+
+
+
+              <li>Parisa Mehran, Mehrasa Alizadeh, Ichiro Koguchi and Haruo Takemura,<br>“Are Japanese digital natives
+                ready for learning english online? a preliminary case study at Osaka University,”<br>International
+                Journal of Educational Technology in Higher Education, Vol. 14, No. 1, DOI: 10.1186/s41239-017-0047-0.,
+                March. 2017.</li>
+
+
+
+              <li>Jason Orlosky, Yuta Itoh, M Ranchet, Kiyoshi Kiyokawa, J Morgan, and H. Devos,<br>“Emulation of
+                Physician Tasks in Eye-tracked Virtual,”<br>IEEE Transactions on Visualization and Computer Graphics
+                (TVCG), DOI: 10.1109/TVCG.2017.2657018., 2017.</li>
+
+
+
+              <li>Jason Orlosky, Kiyoshi Kiyokawa, and Haruo Takemura,<br>“Virtual and Augmented Reality on the 5G
+                Highway”,<br>Journal of Information Processing, Special Issue on “Network and Distributed Processing”,
+                Feb. 2017 (Invited Paper)</li>
+            </ul>
+
+
+
+            <h3 class="wp-block-heading">International Conference (国際会議査読あり)</h3>
+
+
+
+            <ul>
+              <li>Parisa Mehran, Mehrasa Alizadeh, Ichiro Koguchi, Haruo Takemura,<br>“Designing and developing a
+                blended course: toward best practices for Japanese learners,”<br>CALL in a climate of change: adapting
+                to turbulent global conditions – short papers from EUROCALL 2017<br>pp. 205-210, December 3, 2017</li>
+
+
+
+              <li>Mehrasa Alizadeh, Parisa Mehran, Ichiro Koguchi, Haruo Takemura,<br>“Learning by design: bringing
+                poster carousels to life through augmented reality in a blended English course,”<br>CALL in a climate of
+                change: adapting to turbulent global conditions – short papers from EUROCALL 2017<br>pp. 7-12, December
+                3, 2017</li>
+
+
+
+              <li>Atsuyuki Nakamura, Kiyoshi Kiyokawa, Photchara Ratsamee, Tomohiro Mashita, Yuki Uranishi, and Haruo
+                Takemura,<br>” A Mutual Motion Capture System for Face-to-face Collaboration,”<br>International
+                Conference on Artificial Reality and Telexistence and Eurographics Symposium on Virtual
+                Environments(ICAT-EGVE2017),<br>pp. 009-016, November 22 – 24, 2017</li>
+
+
+
+              <li>Kari Daniel Karjalainen, Anna Elisabeth Sofia Romell, Photchara Ratsamee, Asım Evren Yantac, Morten
+                Fjeld, Mohammad Obaid, “Social Drone Companion for the Home Environment: a User-Centric Exploration,”
+                Proceedings of the 5th International Conference on Human Agent Interaction (HAI), Bielefeld, Germany —
+                October 17 – 20, 2017</li>
+
+
+
+              <li>Alexander Yeh, Photchara Ratsamee, Kiyoshi Kiyokawa, Yuki Uranishi, Tomohiro Mashita, Haruo Takemura,
+                Morten Fjeld, Mohammad Obaid, “Exploring Proxemics for Human-Drone Interaction ,” Proceedings of the 5th
+                International Conference on Human Agent Interaction (HAI), Bielefeld, Germany — October 17 – 20, 2017
+              </li>
+
+
+
+              <li>Jason Orlosky, Peter Kim, Kiyoshi Kiyokawa, Tomohiro Mashita, Photchara Ratsamee, Yuki Uranishi, Haruo
+                Takemura,<br>“VisMerge: Light Adaptive Vision Augmentation via Spectral and Temporal Fusion of
+                Non-visible Light,”<br>the 16th IEEE International Symposium on Mixed and Augmented Reality (ISMAR),
+                Nantes – France, Oct 10 2017</li>
+
+
+
+              <li>Takurou Okamoto, Yuki Uranishi, Tomohiro Mashita, Photchara Ratsamee, Kiyoshi Kiyokawa, Haruo
+                Takemura,<br>“Realtime Generation of Caustic Images Using a Deep Neural Network,”<br>the 16th IEEE
+                International Symposium on Mixed and Augmented Reality (ISMAR), Nantes – France, Oct 11, 2017.</li>
+
+
+
+              <li>Peter Kim, Jason Orlosky, Kiyoshi Kiyokawa, Photchara Ratsamee, Tomohiro Mashita,<br>“DotWarp: Dynamic
+                Object Timewarping for Video See-Through Augmented Reality,”<br>the 16th IEEE International Symposium on
+                Mixed and Augmented Reality (ISMAR), Nantes – France Oct 11, 2017.</li>
+
+
+
+              <li>Mehran, P., Alizadeh, M., Koguchi, I., &amp; Takemura, H. (2017, August).<br>Learning by design:
+                Bringing poster carousels to life through augmented reality in a blended English course.<br>Presented at
+                the 25th EUROCALL Conference, the University of Southampton, UK.</li>
+
+
+
+              <li>Alizadeh, M., Mehran, P., Koguchi, I., &amp; Takemura, H. (2017, August).<br>Designing and developing
+                a blended course: Best practices for Japanese learners.<br>Presented at the 25th EUROCALL Conference,
+                the University of Southampton, UK.</li>
+
+
+
+              <li>Yuta Ideguchi, Yuki Uranishi, Shunsuke Yoshimoto, Yoshihiro Kuroda and Osamu Oshiro,<br>“Light Field
+                Convergency: Implicit Photometric Consistency on Transparent Surface”,<br>Proceedings of the 2nd
+                Workshop on Light Fields for Computer Vision (LF4CV):<br>IEEE Conference on Computer Vision and Pattern
+                Recognition Workshop, Honolulu, HW, United States (2017.7)</li>
+
+
+
+              <li>Kenta Hokoyama, Yoshihiro Kuroda, Ginga Kato, Kiyoshi Kiyokawa, and Haruo Takemura,<br>“Mugginess
+                sensation: Exploring its Principle and Prototype Design”,<br>Proc. of IEEE World Haptics Conference 2017
+                (WHC 2017), June, 2017.</li>
+
+
+
+              <li>Yuta Itoh, Jason Orlosky, Kiyoshi Kiyokawa, Toshiyuki Amano, and Maki Sugimoto,<br>“Monocular Focus
+                Estimation Method for a Freely-Orienting Eye using Purkinje-Sanson Images,”<br>Proc. of IEEE Virtual
+                Reality 2017, Mar. 2017.</li>
+
+
+
+              <li>John Thomason, Photchara Ratsamee, Kiyoshi Kiyokawa, Pakpoom Kriangkomol, Jason Orlosky, Tomohiro
+                Mashita, Yuki Uranishi, and Haruo Takemura,<br>“Adaptive View Management for Drone Teleoperation in
+                Complex 3D Structures,”<br>Proc. of the ACM International Conference on Intelligent User Interfaces
+                (IUI), Mar. 2017.</li>
+            </ul>
+
+
+
+            <h3 class="wp-block-heading">International Conference Non-reviewed (国際会議査読無し)</h3>
+
+
+
+            <ul>
+              <li>mage Matching between Cameras for Vision Augmentation HMDs,<br>Ryosuke Goto, Jason Orlosky, Photchara
+                Ratsamee, Tomohiro Mashita, Yuki Uranishi, Kiyoshi Kiyokawa and Haruo Takemura,<br>Asia-Pacific Workshop
+                on Mixed-Reality(APMAR2017), July 3 2017.</li>
+
+
+
+              <li>Automated Backlight Modulation of Optical See-through Head Mounted Displays Based on Users’ Visibility
+                Evaluation, Chang Liu, Alexander Plopski, Tomohiro Mashita, Yoshihiro Kuroda, Kiyoshi Kiyokawa and Haruo
+                Takemura,<br>Asia-Pacific Workshop on Mixed-Reality(APMAR2017), July 3 2017.</li>
+            </ul>
+
+
+
+            <h3 class="wp-block-heading">Domestic Conference (国内学会発表査読あり)</h3>
+
+
+
+            <h3 class="wp-block-heading">Domestic Conference Non-reviewed (国内学会発表査読無し)</h3>
+
+
+
+            <ul>
+              <li>ソアレス メデイロス アンナ カロリナ、ラサミー ポチャラ、浦西友樹、間下以大、竹村治雄，<br>Mouse vs Gesture: Interface Perceptions in
+                Japan，<br>第53回 複合現実感研究会, MR2017-13, 北海道, Oct 19, 2017.</li>
+
+
+
+              <li>山口 孝太郎, 黒田 嘉宏, Photchara Ratsamee, 清川 清, 竹村 治雄,<br>“ドローンを用いた非接地遭遇型力覚ディスプレイ”<br>第22回 バーチャルリアリティ学会大会,
+                3D1-01,徳島 Sep 29, 2017.</li>
+
+
+
+              <li>鋒山 健太, 黒田 嘉宏, 清川 清, 浦西 友樹, 竹村 治雄,<br>“湿度制御による蒸し暑さディスプレイ”<br>第22回 バーチャルリアリティ学会大会, 1D3-02,徳島 Sep 27,
+                2017.</li>
+
+
+
+              <li>Anshi Liu, Photchara Ratsamee, Tomohiro Mashita, Kiyoshi Kiyokawa, Yuki Uranishi, Haruo
+                Takemura,<br>“[2B1-02] Segmentation of Reflection and Iris Pattern in Human Corneal Images,”<br>第22回
+                バーチャルリアリティ学会大会, 2B1-02,徳島 Sep 28, 2017.</li>
+
+
+
+              <li>Tao Tao, Photchara Ratsamee, Yuki Uranishi, Kiyoshi Kiyokawa, Tomohiro Mashita, Haruo Takemura,<br>“An
+                Interactive 4D Visualization of Dynamic 3D Information,”<br>第22回 バーチャルリアリティ学会大会, 1G3-06,徳島 Sep 27, 2017.
+              </li>
+
+
+
+              <li>正満 創太, 間下 以大, Photchara Ratsamee, 浦西 友樹, 清川 清, 竹村
+                治雄,<br>“シミュレーションと自己符号化器を用いた光源変化に頑健なカメラ位置姿勢推定”,<br>画像の認識理解シンポジウム(MIRU 2017) , 広島，Aug 9, 2017.</li>
+
+
+
+              <li>岡本 拓朗, 浦西 友樹, 間下 以大, ラサミー ポチャラ, 清川 清, 竹村 治雄,<br>深層学習による集光模様の実時間生成,<br>画像の認識・理解シンポジウム(MIRU2017), Aug 8,
+                2017.</li>
+
+
+
+              <li>中村 淳之, 清川 清, Photchara Ratsamee, 間下 以大, 浦西 友樹, 竹村
+                治雄<br>“対面協調作業に適した相互モーションキャプチャシステムの開発”<br>第143回ヒューマンインタフェース学会研究会<br>「人工現実感，エンタテイメント，メディアエクスペリエンスおよび一般（SIG-DeMO-03）」,
+                東京, June 2, 2017.</li>
+
+
+
+              <li>岡本 拓朗, 浦西 友樹, 間下 以大, ラサミー ポチャラ, 清川 清, 竹村 治雄,<br>深層学習による集光模様の実時間生成，<br>情報処理学会研究報告, Vol. 2017-CVIM-207,
+                No. 7,名古屋, May 11, 2017.</li>
+
+
+
+              <li>正満 創太, 間下 以大, ラサミー ポチャラ, 浦西 友樹, 清川 清, 竹村 治雄,<br>光源変化シミュレーションと深層学習による特徴量変換を用いたカメラ位置姿勢推定<br>情報処理学会研究報告,
+                Vol. 2017-CVIM-207, No. 19,名古屋, May 11, 2017.</li>
+
+
+
+              <li>井手 絢香, 間下 以大, 清川 清, 浦西 友樹, Photchara Ratsamee, 竹村 治雄,<br>大域照明の内挿による光源操作可能なARシステム<br>情報処理学会研究報告, Vol.
+                2017-CVIM-207, No. 23,名古屋, May 11, 2017.</li>
+
+
+
+              <li>鋒山健太，加藤銀河，黒田嘉宏，清川清，竹村治雄，<br>”Behind You!:湿度制御による弱感覚ディスプレイ”，<br>インタラクション2017，(デモ) 東京，Mar. 4，2017．</li>
+
+
+
+              <li>田村 祐樹, 間下 以大, 黒田 嘉宏, 浦西 友樹, 清川 清, 竹村
+                治雄,<br>“狭帯域多波長画像ピラミッドを用いた生体マッチング方法の検討”,<br>日本バーチャルリアリティ学会複合現実感研究会, MR2017-6, Jan. 2017.</li>
+            </ul>
+
+
+
+            <h3 class="wp-block-heading">Awards(受賞)</h3>
+
+
+
+            <ul>
+              <li>受賞者：Jason Orlosky賞名：大阪大学大学院情報科学研究科 嵩賞受賞年月：2018/3研究課題：人間の視力と認知を改善するための視線追跡を用いる拡張現実</li>
+
+
+
+              <li>&nbsp;受賞者：鈴木拓馬、 清川清、 竹村治雄（大阪大学）<br>賞名 ：大学ICT推進協議会 2016年度年次大会 優秀論文賞<br>受賞年月 2017/12月<br>研究課題名:
+                タイルドディスプレイのためのタブレット端末を用いたシームレスな操作手法の開発</li>
+
+
+
+              <li>受賞者：正満 創太賞名 ：MIRU2017 学生奨励賞受賞年月 2017/8月研究課題名: シミュレーションと自己符号化器を用いた光源変化に頑健なカメラ位置姿勢推定</li>
+
+
+
+              <li>受賞者：鋒山健太,賞名：ヒューマンインタフェース学会 第18回学術奨励賞,受賞年月：2017年3月10日,研究課題：湿度制御による弱存在感ディスプレイ</li>
+            </ul>
+          </div>
+
+
+
+          <div id="tab-9041ec6c-10" class="c-tabBody__item" aria-hidden="true">
+            <h3 class="wp-block-heading">Journal (論文誌)</h3>
+
+
+
+            <ul>
+              <li>Mehran, P., Alizadeh, M., Koguchi, I., &amp; Takemura, H. (2016).<br>The need for establishing an
+                English self-access center at Osaka University: Practical suggestions and overall guidelines.<br>Studies
+                in Self-Access Learning Journal, 7(4), 365-378.</li>
+
+
+
+              <li>Ginga Kato, Yoshihiro Kuroda, Ilana Nisky, Kiyoshi Kiyokawa, and Haruo Takemura,<br>“Design and
+                Psychophysical Evaluation of The HapSticks: A Novel Non-grounded Mechanism for Presenting Tool-mediated
+                Vertical Forces,”<br>IEEE Transactions on Haptics, DOI: 10.1109/TOH.2016.2636824, Dec. 2016.</li>
+
+
+
+              <li>Yuki Tamura, Tomohiro Mashita, Yoshihiro Kuroda, Kiyoshi Kiyokawa and Takemura,<br>“Feature detection
+                in biological tissues using multi-band and narrow-band imaging”,<br>International Journal on Computer
+                Assisted Radiology and Surgery (CARS), DOI: 10.1007/s11548-016-1458-4, Jul., 2016.</li>
+            </ul>
+
+
+
+            <h3 class="wp-block-heading">International Conference (国際会議査読あり)</h3>
+
+
+
+            <ul>
+              <li>Tomohiro Mashita, Alexander Plopski, Akira Kudo, Tobias Hoellerer, Kiyoshi Kiyokawa, Haruo
+                Takemura,<br>“Simulation based Camera Localization under a Variable Lighting Environment,”<br>Proc. of
+                the 26th International Conference on Artificial Reality and Telexistence and the 21st Eurographics
+                Workshop on Virtual Environments (ICAT-EGVE 2016), Dec. 2016.</li>
+
+
+
+              <li>Yuki Yano, Jason Orlosky, Kiyoshi Kiyokawa, Haruo Takemura,<br>“Dynamic View Expansion for Improving
+                Visual Search in Video See-through AR,”<br>Proc. of the 26th International Conference on Artificial
+                Reality and Telexistence and the 21st Eurographics Workshop on Virtual Environments (ICAT-EGVE 2016),
+                Dec. 2016.</li>
+
+
+
+              <li>Qifan Wu, Jason Orlosky, Kiyoshi Kiyokawa and Haruo Takemura,<br>“EmotoPet: Exploring Emotion with an
+                Environment-sensing Virtual Pet,”<br>Proc. of the First International Workshop on Mixed and Augmented
+                Reality Innovations (MARI) 2016, Nov., 2016.</li>
+
+
+
+              <li>Alizadeh, M., Mehran, P., Koguchi, I., &amp; Takemura, H. (2017, August).<br>Designing and developing
+                a blended course: Best practices for Japanese learners.<br>Presented at the 25th EUROCALL Conference,
+                the University of Southampton, UK.</li>
+
+
+
+              <li>Kotaro Yamaguchi, Ginga Kato, Yoshihiro Kuroda, Kiyoshi Kiyokawa, Haruo Takemura,<br>“A Non-grounded
+                and Encountered-type Haptic Display Using a Drone,”<br>Proc. of ACM Spatial User Interaction (SUI),
+                Oct., 2016.</li>
+
+
+
+              <li>Alexander Plopski, Yuta Itoh, Jason Orlosky, Christian Nitschke, Kiyoshi Kiyokawa, Gudrun
+                Klinker,<br>“Automated Spatial Calibration of HMD Systems with Unconstrained Eye-cameras,”<br>Proc. of
+                the IEEE International Symposium on Mixed and Augmented Reality (ISMAR) 2016, Sep., 2016.</li>
+
+
+
+              <li>Mami Mori, Jason Orlosky, Kiyoshi Kiyokawa, Haruo Takemura,<br>“A Transitional AR Furniture
+                Arrangement System with Automatic View Recommendation”,<br>Proc. of the IEEE International Symposium on
+                Mixed and Augmented Reality (ISMAR) 2016, Sep., 2016.</li>
+
+
+
+              <li>Alexander Plopski, Tomohiro Mashita, Akira Kudo, Tobias Hoellerer, Kiyoshi Kiyokawa, Haruo
+                Takemura,<br>“Improving Localization under Varying Illumination,”<br>IEEE International Symposium on
+                Mixed and Augmented Reality (ISMAR) 2016, Sep., 2016.</li>
+
+
+
+              <li>Yuki Tamura, Tomohiro Mashita, Yoshihiro Kuroda, Kiyoshi Kiyokawa, and Haruo Takemura,<br>“Feature
+                detection in biological tissues using multi-band and narrow-band imaging,”<br>Computer Assisted
+                Radiology and Surgery 30th International Congress and Exhibition (CARS2016), Jun., 2016.</li>
+
+
+
+              <li>Konstantinos Theofilis, Jason Orlosky, Yukie Nagai, and Kiyoshi Kiyokawa,<br>“Panoramic View
+                Reconstruction for Mitigating Rendering Delay in Robot Teleoperation,”<br>Proc. of Workshop “From
+                Robotics to Cognitive Interaction and Beyond”, Mar. 2016.</li>
+
+
+
+              <li>Yuta Itoh, Jason Orlosky, Kiyoshi Kiyokawa, Manuel Huber, and Gudrun Klinker,<br>“OST Rift: Temporally
+                Consistent Augmented Reality with a Consumer Optical See-Through Head-Mounted Display,”<br>Proc. of the
+                IEEE Virtual Reality 2016, Mar., 2016.</li>
+
+
+
+              <li>Alexander Plopski, Kenneth R. Moser, Kiyoshi Kiyokawa, J. Edward Swan II, and Haruo
+                Takemura,<br>“Consistency Perception in Optical- and Video-See-Through Head-Mounted
+                Augmentations,”<br>Proc. of the IEEE Virtual Reality 2016, Mar., 2016.</li>
+
+
+
+              <li>Yuta Itoh, Jason Orlosky, Kiyoshi Kiyokawa, and Gudrun Klinker,<br>“Laplacian Vision: Augmenting
+                Motion Prediction via Optical See-Through Head-Mounted Displays,”<br>Proc. of the ACM Augmented Human
+                2016, Feb., 2016.</li>
+            </ul>
+
+
+
+            <h3 class="wp-block-heading">International Conference Non-reviewed (国際会議査読無し)</h3>
+
+
+
+            <ul>
+              <li>Chang Liu, Alexander Plopski, Tomohiro Mashita, Yoshihiro Kuroda, Kiyoshi Kiyokawa and Haruo
+                Takemura,<br>“Automated Backlight Adjustment of Optical See-through HMDs for Improved
+                Visibility”,<br>Proc. 8th Asia-Pacific Workshop on Mixed Reality (APMR), Andong, Korea, Apr. 2016.</li>
+            </ul>
+
+
+
+            <h3 class="wp-block-heading">Domestic Conference (国内学会発表査読あり)</h3>
+
+
+
+            <ul>
+              <li>鋒山健太，加藤銀河，黒田嘉宏，清川清，竹村治雄，<br>”湿度制御による弱存在感ディスプレイ”，<br>ヒューマンインタフェースシンポジウム2016(HIS2016)，東京，Sept. 9，2016．
+              </li>
+
+
+
+              <li>間下 以大, Plopski Alexander, 工藤 彰, Höllerer Tobias, 清川 清, 竹村
+                治雄,<br>“屋外拡張現実における自己位置推定のためのマハラノビス距離を用いた特徴点マッチング手法”,<br>第19回画像の認識・理解シンポジウム(MIRU2016), 浜松, Aug. 2016.
+              </li>
+            </ul>
+
+
+
+            <h3 class="wp-block-heading">Domestic Conference Non-reviewed (国内学会発表査読無し)</h3>
+
+
+
+            <ul>
+              <li>鈴木 拓馬, 清川 清, 竹村 治雄,<br>“タイルドディスプレイのためのタブレット端末を用いたシームレスな操作手法の開発”,<br>大学ICT推進協議会 2016年度年次大会 講演論文集, Dec.
+                2016.</li>
+
+
+
+              <li>テチャサラトーン ナタオン, ラサミー ポチャラ, 間下 以大, 浦西 友樹, 清川 清, 竹村 治雄,<br>“投影型拡張現実によるパッキング支援システム”,<br>日本バーチャルリアリティ学会
+                複合現実感研究会, MR2016-12, 支笏湖, Oct. 2016.</li>
+
+
+
+              <li>矢野 裕季, オーロスキ ジェーソン, 清川 清, 竹村 治雄,<br>“ビデオシースルーHMDを用いた実環境における動的視野拡張手法の検討”,<br>電子情報通信学会技術研究報告,
+                MVE2015-85, 沖縄, Mar. 2016.</li>
+
+
+
+              <li>望月 祐希, 清川 清, 竹村 治雄,<br>“スマートフォンの複数センサを用いた大型ディスプレイのためのポインティング手法の実装と評価”,<br>電子情報通信学会技術研究報告, MVE2015-88,
+                沖縄, Mar. 2016.</li>
+
+
+
+              <li>鈴木 拓馬, 清川 清, 竹村 治雄,<br>“タイルドディスプレイのためのタブレット端末を用いたシームレスな操作手法の提案”,<br>電子情報通信学会技術研究報告, MVE2015-89, 沖縄,
+                Mar. 2016.</li>
+
+
+
+              <li>森 磨美, 間下 以大, 黒田 嘉宏, 清川 清, 竹村 治雄,<br>“補助視点推薦機能を有するAR家具配置システム”,<br>電子情報通信学会技術研究報告, MVE2015-92, 沖縄, Mar.
+                2016.</li>
+
+
+
+              <li>劉 暢, アレクサンダー プロプスキ, 間下 以大, 黒田 嘉宏, 清川 清, 竹村
+                治雄,<br>“情報視認性向上のための光学シースルーHMDにおけるバックライト輝度の自動調整”,<br>電子情報通信学会技術研究報告, MVE2015-93, 沖縄, Mar. 2016.</li>
+            </ul>
+          </div>
+
+
+
+          <div id="tab-9041ec6c-11" class="c-tabBody__item" aria-hidden="true">
+            <h3 class="wp-block-heading">Journal (論文誌)</h3>
+
+
+
+            <ul>
+              <li>Jason Orlosky, Takumi Toyama, Daniel Sonntag and Kiyoshi Kiyokawa,<br>“The Role of Focus in Advanced
+                Visual Interfaces,”<br>Künstliche Intelligenz (Journal on Artificial Intelligence in Germany), Oct.
+                2015.</li>
+
+
+
+              <li>Jason Orlosky, Takumi Toyama, Kiyoshi Kiyokawa, and Daniel Sonntag,<br>“ModulAR: Eye-controlled Vision
+                Augmentations for Head Mounted Displays,”<br>IEEE Transactions on Visualization and Computer Graphics
+                (TVCG), Special Issue on International Symposium on Mixed and Augmented Reality (ISMAR) 2015, Vol. 21,
+                No. 11, pp. 1259-1268, 2015.</li>
+
+
+
+              <li>Nicholas Katzakis, Robert Teather, Kiyoshi Kiyokawa, and Haruo Takemura,<br>“INSPECT: Extending
+                Plane-Casting for 6-DOF Control,”<br>Human-centric Computing and Information Sciences, Springer, DOI:
+                10.1186/s13673-015-0037-y, Jul., 2015.</li>
+
+
+
+              <li>Alexandor Plopski, Yuta Itoh, Christian Nitschke, Kiyoshi Kiyokawa, Gudrun Klinker, and Haruo
+                Takemura,<br>“Corneal-Imaging Calibration for Optical See-Through Head-Mounted Displays,”<br>IEEE
+                Transaction on Visualization and Computer Graphics (TVCG), Vol. 21, No. 4, pp. 481-490, 2015.</li>
+            </ul>
+
+
+
+            <h3 class="wp-block-heading">International Conference (国際会議査読あり)</h3>
+
+
+
+            <ul>
+              <li>Photchara Ratsamee, Yasushi Mae, Kazuto Kamiyama, Mitsuhiro Horade, Masaru Kojima, Kiyoshi Kiyokawa,
+                Tomohiro Mashita, Yoshihiro Kuroda, Haruo Takemura, and Tatsuo Arai, “Object Search Framework based on
+                Gaze Interaction,”<br>Proc. of IEEE ROBIO Conference, pp. 1997-2002, Dec. 2015.</li>
+
+
+
+              <li>Ginga Kato, Yoshihiro Kuroda, Ilana Nisky, Kiyoshi Kiyokawa, and Haruo Takemura,<br>“HapSticks:
+                tool-mediated interaction with grounding-free haptic interface,”<br>Proc. of SIGGRAPH Asia 2015 Workshop
+                on Haptic Media And Contents Design, (Demo) Nov. 2015.</li>
+
+
+
+              <li>Alexander Plopski, Christian Nitschke, Kiyoshi Kiyokawa, Dieter Schmalstieg and Haruo
+                Takemura,<br>“Hybrid Eye Tracking: Combining Iris Contour and Corneal Imaging,”<br>Proc. of the 25th
+                International Conference on Artificial Reality and Telexistence and the 20th Eurographics Workshop on
+                Virtual Environments (ICAT-EGVE 2015), Oct. 2015.</li>
+
+
+
+              <li>Alexander Plopski, Christian Nitschke, Kiyoshi Kiyokawa, Dieter Schmalstieg and Haruo
+                Takemura,<br>“Accurate Passive Eye-Pose Estimation through Corneal Imaging,”<br>Proc. of the 25th
+                International Conference on Artificial Reality and Telexistence and the 20th Eurographics Workshop on
+                Virtual Environments (ICAT-EGVE 2015), (Demo) Oct. 2015.</li>
+
+
+
+              <li>Qifan Wu, Jason Orlosky, Haruo Takemura and Kiyoshi Kiyokawa,<br>“Multi-modal Interaction with a
+                Context-aware AR Virtual Pet,”<br>Proc. of the 25th International Conference on Artificial Reality and
+                Telexistence and the 20th Eurographics Workshop on Virtual Environments (ICAT-EGVE 2015), Oct. 2015.
+              </li>
+
+
+
+              <li>Ginga Kato, Yoshihiro Kuroda, Ilana Nisky, Kiyoshi Kiyokawa, and Haruo Takemura, “HapSticks: A Novel
+                Method to Present Vertical Forces in Tool-Mediated Interactions by a Non-Grounded Rotation
+                Mechanism,”<br>Proc. IEEE World Haptics Conference (WHC) 2015, pp. 400-407, Jun. 2015.</li>
+
+
+
+              <li>Alexander Plopski, Christian Nitschke, Kiyoshi Kiyokawa, Dieter Schmalstieg and Haruo
+                Takemura,<br>“Hybrid Eye Tracking: Combining Iris Contour and Corneal Imaging,”<br>Proc. of the 25th
+                International Conference on Artificial Reality and Telexistence and the 20th Eurographics Workshop on
+                Virtual Environments (ICAT-EGVE 2015), Oct. 2015.</li>
+
+
+
+              <li>Alexander Plopski, Christian Nitschke, Kiyoshi Kiyokawa, Dieter Schmalstieg and Haruo
+                Takemura,<br>“Accurate Passive Eye-Pose Estimation through Corneal Imaging,”<br>Proc. of the 25th
+                International Conference on Artificial Reality and Telexistence and the 20th Eurographics Workshop on
+                Virtual Environments (ICAT-EGVE 2015), (Demo) Oct. 2015.</li>
+
+
+
+              <li>Qifan Wu, Jason Orlosky, Haruo Takemura and Kiyoshi Kiyokawa,<br>“Multi-modal Interaction with a
+                Context-aware AR Virtual Pet,”<br>Proc. of the 25th International Conference on Artificial Reality and
+                Telexistence and the 20th Eurographics Workshop on Virtual Environments (ICAT-EGVE 2015), Oct. 2015.
+              </li>
+
+
+
+              <li>Ginga Kato, Yoshihiro Kuroda, Ilana Nisky, Kiyoshi Kiyokawa, and Haruo Takemura,<br>“HapSticks: A
+                Novel Method to Present Vertical Forces in Tool-Mediated Interactions by a Non-Grounded Rotation
+                Mechanism,”<br>Proc. IEEE World Haptics Conference (WHC) 2015, pp. 400-407, Jun. 2015.</li>
+
+
+
+              <li>Jason Orlosky, Takumi Toyama, Kiyoshi Kiyokawa and Daniel Sonntag,<br>“Halo Content: Context-aware
+                Viewspace Management for Non-invasive Augmented Reality,”<br>Proc. ACM Int. Conf. on Intelligent User
+                Interfaces (IUI 2015), pp. 369-373, Mar. 2015.</li>
+
+
+
+              <li>Takumi Toyama, Jason Orlosky, Daniel Sonntag and Kiyoshi Kiyokawa,<br>“Attention Engagement and
+                Cognitive State Analysis for Augmented Reality Text Display Functions,”<br>Proc. ACM Int. Conf. on
+                Intelligent User Interfaces (IUI 2015), pp. 322-332, Mar. 2015.</li>
+
+
+
+              <li>Nicholas Katzakis, Robert Tether, Kiyoshi Kiyokawa and Haruo Takemura,<br>“INSPECT – Extending
+                Plane-Casting for 6-DOF Control”,<br>Proc. of the IEEE Symposium on 3D User Interfaces (3DUI) 2015, pp.
+                165-166, Mar. 2015.</li>
+            </ul>
+
+
+
+            <h3 class="wp-block-heading">International Conference Non-reviewed (国際会議査読無し)</h3>
+
+
+
+            <h3 class="wp-block-heading">Domestic Conference (国内学会発表査読あり)</h3>
+
+
+
+            <ul>
+              <li>望月 祐希, カザキス ニコラス, 清川 清, 間下 以大, 竹村 治雄,<br>“一筆書きでアニメーションの効果と移動経路を指定するアニメーション作成システムの開発”,<br>NICOGRAPH
+                2015 ポスター, 大阪, Nov. 2015.</li>
+
+
+
+              <li>Chang Liu, Ryo Taguchi, Nattaon Techasarathul, Kiyoshi Kiyokawa, Haruo
+                Takemura,<br>“炭酸噴き出し感覚を提示する缶型デバイス”,<br>NICOGRAPH 2015 展示発表, 大阪, Nov. 2015.</li>
+
+
+
+              <li>Ginga Kato, Yoshihiro Kuroda, Ilana Nisky, Kiyoshi Kiyokawa, Haruo Takemura,<br>“HapSticks: A
+                Grounding-free Haptic Device to Represent Weight Sensation by Mimicking the Cutaneous
+                Sensation”,<br>NICOGRAPH 2015 展示発表, 大阪, Nov. 2015.</li>
+
+
+
+              <li>加藤 銀河, 田村 祐樹, 西山 周平, 清川 清, 竹村 治雄,<br>“Whispear: 温覚と風の提示によるささやかれ感の強調”,<br>NICOGRAPH 2015 展示発表, 大阪, Nov.
+                2015.</li>
+
+
+
+              <li>Eric Benson, John Breen, Sean Halloran, Andrew Han, Chris Knapp, Robert Lindeman, Peter Kim, Kiyoshi
+                Kiyokawa,<br>“Hikari Hook: A Hookshot Traversal Technique for Immersive Flight Sensation and
+                Gaming”,<br>NICOGRAPH 2015 展示発表, 大阪, Nov. 2015.</li>
+            </ul>
+
+
+
+            <h3 class="wp-block-heading">Domestic Conference Non-reviewed (国内学会発表査読無し)</h3>
+
+
+
+            <ul>
+              <li>Yuki Tamura, Tomohiro Mashita, Yoshihiro Kuroda, Kiyoshi Kiyokawa, and Haruo Takemura,<br>“Feature
+                Detection with Multi-Band Imaging for Tracking Non-rigid Biological Tissues,”<br>生体医工学シンポジウム, 岡山, Sep.
+                16th, 2015.</li>
+
+
+
+              <li>間下 以大, 新谷 晃一, 清川 清, 竹村 治雄,<br>“指差し動作における利き手および利き目の影響に関する調査”,<br>情処報CVIM, Vol. 2015-CVIM-197, No. 4,
+                東京, May 2015.</li>
+
+
+
+              <li>田村 祐樹, 間下 以大, 黒田 嘉宏, 清川 清, 竹村 治雄,<br>“生体トラッキングのための多波長計測システムの実装と評価”,<br>情処報CVIM, Vol. 2015-CVIM-197,
+                No. 15, 東京, May 2015.</li>
+
+
+
+              <li>工藤 彰, Alexander Plopski, Tobias Höllerer, 間下以大, 清川 清, 竹村 治雄,<br>“異なる光源環境における画像特徴の頑健性の調査”,<br>情処報CVIM,
+                Vol. 2015-CVIM-195, No. 65, 奈良, Jan 2015.</li>
+
+
+
+              <li>重野 孝明, 間下 以大, 清川清, 竹村治雄,<br>“広視野アイマークレコーダにおける顕著性マップを用いた視線推定結果の補正手法”,<br>情処報CVIM, Vol. 2015-CVIM-195,
+                No. 58, 奈良, Jan 2015.</li>
+
+
+
+              <li>関 一輝, 黒田 嘉宏, 清川 清, 竹村 治雄,<br>“風向制御による非接地型力覚提示デバイスの試作”,<br>電子情報通信学会MVE研究会, 奈良, Jan 2015.</li>
+            </ul>
+          </div>
+
+
+
+          <div id="tab-9041ec6c-12" class="c-tabBody__item" aria-hidden="true">
+            <h3 class="wp-block-heading">Journal (論文誌)</h3>
+
+
+
+            <ul>
+              <li>間下 以大, 安原 広幸, プロプスキ アレクサンダー, 清川 清, 竹村, 治雄,<br>“インバースレンダリングに基づく拡張現実感のための光源環境と反射特性のオンライン推定”<br>電気学会論文誌C,
+                Vol. 134, No. 10, 2014.</li>
+
+
+
+              <li>森 弘樹, 間下 以大, 清川 清, 竹村 治雄,<br>“広視野アイカメラのためのK近傍法による視線推定手法”,<br>電気学会論文誌C, Vol. 134, No. 10, 2014.</li>
+
+
+
+              <li>Jason Orlosky, Kiyoshi Kiyokawa and Haruo Takemura:<br>“Managing Mobile Text in Head Mounted Displays:
+                Studies on Visual Preference and Text Placement,”<br>Mobile Computing and Communications Review, Vol.
+                18, No. 2, pp. 20-31, 2014.</li>
+
+
+
+              <li>Minh-Khuong Bui, Kiyoshi Kiyokawa, Andrew Miller, Joseph J. LaViola Jr, Tomohiro Mashita and Haruo
+                Takemura:<br>“Context-related Visualization Modes of an AR-based Context-Aware Assembly Support System
+                in Object Assembly,”<br>日本バーチャルリアリティ学会 論文誌, Vol.19, No.2, pp.195-205, 2014.</li>
+
+
+
+              <li>グェンヴァンドゥック, 清川清, 間下以大, 竹村治雄:<br>“再帰性半透過スクリーンを用いた広視野頭部搭載プロジェクタの実装と評価”,<br>日本バーチャルリアリティ学会 論文誌, Vol.19,
+                No.2, pp.163-172, 2014.</li>
+
+
+
+              <li>森島 茂貴, 清川 清, 間下 以大, 竹村 治雄:<br>“プロジェクション型ARによる遠隔協調作業支援システムのためのベルト装着型ProCamシステム”,<br>日本バーチャルリアリティ学会 論文誌,
+                Vol.19, No.2, pp.153-162, 2014.</li>
+
+
+
+              <li>Atsushi Umakatsu, Kiyoshi Kiyokawa, Tomohiro Mashita and Haruo Takemura:<br>“Implementation and
+                Evaluation of Pinch-n-Paste: Direct Texture Transfer Interaction in Augmented
+                Reality,”<br>日本バーチャルリアリティ学会 論文誌, Vol.19, No.2, pp.141-151, 2014.</li>
+
+
+
+              <li>岸下 直弘, オーロスキ ジェーソン, 清川 清, 間下 以大, 竹村 治雄:<br>“広視野シースルーHMDを用いた情報提示における周辺視野の影響の調査”,<br>日本バーチャルリアリティ学会 論文誌,
+                Vol.19, No.2, pp.121-130, 2014.</li>
+
+
+
+              <li>オーロスキ・ジェーソン, 重野孝明, 清川清, 竹村治雄:<br>“身体装着型QWERTYキーボードのモバイル環境における入力速度評価”,<br>日本バーチャルリアリティ学会 論文誌, Vol.19,
+                No.2, pp.117-120, 2014.</li>
+
+
+
+              <li>Andrei Sherstyuk and Kiyoshi Kiyokawa:<br>“Collision-Free Navigation with Extended Terrain
+                Maps,”<br>Transaction on Computational Science, Vol. 23, No. 2, pp. 20-31, Cyberworlds 2013 Special
+                Issue, Springer, 2014.</li>
+            </ul>
+
+
+
+            <h3 class="wp-block-heading">International Conference (国際会議査読あり)</h3>
+
+
+
+            <ul>
+              <li>Yuki Yano, Kiyoshi Kiyokawa, Andrei Sherstyuk, Tomohiro Mashita, and Haruo Takemura,<br>“Investigation
+                of Dynamic View Expansion for Head-Mounted Displays with Head Tracking in Virtual
+                Environments,”<br>Proc. of the 24th International Conference on Artificial Reality and Telexistence and
+                the 19th Eurographics Workshop on Virtual Environments (ICAT-EGVE 2014), pp. 37-44, Dec. 2014.</li>
+
+
+
+              <li>Jason Orlosky, Qifan Wu, Kiyoshi Kiyokawa, Christian Nitschke, and Haruo Takemura,<br>“Fisheye Vision:
+                Peripheral Spatial Compression for Improved Field of View in Head Mounted Displays,”<br>Proc. of the 2nd
+                ACM Symposium on Spatial User Interaction (SUI) 2014, pp. 54-61, Oct., 2014.</li>
+
+
+
+              <li>Naohiro Kishishita, Kiyoshi Kiyokawa, Ernst Kruijff, Jason Orlosky, Tomohiro Mashita and Haruo
+                Takemura,<br>“Analysing the Effects of a Wide Field of View Augmented Reality Display on Search
+                Performance in Divided Attention Tasks,”<br>Proc. of the International Symposium on Mixed and Augmented
+                Reality (ISMAR) 2014, pp. 177-186, Sep., 2014.</li>
+
+
+
+              <li>Jason Orlosky, Takumi Toyama, Daniel Sonntag, and Kiyoshi Kiyokawa,<br>“Using Eye-Gaze and
+                Visualization to Augment Memory – A Framework for Improving Context Recognition and Recall,”<br>Proc. of
+                HCI International, Vol. 21, pp. 282-291, Jun. 2014.</li>
+
+
+
+              <li>Takumi Toyama, Jason Orlosky, Daniel Sonntag and Kiyoshi Kiyokawa,<br>“A natural interface for
+                multi-focal plane head mounted displays using 3D gaze,”<br>Proc. of the 12th International Conference on
+                Advanced Visual Interfaces (AVI) 2014, pp. 25-32, May. 2014.</li>
+
+
+
+              <li>Alexander Plopski, Tomohiro Mashita, Kiyoshi Kiyokawa, and Haruo Takemura,<br>“Reflectance and Light
+                Source Estimation for Indoor AR Applications,”<br>Proc. of the IEEE Virtual Reality 2014, pp. 103-104,
+                Mar. 2014.</li>
+
+
+
+              <li>Bui Minh Khuong, Kiyoshi Kiyokawa, Andrew Miller, Joseph J. LaViola Jr., Tomohiro Mashita, and Haruo
+                Takemura,<br>“The Effectiveness of an AR-based Context-Aware Assembly Support System in Object
+                Assembly,”<br>Proc. of the IEEE Virtual Reality 2014, pp. 57-62, Mar. 2014.</li>
+            </ul>
+
+
+
+            <h3 class="wp-block-heading">International Conference Non-reviewed (国際会議査読無し)</h3>
+
+
+
+            <ul>
+              <li>Alexander Plopski, Tomohiro Mashita, Kiyoshi Kiyokawa, and Haruo Takemura,<br>“Reflectance and
+                Lightsource Estimation for Indoor AR Applications,”<br>Proc. 7th Korea Japan Workshop on Mixed Reality
+                (KJMR), Jeon-buk, Korea, Apr. 2014.</li>
+
+
+
+              <li>Mami Mori, Tomohiro Mashita, Kiyoshi Kiyokawa, and Haruo Takemura,<br>“Pinch-n-Paste: Texture Transfer
+                Gesture Interaction System with a see-through HMD,”<br>Proc. 7th Korea Japan Workshop on Mixed Reality
+                (KJMR), Jeon-buk, Korea, Apr. 2014.</li>
+            </ul>
+
+
+
+            <h3 class="wp-block-heading">Domestic Conference (国内学会発表査読あり)</h3>
+
+
+
+            <h3 class="wp-block-heading">Domestic Conference Non-reviewed (国内学会発表査読無し)</h3>
+
+
+
+            <ul>
+              <li>矢野 裕季, 鈴木 拓馬, Hagad Juan Lorenzo, Mollica Nicholas, Katzakis Nicholas, 安藤 英由樹, 清川
+                清,<br>“HMDおよび身体幇助メカニズムを用いたVR環境における浮遊感体験装置の提案”,<br>Entertainment Computing 2014, 東京, 2014.</li>
+
+
+
+              <li>古都 知哉, 阿部 哲朗, Alexander Plopski, 間下 以大, 清川 清, 竹村 治雄, 福田
+                登仁,<br>“工場内巡回ロボットにおける広域実環境再構築システムのための自己位置回復手法”,<br>電子情報通信学会技術研究報告, 大阪, Jan. 2014.</li>
+            </ul>
+          </div>
+
+
+
+          <div id="tab-9041ec6c-13" class="c-tabBody__item" aria-hidden="true">
+            <h3 class="wp-block-heading">Journal (論文誌)</h3>
+
+
+
+            <h3 class="wp-block-heading">International Conference (国際会議査読あり)</h3>
+
+
+
+            <ul>
+              <li>Tomohiro Mashita, Hiroyuki Yasuhara, Alexander Plopski, Kiyoshi Kiyokawa, and Haruo
+                Takemura,<br>“Parallel Lighting and Reﬂectance Estimation based on Inverse Rendering,”<br>Proc. of the
+                23rd International Conference on Artificial Reality and Telexistence (ICAT 2013), pp. 102-107, Dec.
+                2013.</li>
+
+
+
+              <li>Samping Chuang, Kiyoshi Kiyokawa and Haruo Takemura,<br>“ARGoTrainer – Learning Go In An Augmented
+                Reality Environment,”<br>Proc. of the 23rd International Conference on Artificial Reality and
+                Telexistence (ICAT 2013), pp. 72-77, Dec. 2013.</li>
+
+
+
+              <li>Andrei Sherstyuk, Kiyoshi Kiyokawa, and Yuki Yano,<br>“3D Collision Detection with 2D Terrain
+                Maps”,<br>Proc. ACM Cyberworlds 2013, Oct. 2013. (Forum8 Poster Award)</li>
+
+
+
+              <li>Andrei Sherstyuk and Kiyoshi Kiyokawa,<br>“Navigation Maps for Virtual Travelers”,<br>Proc. ACM
+                Cyberworlds 2013, Oct. 2013.</li>
+
+
+
+              <li>Jason Orlosky, Kiyoshi Kiyokawa and Haruo Takemura,<br>“Towards Intelligent View Management: A Study
+                of Manual Text Placement Tendencies in Mobile Environments Using Video See-through Displays,”<br>Proc.
+                IEEE Int. Symp. on Mixed Augmented Reality (ISMAR), pp. 281-282, Oct. 2013.</li>
+
+
+
+              <li>Tomohiro Mashita, Hiroyuki Yasuhara, Alexander Plopski, Kiyoshi Kiyokawa and Haruo
+                Takemura,<br>“in-situ Lighting and Reflectance Estimation for indoor AR systems,”<br>Proc. IEEE Int.
+                Symp. on Mixed Augmented Reality (ISMAR), pp. 275-276, Oct. 2013.</li>
+
+
+
+              <li>Nicholas Katzakis, Kazuteru Seki, Kiyoshi Kiyokawa and Haruo Takemura,<br>“Mesh-Grab and Arcball-3D:
+                Ray-based 6-DOF Object Manipulation,”<br>Proc. of the 11th Asia Pacific Conference on Computer Human
+                Interaction (APCHI), pp. 129-136, Sep. 2013.</li>
+
+
+
+              <li>Nicholas Katzakis, Kiyoshi Kiyokawa and Haruo Takemura,<br>“PlaneCasting: 3D Cursor Control with a
+                Smartphone,”<br>Proc. of the 11th Asia Pacific Conference on Computer Human Interaction (APCHI), pp.
+                199-200, Sep. 2013.</li>
+
+
+
+              <li>Jason Orlosky, Kiyoshi Kiyokawa and Haruo Takemura,<br>“Dynamic Text Management for See-through
+                Wearable and Heads-up Display Systems,”<br>Proc. ACM Int. Conf. on Intelligent User Interfaces (IUI
+                2013), pp. 363-370, Mar. 2013.</li>
+
+
+
+              <li>Atsushi Umakatsu, Tomohiro Mashita, Kiyoshi Kiyokawa and Haruo Takemura,<br>“Pinch-n-Paste: Direct
+                Texture Transfer Interaction in Augmented Reality,”<br>Proc. IEEE Virtual Reality (IEEE VR), pp. 73-74,
+                Mar. 2013.</li>
+
+
+
+              <li>Junya Nakase, Koichi Moriyama, Kiyoshi Kiyokawa, Masayuki Numao, Mayumi Oyama and Satoshi
+                Kurihara,<br>“Learning system for adapting users with user’s state classification by vital
+                sensing,”<br>Proc. the 2nd International Workshop on Ambient Information Technologies (AMBIT 2013),
+                2013.</li>
+
+
+
+              <li>Jun Fukano, Tomohiro Mashita, Takahiro Hara, Kiyoshi Kiyokawa, Haruo Takemura and Shojiro
+                Nishio,<br>“A Next Location Prediction Method for Smartphones using Blockmodels,”<br>Proc. the 2nd
+                International Workshop on Ambient Information Technologies (AMBIT 2013), 2013.</li>
+
+
+
+              <li>Naohiro Kishishita, Jason Orlosky, Tomohiro Mashita, Kiyoshi Kiyokawa and Haruo
+                Takemura,<br>“Investigation on the Peripheral Visual Field for Information Display with Real and Virtual
+                Wide Field-of-view See-through HMDs,”<br>Proc. the 8th IEEE Symposium on 3D User Interfaces (3DUI 2013),
+                pp. 143-144, Mar. 2013.</li>
+
+
+
+              <li>Junya Nakase, Koichi Moriyama, Kiyoshi Kiyokawa, Masayuki Numao, Mayumi Oyama and Satoshi
+                Kurihara,<br>“Effective awaking interaction learning system that uses vital sensing,”<br>IEEE Sensors
+                Applications Symposium (SAS) 2013, pp.104-108, 19-21 Feb. 2013.</li>
+            </ul>
+
+
+
+            <h3 class="wp-block-heading">International Conference Non-reviewed (国際会議査読無し)</h3>
+
+
+
+            <ul>
+              <li>Bui Minh Khuong, Kiyoshi Kiyokawa, Tomohiro Mashita, Haruo Takemura,<br>“A Study on an AR-based
+                Toy-block Assembly Support System with Automatic Error Detection,”<br>Proc. 6th Korea Japan Workshop on
+                Mixed Reality (KJMR), Okinawa, Japan, Apr. 2013.</li>
+
+
+
+              <li>Jason Orlosky, Kiyoshi Kiyokawa, Haruo Takemura,<br>“Automated Text Management for Wearable and
+                See-through Display Systems,”<br>Proc. 6th Korea Japan Workshop on Mixed Reality (KJMR), Okinawa, Japan,
+                Apr. 2013.</li>
+
+
+
+              <li>Junya Ochi, William Walmsley, Paul Milgram, Tomohiro Mashita, Kiyoshi Kiyokawa and Haruo
+                Takemura,<br>“Evaluating Motion Parallax Methods of Viewpoint Manipulation in a Depth Perceptual
+                Task,”<br>Proc. 6th Korea Japan Workshop on Mixed Reality (KJMR), Okinawa, Japan, Apr. 2013.</li>
+            </ul>
+
+
+
+            <h3 class="wp-block-heading">Domestic Conference (国内学会発表査読あり)</h3>
+
+
+
+            <h3 class="wp-block-heading">Domestic Conference Non-reviewed (国内学会発表査読無し)</h3>
+
+
+
+            <ul>
+              <li>阿部 哲朗, 古都 知哉, Alexander Plopski, 間下 以大, 清川 清, 竹村 治雄, 福田
+                登仁,<br>“工場内巡回ロボットのためのRGB-Dカメラを用いた広域実環境再構築システムの設計”,<br>電子情報通信学会技術研究報告, 利尻, Sep. 2013.</li>
+
+
+
+              <li>安原 広幸, 間下 以大, 清川 清, 竹村 治雄,<br>“ARのための一般物体を用いた光源環境と物体の反射特性の推定”,<br>電子情報通信学会技術研究報告, MVE2012-89, 京都, Jan.
+                2013.</li>
+
+
+
+              <li>内山 英昭, 神原 誠之, 柴田 史久, 清川 清,<br>“ISMAR 2012 報告”,<br>電子情報通信学会技術研究報告, MVE2012-81, 京都, Jan. 2013.</li>
+            </ul>
+          </div>
+
+
+
+          <div id="tab-9041ec6c-14" class="c-tabBody__item" aria-hidden="true">
+            <h3 class="wp-block-heading">Journal (論文誌)</h3>
+
+
+
+            <ul>
+              <li>Mayu Iwata, Hiroki Miyamoto, Takahiro Hara, Daijiro Komaki, Kentaro Shimatani, Tomohiro Mashita,
+                Kiyoshi Kiyokawa, Toshiaki Uemukai, Gen Hattori, Shojiro Nishio, and Haruo Takemura:<br>“A Content
+                Search System Considering the Activity and Context of a Mobile User”,<br>International Journal of
+                Personal and Ubiquitous Computing, June 2012.</li>
+
+
+
+              <li>大西崇之, ロバート・リンデマン, 清川清, 竹村治雄:<br>“三次元領域選択のための複数のマルチタッチデバイスを用いた三次元インタラクション手法”,<br>日本バーチャルリアリティ学会 論文誌,
+                Vol.17, No.4, 2012.</li>
+            </ul>
+
+
+
+            <h3 class="wp-block-heading">International Conference (国際会議査読あり)</h3>
+
+
+
+            <ul>
+              <li>Atsushi Umakatsu, Tomohiro Mashita, Kiyoshi Kiyokawa and Haruo Takemura,<br>“Pinch-n-Paste: Direct
+                Texture Transfer Interaction in Augmented Reality,”<br>Proc. ACM Symp. on Virtual Reality Software and
+                Technology (VRST), pp. 185-186, Dec. 2012.</li>
+
+
+
+              <li>Atsushi Umakatsu, Tomohiro Mashita, Kiyoshi Kiyokawa and Haruo Takemura,<br>“Touch-n-Paste: Direct
+                Texture Transfer Interaction in AR Environments”,<br>Proc. IEEE Int. Symp. on Mixed Augmented Reality
+                (ISMAR), pp. 325-326, Nov. 2012.</li>
+
+
+
+              <li>Shigeki Morishima, Tomohiro Mashita, Kiyoshi Kiyokawa and Haruo Takemura,<br>“A Waist-Mounted ProCam
+                System for Remote Collaboration,”<br>Proc. IEEE Int. Symp. on Mixed Augmented Reality (ISMAR), pp.
+                301-302, Nov. 2012.</li>
+
+
+
+              <li>Duc Nguyen Van, Tomohiro Mashita, Kiyoshi Kiyokawa and Haruo Takemura,<br>“Subjective Evaluations on
+                Perceptual Depth of Stereo Image and Effective Field of View of a Wide-View Head Mounted Projective
+                Display with a Semi-Transparent Retro-Reflective Screen,”<br>Proc. IEEE Int. Symp. on Mixed Augmented
+                Reality (ISMAR), pp. 327-328, Nov. 2012.</li>
+
+
+
+              <li>Jason Orlosky, Nicholas Katzakis, Kiyoshi Kiyokawa, and Haruo Takemura,<br>“Torso Keyboard: A Wearable
+                Text Entry Device That Can Be Used While Sitting, Standing or Walking,”<br>Proc. of the 10th Asia
+                Pacific Conference on Computer Human Interaction (APCHI), Aug. 2012.</li>
+
+
+
+              <li>Kiyoshi Kiyokawa,<br>“Trends and Vision of Head Mounted Displays,”<br>Invited Talk at International
+                Symposium on Ubiquitous Virtual Reality (ISUVR) 2012, Aug. 2012.</li>
+
+
+
+              <li>Nicholas Katzakis, Kiyoshi Kiyokawa, Masahiro Hori and Haruo Takemura,<br>“Plane Casting: 3D Cursor
+                Control With a SmartPhone,”<br>Proc. the ACM CHI 2012 Workshop on “The 3rd Dimension of CHI (3DCHI):
+                Touching and Designing 3D User Interfaces”, May, 2012.</li>
+
+
+
+              <li>Hironori Shigeta, Junya Nakase, Yuta Tsunematsu, Kiyoshi Kiyokawa, Masahide Hatanaka, Kazufumi Hosoda,
+                Masashi Okada, Yasunori Ishihara, Fukuhito Ooshita, Hirotsugu Kakugawa, Satoshi Kurihara and Koichi
+                Moriyama,<br>“Implementation of a Smart Office System in an Ambient Environment,”<br>Proc. the 1st
+                International Workshop on Ambient Information Technologies (AMBIT 2012), 2012.</li>
+
+
+
+              <li>Junya Nakase, Koichi Moriyama, Kiyoshi Kiyokawa, Masayuki Numao, Mayumi Oyama and Satoshi
+                Kurihara,<br>“Adaptive interactive device control by using reinforcement learning in ambient information
+                environment,”<br>Proc. the 1st International Workshop on Ambient Information Technologies (AMBIT 2012),
+                2012.</li>
+
+
+
+              <li>Tomohiro Mashita, Kentaro Shimatani, Mayu Iwata, Hiroki Miyamoto, Daijiro Komaki, Takahiro Hara,
+                Kiyoshi Kiyokawa, Haruo Takemura, Shojiro Nishio,<br>“Human Activity Recognition for a Content Search
+                System Considering Situations of Smartphone Users,”<br>Proc. the 1st International Workshop on Ambient
+                Information Technologies (AMBIT 2012), 2012.</li>
+
+
+
+              <li>Kiyoshi Kiyokawa, Masahide Hatanaka, Kazufumi Hosoda, Masashi Okada, Hironori Shigeta, Yasunori
+                Ishihara, Fukuhito Ooshita, Hirotsugu Kakugawa, Satoshi Kurihara, Koichi Moriyama,<br>“Owens Luis – A
+                Context-aware Multi-modal Smart Office Chair in an Ambient Environment,”<br>Proc. the 1st International
+                Workshop on Ambient Information Technologies (AMBIT 2012), 2012.</li>
+
+
+
+              <li>Tomohiro Mashita, Daijiro Komaki, Mayu Iwata, Kentaro Shimatani, Hiroki Miyamoto, Takahiro Hara,
+                Kiyoshi Kiyokawa, Haruo Takemura, Shojiro Nishio,<br>“A Content Search System for Mobile Devices based
+                on User Context Recognition,”<br>Proc. the 1st International Workshop on Ambient Information
+                Technologies (AMBIT 2012), 2012.</li>
+
+
+
+              <li>Takayuki Ohnishi, Kiyoshi Kiyokawa and Haruo Takemura,<br>“Virtual Interaction Surface: Decoupling of
+                Interaction and View Dimensions for Flexible Indirect 3D Interaction,”<br>Proc. the 7th IEEE Symposium
+                on 3D User Interfaces (3DUI 2012), pp. 113-116, Mar. 2012.</li>
+            </ul>
+
+
+
+            <h3 class="wp-block-heading">International Conference Non-reviewed (国際会議査読無し)</h3>
+
+
+
+            <ul>
+              <li>Junya Ochi, Tomohiro Mashita, Kiyoshi Kiyokawa and Haruo Takemura,<br>“An AR Interior Design System
+                using a Tablet Device and a Real-time Range Sensor,”<br>Proc. 5th Korea Japan Workshop on Mixed Reality
+                (KJMR), Seoul, Korea, Apr. 2012.</li>
+
+
+
+              <li>Hiroyuki Yasuhara, Tomohiro Mashita, Kiyoshi Kiyokawa and Haruo Takemura,<br>“A 3D Reconstruction
+                Method Based on Appearance Consistency for an AR Diorama System,”<br>Proc. 5th Korea Japan Workshop on
+                Mixed Reality (KJMR), Seoul, Korea, Apr. 2012.</li>
+
+
+
+              <li>Atsushi Umakatsu, Thammathip Piumsomboon, Adrian Clark, Tomohiro Mashita, Kiyoshi Kiyokawa, Haruo
+                Takemura, and Mark Billinghurst,<br>“AR Diorama: Natural hand and Tangible AR Interaction
+                System,”<br>Proc. 5th Korea Japan Workshop on Mixed Reality (KJMR), Seoul, Korea, Apr. 2012.</li>
+            </ul>
+
+
+
+            <h3 class="wp-block-heading">Domestic Conference (国内学会発表査読あり)</h3>
+
+
+
+            <ul>
+              <li>間下 以大, 清川 清, 中澤 篤志, 竹村 治雄:<br>“大阪大学における新入生の高校教科「情報」に関する調査報告”,<br>情報処理学会 情報教育シンポジウム(SSS2012) pp. , 静岡,
+                Aug. 2012.</li>
+            </ul>
+
+
+
+            <h3 class="wp-block-heading">Domestic Conference Non-reviewed (国内学会発表査読無し)</h3>
+
+
+
+            <ul>
+              <li>中澤 篤志, 間下 以大, 清川 清, 竹村 治雄,<br>“大阪大学の情報教育システムに関する現状と展望”,<br>大学ICT推進協議会 年次大会, 神戸, Dec. 2012.</li>
+
+
+
+              <li>森島 茂貴, 間下 以大, 清川 清, 竹村治雄,<br>“遠隔協調作業支援のためのベルト装着型ProCamシステム”,<br>日本バーチャルリアリティ学会研究報告(SIG-MR), 根室, Sep.
+                2012.</li>
+
+
+
+              <li>嶋谷 健太郎, 間下 以大, 宮本 大樹, 岩田 麻佑, 原 隆浩, 清川 清, 竹村 治雄, 西尾
+                章治郎,<br>“スマートフォン利用者のコンテキストログを用いたアプリケーション推薦システムの設計”,<br>ヒューマンインタフェースシンポジウム2012講演論文集, 3222S, 福岡, Sep.
+                2012.</li>
+
+
+
+              <li>越智 惇也, 間下 以大, 清川 清, 竹村 治雄,<br>“タブレット端末と据置型距離センサを用いた AR インテリアデザインシステム”,<br>ヒューマンインタフェースシンポジウム2012講演論文集,
+                3214L, 福岡, Sep. 2012.</li>
+
+
+
+              <li>岸下 直弘, 間下 以大, 清川 清, 竹村 治雄,<br>“広視野シースルーHMDによる情報提示のためのVR環境を用いた周辺視野の影響の調査”,<br>電子情報通信学会技術研究報告,
+                MVE2012-23, 東京, Jun. 2012.</li>
+
+
+
+              <li>嶋谷 健太郎, 間下 以大, 宮本 大樹, 岩田 麻佑, 原 隆浩, 清川 清, 竹村 治雄, 西尾
+                章治郎,<br>“スマートフォンを用いたコンテンツ検索支援のための動作認識”,<br>電子情報通信学会技術研究報告, PRMU2011-194, 仙台, Feb. 2012.</li>
+            </ul>
+          </div>
+
+
+
+          <div id="tab-9041ec6c-15" class="c-tabBody__item" aria-hidden="true">
+            <h3 class="wp-block-heading">Journal (論文誌)</h3>
+
+
+
+            <ul>
+              <li>Hiroki Miyamoto, Daijiro Komaki, Takahiro Hara, Kentaro Shimatani, Tomohiro Mashita, Kiyoshi Kiyokawa,
+                Toshiaki Uemukai, Shojiro Nishio, Haruo Takemura:<br>“A Menu-based Content Search Support System
+                Considering Mobile User’s Situations,”<br>Journal of Procedia Computer Science, Vol.5, pp.434-441, 2011.
+              </li>
+
+
+
+              <li>Mayu Iwata, Takahiro Hara, Kentaro Shimatani, Tomohiro Mashita, Kiyoshi Kiyokawa, Shojiro Nishio,
+                Haruo Takemura,<br>“A Location-based Content Search System Considering Situations of Mobile
+                Users,”<br>Journal of Procedia Computer Science, Vol.5, pp.426-433, 2011.</li>
+
+
+
+              <li>西川 知宏, 間下 以大, 小川 剛史, 清川 清, 竹村
+                治雄:<br>“モバイル環境におけるコンテクスト認識とスケジュール予測に基づくマルチメディアコンテンツの動的再生制御”,<br>電子情報通信学会論文誌(D), Vol.J94-D, No.1,
+                pp.147-158, Jan. 2011.</li>
+            </ul>
+
+
+
+            <h3 class="wp-block-heading">International Conference (国際会議査読あり)</h3>
+
+
+
+            <ul>
+              <li>Duc Nguyen Van, Tomohiro Mashita, Kiyoshi Kiyokawa and Haruo Takemura,<br>“Subjective Image Quality
+                Assessment of a Wide-view Head Mounted Projective Display with a Semi-transparent Retro-reflective
+                Screen,”<br>Proc. the 21st International Conference on Artificial Reality and Telexistence (ICAT 2011),
+                pp. 22-27, Nov. 2011.</li>
+
+
+
+              <li>Hiroki Miyamoto, Daijiro Komaki, Takahiro Hara, Kentaro Shimatani, Tomohiro Mashita, Kiyoshi Kiyokawa,
+                Toshiaki Uemukai, Shojiro Nishio, and Haruo Takemura:<br>“A Menu-based Content Search Support System
+                Considering Mobile User’s Situations,”<br>Proc. the 2nd Int. Conf. on Ambient Systems, Networks and
+                Technologies (ANT 2011), Sep. 2011.</li>
+
+
+
+              <li>Mayu Iwata, Takahiro Hara, Kentaro Shimatani, Tomohiro Mashita, Kiyoshi Kiyokawa, Shojiro Nishio, and
+                Haruo Takemura:<br>“A Location-based Content Search System Considering Situations of Mobile
+                Users,”<br>Proc. the 2nd Int. Conf. on Ambient Systems, Networks and Technologies (ANT 2011), Sep. 2011.
+              </li>
+
+
+
+              <li>Atsushi Umakatsu, Hiroyuki Yasuhara, Tomohiro Mashita, Kiyoshi Kiyokawa and Haruo
+                Takemura:<br>“Camera-based In-situ 3D Modeling Techniques for AR Diorama in Ubiquitous Virtual
+                Reality,”<br>Proc. Int. Conf. on Human-Computer Interaction (HCI International), pp. 113-122, Jul. 2011.
+              </li>
+
+
+
+              <li>Takayuki Ohnishi, Robert Lindeman, and Kiyoshi Kiyokawa:<br>“Multiple Multi-Touch Touchpads for 3D
+                Selection,”<br>Proc. the 6th IEEE International Symposium on 3D User Interfaces (3DUI 2011), pp.
+                115-116, Mar. 2011.</li>
+            </ul>
+
+
+
+            <h3 class="wp-block-heading">International Conference Non-reviewed (国際会議査読無し)</h3>
+
+
+
+            <ul>
+              <li>Kentaro Oita, Hironori Shigeta, Kiyoshi Kiyokawa, Kazunori Nozaki and Haruo
+                Takemura:<br>“Three-Dimensional Flow Visualization and Segmentation of Characteristics of Turbulence in
+                Sibilant ,”<br>Proc. 11th Asian Symposium on Visualization, ASV11-14-0, Niigata, Japan, Jun. 2011.</li>
+
+
+
+              <li>Atsushi Umakatsu, Tomohiro Mashita, Kiyoshi Kiyokawa and Haruo Takemura:<br>“A 3D Reconstruction
+                Method based on Region Segmentation for AR Diorama System,”<br>Proc. 4th Korea Japan Workshop on Mixed
+                Reality (KJMR), Osaka, Japan, Apr. 2011.</li>
+            </ul>
+
+
+
+            <h3 class="wp-block-heading">Domestic Conference (国内学会発表査読あり)</h3>
+
+
+
+            <ul>
+              <li>岩田麻佑, 原 隆浩, 嶋谷健太郎, 間下以大, 清川 清, 西尾章治郎, 竹村治雄,<br>“モバイルユーザの状況を考慮した位置依存コンテンツ検索支援システム”,<br>情報処理学会マルチメディア,
+                分散, 協調とモバイルシンポジウム(DICOMO 2011), pp.1537-1544, 宮津, Jul. 2011.</li>
+
+
+
+              <li>宮本大樹, 小牧大治郎, 原 隆浩, 嶋谷健太郎, 間下以大, 清川 清, 上向俊晃, 西尾章治郎,
+                竹村治雄,<br>“モバイルユーザの状況を考慮した候補提示型コンテンツ検索支援システム”,<br>情報処理学会マルチメディア, 分散, 協調とモバイルシンポジウム(DICOMO 2011),
+                pp.1545-1551, 宮津, Jul. 2011.</li>
+
+
+
+              <li>馬勝 淳史, 間下 以大, 清川 清, 竹村 治雄:<br>“ARジオラマにおける領域分割に基づく三次元形状復元手法”,<br>画像の認識・理解シンポジウム（MIRU）講演論文集, 金沢, Jul.
+                2011.</li>
+
+
+
+              <li>嶋谷 健太郎, 間下 以大, 清川 清, 竹村 治雄:<br>“スマートフォンを用いたコンテンツ検索支援のためのモバイルコンテキスト認識”,<br>情報処理学会
+                マルチメディア，分散，協調とモバイルシンポジウム(DICOMO)論文集, Vol. 2011, 宮津, Jul. 2011.</li>
+            </ul>
+
+
+
+            <h3 class="wp-block-heading">Domestic Conference Non-reviewed (国内学会発表査読無し)</h3>
+
+
+
+            <ul>
+              <li>中瀬 絢哉, 森山 甲一, 清川 清, 雄山 真弓, 沼尾 正行, 栗原
+                聡,<br>“アンビエント環境における経験型強化学習を用いたインタラクティブデバイスの制御とバイタルセンシング導入の考察”,<br>人工知能学会 第1回データ指向構成マイニングとシミュレーション研究会資料
+                (SIG-DOCMAS-B101), 日吉, Dec. 2011.</li>
+
+
+
+              <li>老田 健太郎, 繁田 浩功, 清川 清, 野崎 一徳, 竹村 治雄,<br>“歯茎摩擦音[s]における乱流解析のため対話的可視化”,<br>電子情報通信学会 技術研究報告, MVE2011-49, 稚内,
+                Oct. 2011.</li>
+
+
+
+              <li>大西 崇之, 清川 清, 竹村 治雄,<br>“マルチタッチデバイスを用いた三次元インタラクションのための仮想操作曲面の提案”,<br>日本バーチャルリアリティ学会研究報告(SIG-VR), Vol.
+                16, pp. 39-42, 稚内, Oct. 2011.</li>
+
+
+
+              <li>安原 広幸, 間下 以大, 清川 清, 竹村治雄,<br>“ARジオラマにおける四面体カービングを用いた三次元形状復元手法”,<br>電子情報通信学会 技術研究報告, MVE2011-48, 稚内,
+                Oct. 2011.</li>
+
+
+
+              <li>清川 清, 畠中 理英, 細田 一史, 岡田 雅司, 繁田 浩功, 石原 靖哲, 大下 福仁, 角川 裕次, 栗原 聡, 森山
+                甲一,<br>“オーエンス・ルイス～アンビエント環境制御を用いた知的オフィスチェアの開発～”,<br>ヒューマンインタフェースシンポジウム2011講演論文集, 2212L, 仙台, Sep. 2011.
+              </li>
+
+
+
+              <li>中瀬 絢哉, 栗原 聡, 森山 甲一, 石原 靖哲, 大下 福仁, 角川 裕次, 清川 清, 畠中 理央, 細田
+                一史,<br>“カフェ・ド・ナイーダ：アンビエント環境における最適インタラクション推定機構の提案”,<br>ヒューマンインタフェースシンポジウム2011講演論文集, 2211L, 仙台, Sep. 2011.
+              </li>
+
+
+
+              <li>グェンヴァンドゥック, 清川 清, 竹村
+                治雄,<br>“再帰性半透過スクリーンを用いた広視野頭部搭載プロジェクタにおける映像品質の主観評価”,<br>ヒューマンインタフェースシンポジウム2011講演論文集, 1213L, 仙台, Sep.
+                2011．</li>
+
+
+
+              <li>大西 崇之, ロバート・リンデマン, 清川 清, 竹村 治雄:<br>複数のマルチタッチデバイスを用いた三次元領域選択のためのユーザインタフェース”,<br>電子情報通信学会 技術研究報告,
+                MVE2011-25, 東京, June, 2011.</li>
+
+
+
+              <li>Nicholas Katzakis, Masahiko Hori, Kiyoshi Kiyokawa, and Haruo Takemura:<br>“Smartphone Game
+                Controller,”<br>Human Interface Society, SIG-VR Workshop, Technical Report, 東京, June, 2011.</li>
+
+
+
+              <li>安原 広幸, 間下 以大, 清川 清, 竹村 治雄:<br>“ARジオラマにおける特徴点の可視性に基づく四面体カービングによる三次元形状復元手法”,<br>情報処理学会 研究報告, CVIM177-20,
+                大阪, May, 2011.</li>
+
+
+
+              <li>馬勝 淳史, 間下 以大, 清川 清, 竹村 治雄:<br>“ARジオラマにおける前景抽出インタフェースを用いた三次元形状復元手法”,<br>情報処理学会 研究報告, CVIM177-21, 大阪,
+                May, 2011.</li>
+
+
+
+              <li>森 弘樹, 間下 以大, 清川 清, 竹村 治雄:<br>“広視野アイマークレコーダのためのK近傍法による視線推定手法”,<br>情報処理学会 研究報告, CVIM, 東京, Mar, 2011.
+              </li>
+
+
+
+              <li>グェン ヴァン ドゥック, 間下 以大, 清川 清, 竹村 治雄:<br>“双曲面ハーフミラーを用いた広視野頭部搭載プロジェクタのための再帰性半透過スクリーンの検討”,<br>電子情報通信学会
+                技術研究報告, MVE2010-119, 草津, Jan. 2011.</li>
+
+
+
+              <li>老田 健太郎, 繁田 浩功, 間下 以大, 清川 清, 竹村
+                治雄:<br>“大規模ボリュームデータ可視化システムを用いたデータマイニングのための携帯情報端末によるユーザインタフェース”,<br>電子情報通信学会 技術研究報告, MVE2010-85, 草津, Jan.
+                2011.</li>
+
+
+
+              <li>森島 茂貴, 間下 以大, 清川 清, 竹村 治雄:<br>“遠隔協調作業支援のための装着型ProCamシステムを用いた三次元再構築”,<br>電子情報通信学会 技術研究報告, MVE2010-75,
+                草津, Jan. 2011.</li>
+            </ul>
+          </div>
+
+
+
+          <div id="tab-9041ec6c-16" class="c-tabBody__item" aria-hidden="true">
+            <h3 class="wp-block-heading">Journal (論文誌)</h3>
+
+
+
+            <ul>
+              <li>Hiroki Mori, Erika Sumiya, Tomohiro Mashita, Kiyoshi Kiyokawa, and Haruo Takemura:<br>“A Wide-view
+                Parallax-free Eye-mark Recorder with a Hyperboloidal Half-silvered Mirror and Appearance-based Gaze
+                Estimation”,<br>IEEE Transaction on Visualization and Computer Graphics (TVCG), IEEE Computer Society
+                Digital Library, DOI:10.1109/TVCG.2010.113, Nov. 2010.</li>
+
+
+
+              <li>中村 友宣, 間下 以大, 小川 剛史, 清川 清, 竹村 治雄:<br>“ウェアラブル学習システムのための複数センサを用いた移動経路上での利用者コンテキスト認識機構”,<br>メディア教育研究,
+                Vol.7, No.1, pp.S28-S34, Oct. 2010. (招待論文)</li>
+
+
+
+              <li>Kumud Brahm Singh, Kiyoshi Kiyokawa and Haruo Takemura:<br>“A Context-Aware Web Browsing Framework for
+                an Ambient Environment”,<br>ヒューマンインタフェース学会論文誌, Vol.12, No.1, pp. 35-46, 2010.</li>
+
+
+
+              <li>高田 大輔, 小川 剛史, 清川 清, 竹村 治雄:<br>“身体動作に基づき提示情報を切り替えるコンテキストアウェアなウェアラブルARシステム”,<br>ヒューマンインタフェース学会論文誌,
+                Vol.12, No.1, pp. 47-56, 2010.</li>
+            </ul>
+
+
+
+            <h3 class="wp-block-heading">International Conference (国際会議査読あり)</h3>
+
+
+
+            <ul>
+              <li>Hideo Miyachi, Hironori Shigeta, Kiyoshi Kiyokawa, Hiroshi Kuwano, Naohisa Sakamoto, and Koji
+                Koyamada,<br>“Parallelization of Particle Based Volume Rendering on Tiled Display Wall,”<br>Proc. the
+                13th International Conference on Network-Based Information Systems (NBiS), pp. 435-438, Sep. 2010.</li>
+
+
+
+              <li>Koichi Shintani, Tomohiro Mashita, Kiyoshi Kiyokawa and Haruo Takemura:<br>“Evaluation of a Pointing
+                Interface for a Large Screen Based on Regression Model with Image Features,”<br>Int. Conf. on
+                Human-centric Computing (HumanCom), Aug. 2010.</li>
+            </ul>
+
+
+
+            <h3 class="wp-block-heading">International Conference Non-reviewed (国際会議査読無し)</h3>
+
+
+
+            <ul>
+              <li>Daisuke Takada, Takefumi Ogawa, Kiyoshi Kiyokawa and Haruo Takemura:<br>“A Context-Aware Wearable AR
+                System with Dynamic Information Detail Control based on Body Motion,”<br>Proc. 3rd Korea Japan Workshop
+                on Mixed Reality (KJMR), Gyeongju, Korea, Apr. 2010.</li>
+            </ul>
+
+
+
+            <h3 class="wp-block-heading">Domestic Conference (国内学会発表査読あり)</h3>
+
+
+
+            <h3 class="wp-block-heading">Domestic Conference Non-reviewed (国内学会発表査読無し)</h3>
+
+
+
+            <ul>
+              <li>新谷 晃市, 間下 以大, 清川 清, 竹村 治雄:<br>“指差し動作における身体の左右差に関する調査”,<br>電子情報通信学会 Human Communication Group (HCG)
+                Symposium, 宮崎, Dec. 2010.</li>
+
+
+
+              <li>國貞 智治, 間下 以大, 清川 清, 竹村 治雄:<br>“全方位視覚センサとLEDを用いた円筒形入力デバイスのための手指姿勢推定法”,<br>ヒューマンインタフェースシンポジウム2010講演論文集,
+                3423, 草津, Sep. 2010.</li>
+
+
+
+              <li>森島 茂貴, 間下 以大, 清川 清, 竹村 治雄:<br>“作業者視点映像の全方位レンジデータへの投影による遠隔協調作業支援システム”,<br>電子情報通信学会 技術研究報告, MVE2010-46,
+                東京, Jun. 2010.</li>
+            </ul>
+          </div>
+
+
+
+          <div id="tab-9041ec6c-17" class="c-tabBody__item" aria-hidden="true">
+            <h3 class="wp-block-heading">Journal (論文誌)</h3>
+
+
+
+            <ul>
+              <li>廣瀬 康一, 小川 剛史, 清川 清, 竹村 治雄:<br>“複数の仮想空間を操作するマルチビューポートインタフェースのフレームワークに関する評価”,<br>日本バーチャルリアリティ学会 論文誌,
+                Vol. 14, No. 2, pp. 203-211, 2009.</li>
+
+
+
+              <li>Miguel Miranda Miranda, Kiyoshi Kiyokawa, and Haruo Takemura:<br>“Implementation and Evaluation of a
+                Magic-lens Interface using a Handheld Device in an Immersive Virtual Environment,”<br>映像情報メディア学会論文誌,
+                Vol.63, No.6, pp. 816-821, 2009.</li>
+
+
+
+              <li>竹田 夏木, 清川 清, 竹村 治雄:<br>“双曲面ハーフミラーを用いた超広視野頭部搭載型プロジェクタの設計と実装”,<br>映像情報メディア学会論文誌, Vol.63, No.6, pp.
+                794-799, 2009.</li>
+            </ul>
+
+
+
+            <h3 class="wp-block-heading">International Conference (国際会議査読あり)</h3>
+
+
+
+            <ul>
+              <li>Erika Sumiya, Tomohiro Mashita, Kiyoshi Kiyokawa and Haruo Takemura:<br>“A Wide-view Parallax-free
+                Eye-mark Recorder with a Hyperboloidal Half-silvered Mirror,”<br>Proc. ACM Symp. on Virtual Reality
+                Software and Technology (VRST), pp. 19-22, Nov. 2009.</li>
+
+
+
+              <li>Daisuke Takada, Takefumi Ogawa, Kiyoshi Kiyokawa and Haruo Takemura:<br>“A Context-Aware AR Navigation
+                System using Wearable Sensors,”<br>Proc. Int. Conf. on Human-Computer Interaction (HCI International),
+                Jul. 2009.</li>
+
+
+
+              <li>Natsuki Takada, Kiyoshi Kiyokawa and Haruo Takemura:<br>“Poster: A Virtual Walkthrough System with a
+                Wide Field-of-view Stereo Head Mounted Projective Display,”<br>IEEE Symposium on 3D User Interface 2009
+                (3DUI 2009), pp. 149-150, Mar. 2009.</li>
+            </ul>
+
+
+
+            <h3 class="wp-block-heading">International Conference Non-reviewed (国際会議査読無し)</h3>
+
+
+
+            <ul>
+              <li>Hironori Shigeta, Yasuo Ebara, Kazunori Nozaki, Kiyoshi Kiyokawa and Haruo Takemura,<br>“3D Interface
+                for Ultra-Scale Visualization System with Tiled Displays Wall,”<br>Proc. of ASIAGRAPH 2009 in Tokyo,
+                Vol.3, No.1, pp.65-66, Tokyo, Japan, Oct. 2009.</li>
+
+
+
+              <li>Kumud Brahm SINGH, Kiyoshi KIYOKAWA and Haruo TAKEMURA:<br>“Device-Context Awareness for Content
+                Adaptation,”<br>Proc. 2nd Korea Japan Workshop on Mixed Reality (KJMR), Hakodate, Japan, Jun. 2009.</li>
+            </ul>
+
+
+
+            <h3 class="wp-block-heading">Domestic Conference (国内学会発表査読あり)</h3>
+
+
+
+            <ul>
+              <li>間下 以大, 住谷 英里佳, 清川 清, 竹村 治雄:<br>“双曲面ハーフミラーを用いた視点一致型広視野アイマークレコーダ”,<br>画像の認識・理解シンポジウム（MIRU）講演論文集, pp.
+                1721-1728, 松江, Jul. 2009.</li>
+
+
+
+              <li>西川 知宏, 間下 以大, 清川 清, 竹村 治雄:<br>“GPSと加速度センサを用いた移動スケジュール予測によるマルチメディアコンテンツの再生順序制御”,<br>情報処理学会
+                マルチメディア，分散，協調とモバイルシンポジウム(DICOMO)論文集, Vol. 2009, No. 1, pp. 1395-1401, 別府, Jul. 2009.</li>
+            </ul>
+
+
+
+            <h3 class="wp-block-heading">Domestic Conference Non-reviewed (国内学会発表査読無し)</h3>
+
+
+
+            <ul>
+              <li>国貞 智治, 間下 以大, 清川 清, 竹村 治雄:<br>“全方位視覚センサとLEDを用いた3Dインタラクションのための指先位置検出法”,<br>第52回自動制御連合講演会, F6-2, 大阪,
+                Nov. 2009.</li>
+
+
+
+              <li>森 弘樹, 間下 以大, 清川 清, 竹村 治雄:<br>“広視野アイマークレコーダのための線型回帰モデルによる視線推定手法”,<br>第52回自動制御連合講演会, F6-1, 大阪, Nov.
+                2009.</li>
+
+
+
+              <li>竹田 夏木, 清川 清, 竹村 治雄:<br>“双曲面ハーフミラーを用いた超広視野頭部搭載型プロジェクタによる投影映像の輝度補正の検討”,<br>電子情報通信学会 技術研究報告, MVE2009-44,
+                網走, Oct. 2009.</li>
+
+
+
+              <li>宮地 英生, 清川 清, 江原 康生, 小山田 耕二,<br>“タイルディスプレイへの高解像度可視化表示のためのミドルウエアの開発”,<br>電子情報通信学会 技術研究報告, IA-109(208),
+                pp.13-16, 東京, Sep. 2009.</li>
+
+
+
+              <li>シング クムド ビラハム, 清川 清, 竹村 治雄:<br>“アンビエント環境における状況適応型ウェブ閲覧システムに関する研究”,<br>ヒューマンインタフェースシンポジウム, 1443, 東京,
+                Sep. 2009.</li>
+
+
+
+              <li>立石 昂裕, 間下 以大, 清川 清, 竹村 治雄:<br>“ARコンテンツのための単眼カメラとペン入力を用いた実環境モデリングシステムの試作”,<br>ヒューマンインタフェースシンポジウム, 1122,
+                東京, Sep. 2009.</li>
+
+
+
+              <li>新谷 晃市, 間下 以大, 清川 清, 竹村 治雄:<br>“大画面ポインティングシステムのための単眼画像からの指差し位置の推定手法の評価”,<br>ヒューマンインタフェースシンポジウム, 1112,
+                東京, Sep. 2009.</li>
+
+
+
+              <li>宮地 英生, 清川 清, 江原 康生, 小山田 耕二,<br>“タイルディスプレイへの高解像度可視化表示のためのミドルウエアの開発”,<br>第37回 可視化情報シンポジウム講演論文集,
+                pp.65-66, 東京, Jul. 2009.</li>
+
+
+
+              <li>新谷 晃市, 間下 以大, 清川 清, 竹村 治雄:<br>“大画面ポインティングシステムのための回帰モデルによる単眼画像からの指差し位置の推定”,<br>情処研報 CVIM 167-34, 京都,
+                Jun. 2009.</li>
+
+
+
+              <li>西川 知宏, 間下 以大, 清川 清, 竹村 治雄:<br>“GPSと加速度センサを用いたウェアラブル学習システムのための移動スケジュール予測”,<br>電子情報通信学会 技術研究報告,
+                MVE2008-98, 宮崎, Jan. 2009.</li>
+
+
+
+              <li>Kumud Brahm Singh, Kiyoshi Kiyokawa and Haruo Takemura:<br>“A Study on Designing Adaptive User
+                Interface for Different Screen Sizes,”<br>電子情報通信学会 技術研究報告, MVE2008-109, 宮崎, Jan. 2009.</li>
+
+
+
+              <li>湯本 貢司, 清川 清, 竹村 治雄:<br>“大規模仮想環境における共同注意を支援する視覚化手法の実装”,<br>電子情報通信学会 技術研究報告, MVE2008-108, 宮崎, Jan. 2009.
+              </li>
+
+
+
+              <li>竹田 夏木, 清川 清, 竹村 治雄:<br>“双曲面ハーフミラーを用いた超広視野頭部搭載型プロジェクタのためのレンダリング手法”,<br>電子情報通信学会 技術研究報告, MVE2008-107,
+                宮崎, Jan. 2009.</li>
+            </ul>
+          </div>
+
+
+
+          <div id="tab-9041ec6c-18" class="c-tabBody__item" aria-hidden="true">
+            <h3 class="wp-block-heading">Journal (論文誌)</h3>
+
+
+
+            <ul>
+              <li>Doug Bowman, Sabine Coquillart, Bernd Froehlich, Michitaka Hirose, Yoshifumi Kitamura, Kiyoshi
+                Kiyokawa and Wolfgang Stuerzlinger:<br>“3D User Interfaces: New Directions and Perspectives,”<br>IEEE
+                Computer Graphics and Applications, Vol. 28, No. 6, pp. 20-36, Nov. 2008.</li>
+
+
+
+              <li>高田 大輔, 小川 剛史, 清川 清, 竹村 治雄:<br>“ネットワーク型拡張現実感システムのための階層的注釈情報データベースと動的優先度制御手法”,<br>日本バーチャルリアリティ学会 論文誌,
+                Vol. 13, No. 2, pp. 279-287, Jun. 2008.</li>
+
+
+
+              <li>桝田 秀夫, 小川 剛史, 町田 貴史, 中澤 篤志, 清川 清, 竹村 治雄:<br>“Diskless Linuxを用いた情報教育システムの開発とその評価”,<br>情報処理学会論文誌,
+                Vol.49, No.3, pp.1239-1248, 2008.</li>
+            </ul>
+
+
+
+            <h3 class="wp-block-heading">International Conference (国際会議査読あり)</h3>
+
+
+
+            <ul>
+              <li>Daisuke Takada, Takefumi Ogawa, Kiyoshi Kiyokawa and Haruo Takemura:<br>“A Hierarchical Annotation
+                Database and a Dynamic Priority Control Technique of Annotation Information for a Networked Wearable
+                Augmented Reality System,”<br>Proc. Int. Conf. on Artificial Reality and Telexistence (ICAT), pp.
+                226-233, Dec. 2008.</li>
+
+
+
+              <li>Daniel Kurz, Kiyoshi Kiyokawa and Haruo Takemura:<br>“Mutual Occlusions on Table-top Displays in Mixed
+                Reality Applications,”<br>Proc. ACM Symp. on Virtual Reality Software and Technology (VRST), pp.
+                227-230, Oct. 2008.</li>
+
+
+
+              <li>Anuraag Agrawal, Kiyoshi Kiyokawa and Haruo Takemura:<br>“Poster: Evaluation of an Approach for Remote
+                Object Manipulation Utilizing Dynamic Magnifying Lenses,”<br>Proc. IEEE 3D User Interfaces (IEEE 3DUI),
+                pp. 169-170, Mar. 2008.</li>
+            </ul>
+
+
+
+            <h3 class="wp-block-heading">International Conference Non-reviewed (国際会議査読無し)</h3>
+
+
+
+            <ul>
+              <li>Hironori Shigeta, Eduardo Veas, Kiyoshi Kiyokawa and Haruo Takemura:<br>“An Evaluation of
+                Reconfigurable Ubiquitous System Development based on a Middleware for Distributed Virtual
+                Environments,”<br>Proc. 1st Korea Japan Workshop on Mixed Reality (KJMR), Jeju, Korea, Jun. 2008.</li>
+            </ul>
+
+
+
+            <h3 class="wp-block-heading">Domestic Conference (国内学会発表査読あり)</h3>
+
+
+
+            <h3 class="wp-block-heading">Domestic Conference Non-reviewed (国内学会発表査読無し)</h3>
+
+
+
+            <ul>
+              <li>Miguel Miranda, Kiyoshi Kiyokawa and Haruo Takemura:<br>“Implementation and Evaluation of a
+                See-through the lens interface in an Immersive Virtual Environment,”<br>電子情報通信学会 技術研究報告, MVE2008-50, 釧路,
+                Oct. 2008.</li>
+
+
+
+              <li>湯本 貢司, 清川 清, 竹村 治雄:<br>“大規模仮想環境における共同注意を支援する視覚化手法の提案”,<br>電子情報通信学会 技術研究報告, MVE2008-59, 釧路, Oct. 2008.
+              </li>
+
+
+
+              <li>四宮 龍, 小川 剛史, 清川 清, 竹村 治雄:<br>“テーブルトップ型協調作業環境における動的なグループ構成に対応した情報共有手法の実装”,<br>電子情報通信学会 技術研究報告,
+                MVE2008-58, 釧路, Oct. 2008.</li>
+
+
+
+              <li>西川 知宏, 間下 以大, 清川 清, 竹村 治雄:<br>“移動経路上での利用者コンテキスト認識機構を備えたウェアラブル学習システム”,<br>ヒューマンインタフェースシンポジウム, 3325, 大阪,
+                Sep. 2008.</li>
+
+
+
+              <li>繁田 浩功, 清川 清, 竹村 治雄:<br>“分散仮想環境のミドルウェアを用いた動的再構成可能なアプリケーションの実装と評価”,<br>ヒューマンインタフェースシンポジウム, 3324, 大阪,
+                Sep. 2008.</li>
+
+
+
+              <li>四宮 龍, 小川 剛史, 清川 清, 竹村 治雄:<br>“テーブルトップ型協調作業環境における動的なグループ構成に対応した情報共有手法”,<br>ヒューマンインタフェースシンポジウム, 3114,
+                大阪, Sep. 2008.</li>
+
+
+
+              <li>Miguel Miranda, Kiyoshi Kiyokawa and Haruo Takemura:<br>“Implementing a See-through the lens interface
+                for enhancing interaction in a CAVE,”<br>ヒューマンインタフェースシンポジウム, 2314, 大阪, Sep. 2008.</li>
+
+
+
+              <li>中村 友宣, 小川 剛史, 清川 清, 竹村 治雄:<br>“二酸化炭素センサによる鉄道車内混雑度推定を用いた ウェアラブル学習システムのための利用者コンテキスト認識”,<br>電子情報通信学会
+                技術研究報告, MVE2007-89, 北九州, Mar. 2008.</li>
+
+
+
+              <li>Anuraag Agrawal, Kiyoshi Kiyokawa and Haruo Takemura:<br>“Dynamic 3D Magnifying Lenses for
+                Manipulation and Navigation in an Immersive Virtual Environment,”<br>電子情報通信学会 技術研究報告, MVE2007-87, 北九州,
+                Mar. 2008.</li>
+
+
+
+              <li>林 豊, 間下 以大, 小川 剛史, 清川 清, 竹村 治雄:<br>“全方位視覚センサを用いた指先動作検出による円筒型ユーザインタフェースの提案”,<br>電子情報通信学会 技術研究報告,
+                MVE2007-88, 北九州, Mar. 2008.</li>
+
+
+
+              <li>廣瀬 康一, 小川 剛史, 清川 清, 竹村 治雄:<br>“マルチビューポートインタフェースにおける座標系間の階層構造のユーザパフォーマンスへの影響”,<br>日本バーチャルリアリティ学会 研究報告,
+                第30回サイバースペースと仮想都市研究会, 東京, Feb. 2008.</li>
+
+
+
+              <li>清川 清:<br>“双曲面ハーフミラーを用いた超広視野頭部搭載型プロジェクタ”,<br>情報処理学会 研究報告, CVIM161-53, 大津, Jan. 2008.</li>
+            </ul>
+          </div>
+
+
+
+          <div id="tab-9041ec6c-19" class="c-tabBody__item" aria-hidden="true">
+            <h3 class="wp-block-heading">Journal (論文誌)</h3>
+
+
+
+            <ul>
+              <li>齋藤 研作, 清川 清, 竹村 治雄:<br>“移動ロボットの遠隔操縦インタフェースのための全方位映像と三次元形状モデルを用いた情報提示手法”,<br>日本バーチャルリアリティ学会 論文誌, Vol.
+                12, No. 4, pp. 537-547, Dec. 2007.</li>
+
+
+
+              <li>足立 智章, 小川 剛史, 清川 清, 竹村 治雄:<br>“ライブビデオと3次元実環境モデルを用いた遠隔協調作業支援システム”,<br>日本バーチャルリアリティ学会 論文誌, Vol. 12, No.
+                4, pp. 549-558, Dec. 2007.</li>
+
+
+
+              <li>Kousuke Nakashima, Takashi Machida, Kiyoshi Kiyokawa and Haruo Takemura:<br>“A 2D-3D Integrated
+                Tabletop Environment for Multi-user Collaboration,”<br>Computer Animation and Virtual Worlds, Vol. 18,
+                No. 1, pp. 39-56, Feb. 2007.</li>
+            </ul>
+
+
+
+            <h3 class="wp-block-heading">International Conference (国際会議査読あり)</h3>
+
+
+
+            <ul>
+              <li>Kiyoshi Kiyokawa:<br>“A Wide Field-of-view Head Mounted Projective Display using Hyperbolic
+                Half-silvered Mirrors,”<br>Proc. IEEE and ACM Int. Symp. on Mixed Augmented Reality (ISMAR), pp.
+                207-210, Nov. 2007.</li>
+
+
+
+              <li>Miranda Miranda, Kiyokawa Kiyoshi and Takemura Haruo:<br>“A PDA-based See-through Interface within an
+                Immersive Environment,”<br>Proc. Int. Conf. on Artificial Reality and Telexistence (ICAT), pp. 113-118,
+                Nov. 2007.</li>
+
+
+
+              <li>Keiji Nagatani, Kazuya Yoshida, Kiyoshi Kiyokawa, Yasushi Yagi, Tadashi Adachi, Hiroaki Saitoh,
+                Toshiya Suzuki and Osamu Takizawa:<br>“Development of a Networked Robotic System for Disaster Mitigation
+                -System Description of Multi-robot System and Report of Performance Tests-,”<br>The 6th International
+                Conference on Field and Service Robotics, pp. 333-342, Jul. 2007.</li>
+            </ul>
+
+
+
+            <h3 class="wp-block-heading">International Conference Non-reviewed (国際会議査読無し)</h3>
+
+
+
+            <ul>
+              <li>Kiyoshi Kiyokawa, Kensaku Saitoh, Takashi Machida and Haruo Takemura:<br>“A 2D-3D Integrated Interface
+                for Mobile Robot Control Using Omnidirectional Images and 3D Geometric Models,”<br>ASIAGRAPH 2007 in
+                Tokyo, Vol. 1, No. 2, pp. 35-40, Tokyo, Japan, Oct. 2007.</li>
+
+
+
+              <li>Kiyoshi Kiyokawa:<br>“3D Collaboration using Mixed Reality Technology,”<br>First International
+                Symposium on Universal Communication, pp. 104-109, Kyoto, Japan, Jun. 2007.</li>
+
+
+
+              <li>Daisuke Takada, Takefumi Ogawa, Kiyoshi Kiyokawa and Haruo Takemura:<br>“Development of a Software
+                Framework for a Networked Wearable Augmented Reality System,”<br>The First International Conference on
+                Ubiquitous Information Management and Communication, pp. 206-215, Suwon, Korea, Feb. 2007.</li>
+            </ul>
+
+
+
+            <h3 class="wp-block-heading">Domestic Conference (国内学会発表査読あり)</h3>
+
+
+
+            <ul>
+              <li>中村 友宣, 小川 剛史, 清川 清, 竹村 治雄:<br>“利用者コンテキスト認識における電車内外判定に関する検討”,<br>情報処理学会
+                マルチメディア，分散，協調とモバイルシンポジウム(DICOMO)論文集, Vol. 2007, No. 1, pp. 1496-1501, 鳥羽, Jul. 2007.</li>
+            </ul>
+
+
+
+            <h3 class="wp-block-heading">Domestic Conference Non-reviewed (国内学会発表査読無し)</h3>
+
+
+
+            <ul>
+              <li>四宮 龍, 小川 剛史, 清川 清, 竹村 治雄:<br>“テーブルトップ型協調設計環境における三次元モデルの比較検討用インタフェース”,<br>電子情報通信学会 技術研究報告, MVE2007-54,
+                旭川, Oct. 2007.</li>
+
+
+
+              <li>四宮 龍, 小川 剛史, 清川 清, 竹村 治雄:<br>“三次元物体の比較検討が可能な個人・共有空間連携型協調作業支援システム”,<br>電子情報通信学会 技術研究報告, MVE2007-7, 東京,
+                Jun. 2007.</li>
+
+
+
+              <li>Miranda Miguel, Kiyokawa Kiyoshi and Takemura Haruo:<br>“A PDA-based See-through Interface within an
+                Immersive Environment,”<br>電子情報通信学会 技術研究報告, 東京, Jun. 2007.</li>
+
+
+
+              <li>齋藤 研作, 清川 清, 竹村 治雄:<br>“遠隔ロボット操縦のための全方位映像・形状情報の複合提示手法”,<br>電子情報通信学会 技術研究報告, MVE2006-80, 名古屋, Mar.
+                2007.</li>
+
+
+
+              <li>廣瀬 康一, 小川 剛史, 清川 清, 竹村 治雄:<br>“マルチビューポートインタフェースにおける座標系間の階層構造のユーザパフォーマンスへの影響”,<br>日本バーチャルリアリティ学会 研究報告,
+                第30回サイバースペースと仮想都市研究会, 大阪, Feb. 2007.</li>
+
+
+
+              <li>清川 清, 北原 格, 天目 隆平, 神原 誠之:<br>“ISMAR06報告: 複合現実感研究の最新動向”,<br>電子情報通信学会技術研究報告, PRMU, 106(470), pp.25-30,
+                けいはんな, Jan. 2007.</li>
+            </ul>
+          </div>
+
+
+
+          <div id="tab-9041ec6c-20" class="c-tabBody__item" aria-hidden="true">
+            <h3 class="wp-block-heading">Journal (論文誌)</h3>
+
+
+
+            <ul>
+              <li>Yousuke Kimura, Tomohiro Mashita, Atsushi Nakazawa, Takashi Machida, Kiyoshi Kiyokawa and Haruo
+                Takemura:<br>“A Hierarchical 3D Data Rendering System Synchronized with HTML,”<br>The International
+                Journal of Virtual Reality, Vol. 5, No. 2, pp. 67-72, Dec. 2006.</li>
+
+
+
+              <li>廣瀬 康一, 小川 剛史, 清川 清, 竹村 治雄:<br>“複数の仮想空間を操作するマルチビューポートインタフェースのフレームワークの構築”,<br>日本バーチャルリアリティ学会 論文誌, Vol.
+                11, No. 3, pp. 363-370, Sep. 2006.</li>
+            </ul>
+
+
+
+            <h3 class="wp-block-heading">International Conference (国際会議査読あり)</h3>
+
+
+
+            <ul>
+              <li>Yousuke Kimura, Tomohiro Mashita, Atsushi Nakazawa, Takashi Machida, Kiyoshi Kiyokawa and Haruo
+                Takemura:<br>“Hierarchical 3D Data Rendering System Synchronizing with HTML,”<br>Proc. Int. Conf. on
+                Artificial Reality and Telexistence (ICAT), pp. 1212-1222, Nov. 2006.</li>
+
+
+
+              <li>Kensaku Saitoh, Takashi Machida, Kiyoshi Kiyokawa and Haruo Takemura:<br>“A 2D-3D Integrated Interface
+                for Mobile Robot Control Using Omnidirectional Images and 3D Geometric Models,”<br>Proc. IEEE and ACM
+                Int. Symp. on Mixed Augmented Reality (ISMAR), pp. 173-176, Oct. 2006.</li>
+
+
+
+              <li>Kouichi Hirose, Takefumi Ogawa, Kiyoshi Kiyokawa and Haruo Takemura:<br>“Interactive Reconfiguration
+                Techniques of Reference Frame Hierarchy in the Multi-viewport Interface,”<br>Proc. IEEE Symp. on 3D User
+                Interfaces (3DUI), pp. 75-82, Mar. 2006.</li>
+            </ul>
+
+
+
+            <h3 class="wp-block-heading">International Conference Non-reviewed (国際会議査読無し)</h3>
+
+
+
+            <h3 class="wp-block-heading">Domestic Conference (国内学会発表査読あり)</h3>
+
+
+
+            <ul>
+              <li>木村 洋介, 中澤 篤志, 町田 貴史, 清川 清, 竹村 治雄:<br>“モバイル端末向け注釈付加機能付き大規模三次元データ高速描画用Javaアプレット”,<br>情報処理学会
+                マルチメディア，分散，協調とモバイルシンポジウム(DICOMO)論文集, Vol. 2006, No. 6, pp. 145-148, 琴平, Jul. 2006.</li>
+            </ul>
+
+
+
+            <h3 class="wp-block-heading">Domestic Conference Non-reviewed (国内学会発表査読無し)</h3>
+
+
+
+            <ul>
+              <li>中西 通雄, 藤原 融, 武内 良典, 秋吉 政徳, 橋本 昌宜, 岸野 文郎, 清川 清, 原 隆浩, 中前 幸治, 菊野 亨, 寺西
+                裕一:<br>“大学院情報系学生に対する技術者倫理教育(技術者倫理・情報倫理教育の現状と課題,及び一般)”,<br>電子情報通信学会技術研究報告, SITE, 106(401), pp.41-47, 大阪,
+                Dec. 2006.</li>
+
+
+
+              <li>中村 友宣, 小川 剛史, 清川 清, 竹村 治雄:<br>“連続的なウェアラブル学習システムのための利用者コンテキスト認識機構の実装と評価”,<br>電子情報通信学会 技術研究報告,
+                MVE2006-66, 東京, Nov. 2006.</li>
+
+
+
+              <li>木村 洋介, 間下 以大, 中澤 篤志, 町田 貴史, 清川 清, 竹村 治雄:<br>“階層化3次元データを扱う対話的なコンテンツマネジメントシステム”,<br>ヒューマンインタフェースシンポジウム,
+                pp. 201-206, 岡山, Sep. 2006.</li>
+
+
+
+              <li>林 豊, 小川 剛史, 清川 清, 竹村 治雄:<br>“仮想空間でのナビゲーションと文字入力をシームレスに行う入力デバイスの試作と評価”,<br>ヒューマンインタフェースシンポジウム, pp.
+                617-622, 岡山, Sep. 2006.</li>
+
+
+
+              <li>中村 友宣, 小川 剛史, 清川 清, 竹村 治雄:<br>“連続的なウェアラブル学習システムのための利用者コンテキスト認識機構の設計と実装”,<br>ヒューマンインタフェースシンポジウム, pp.
+                979-984, 岡山, Sep. 2006.</li>
+
+
+
+              <li>齋藤 研作, 町田 貴史, 清川 清, 竹村 治雄:<br>“遠隔ロボット操縦のための映像・形状情報の複合提示手法の提案と評価”,<br>電子情報通信学会 技術研究報告, MVE2006-51, 札幌,
+                Sep. 2006.</li>
+
+
+
+              <li>河合 克哉, 中澤 篤志, 清川 清, 竹村 治雄:<br>“移動ロボットによる災害地の三次元再構築のためのポテンシャル場を用いた経路計画”,<br>電子情報通信学会 技術研究報告, PRMU, つくば,
+                Feb. 2006.</li>
+
+
+
+              <li>Eduardo Veas, Kiyoshi Kiyokawa and Haruo Takemura:<br>“A Middleware Architecture for On-the-fly
+                Application Modification in Ubiquitous Augmented Reality,”<br>電子情報通信学会 技術研究報告, PRMU2005-142, 大阪, Jan.
+                2006.</li>
+
+
+
+              <li>廣瀬 康一, 小川 剛史, 清川 清, 竹村 治雄:<br>“マルチビューポートインタフェースにおける座標系間の従属関係の対話的更新手法”,<br>電子情報通信学会 技術研究報告, MVE2005-67,
+                別府, Jan. 2006.</li>
+            </ul>
+          </div>
+
+
+
+          <div id="tab-9041ec6c-21" class="c-tabBody__item" aria-hidden="true">
+            <h3 class="wp-block-heading">Journal (論文誌)</h3>
+
+
+
+            <ul>
+              <li>前田 真希, 小川 剛史, 清川 清, 竹村 治雄:<br>“ウェアラブル拡張現実感のための赤外マーカのステレオ計測と姿勢センサを用いた位置・姿勢推定”,<br>日本バーチャルリアリティ学会 論文誌,
+                Vol. 10, No. 4, pp. 459-466, Dec. 2005.</li>
+            </ul>
+
+
+
+            <h3 class="wp-block-heading">International Conference (国際会議査読あり)</h3>
+
+
+
+            <ul>
+              <li>Eduardo Veas, Kiyoshi Kiyokawa and Haruo Takemura:<br>“Self-Aware Framework for Adaptive Augmented
+                Reality,”<br>Proc. Int. Conf. on Artificial Reality and Telexistence (ICAT), S3-4, Dec. 2005.</li>
+
+
+
+              <li>Kousuke Nakashima, Takashi Machida, Kiyoshi Kiyokawa and Haruo Takemura:<br>“A 2D-3D Integrated
+                Environment for Cooperative Work,”<br>Proc. ACM Symp. on Virtual Reality Software and Technology (VRST),
+                pp. 16-22, Nov. 2005.</li>
+
+
+
+              <li>Takefumi Ogawa, Kiyoshi Kiyokawa and Haruo Takemura:<br>“A Hybrid Image-based and Model-based
+                Telepresence System Using Two-Pass Video Projection onto a 3D Scene Model,”<br>Proc. IEEE and ACM Int.
+                Symp. on Mixed Augmented Reality (ISMAR), pp. 202-203, Oct. 2005.</li>
+
+
+
+              <li>Tomoaki Adachi, Takefumi Ogawa, Kiyoshi Kiyokawa and Haruo Takemura:<br>“A Telepresence System by
+                Using Live Video Projection of a Wearable Camera onto a 3D Scene Model,”<br>Proc. Int. Conf. on
+                Human-Computer Interaction (HCI International), Jul. 2005.</li>
+
+
+
+              <li>Kiyoshi Kiyokawa and Haruo Takemura:<br>“A Tunnel Window and Its Variations: Seamless Teleportation
+                Techniques in a Virtual Environment,”<br>Proc. Int. Conf. on Human-Computer Interaction (HCI
+                International), Jul. 2005.</li>
+
+
+
+              <li>Kengo Uratani, Takashi Machida, Kiyoshi Kiyokawa and Haruo Takemura:<br>“A Study of Depth
+                Visualization Techniques for Virtual Annotations in Augmented Reality,”<br>Proc. IEEE Virtual Reality
+                (IEEE VR), pp. 295-296, Mar. 2005.</li>
+            </ul>
+
+
+
+            <h3 class="wp-block-heading">International Conference Non-reviewed (国際会議査読無し)</h3>
+
+
+
+            <h3 class="wp-block-heading">Domestic Conference (国内学会発表査読あり)</h3>
+
+
+
+            <ul>
+              <li>中澤 篤志, 清川 清, 竹村 治雄, 山本 国士:<br>“距離画像からの自然二次曲面表面群のパラメータ推定”,<br>画像の認識・理解シンポジウム（MIRU）講演論文集, pp. 305-311,
+                淡路, Jul. 2005.</li>
+
+
+
+              <li>浦谷 謙吾, 高田 大輔, 小川 剛史, 町田 貴史, 清川 清, 竹村
+                治雄:<br>“ネットワーク共有型拡張現実感システムにおける注釈情報の効率的な配信・提示手法”,<br>画像の認識・理解シンポジウム（MIRU）講演論文集, pp. 1633-1634, 淡路, Jul.
+                2005.</li>
+
+
+
+              <li>河合 克哉, 齋藤 研作, 町田 貴史, 中澤 篤志, 清川 清, 竹村
+                治雄:<br>“移動ロボットを用いた3次元再構築のための計測・提示システムの開発”,<br>画像の認識・理解シンポジウム（MIRU）講演論文集, pp. 1642-1643, 淡路, Jul. 2005.
+              </li>
+            </ul>
+
+
+
+            <h3 class="wp-block-heading">Domestic Conference Non-reviewed (国内学会発表査読無し)</h3>
+
+
+
+            <ul>
+              <li>河合 克哉, 中澤 篤志, 清川 清, 竹村 治雄:<br>“災害地の3次元再構築のための移動ロボット制御システムの開発”,<br>電子情報通信学会 技術研究報告, MVE2005-29, 函館,
+                Sep. 2005.</li>
+
+
+
+              <li>齋藤 研作, 町田 貴史, 清川 清, 竹村 治雄:<br>“全方位映像と3次元形状モデルを用いた移動ロボットの遠隔操縦インタフェース”,<br>電子情報通信学会 技術研究報告, MVE2005-28,
+                函館, Sep. 2005.</li>
+
+
+
+              <li>廣瀬 康一, 町田 貴史, 清川 清, 竹村 治雄:<br>“複数の仮想空間をシームレスに操作する汎用マルチビューポートフレームワーク”,<br>電子情報通信学会 技術研究報告, MVE2005-27,
+                函館, Sep. 2005.</li>
+
+
+
+              <li>高田 大輔, 浦谷 謙吾, 小川 剛史, 町田 貴史, 清川 清, 竹村 治雄:<br>“ウェアラブル拡張現実感システム開発用ライブラリの構築”,<br>ウェアラブルコンピューティング研究会, Vol.
+                2, pp. 26-33, 東京, Jun. 2005.</li>
+
+
+
+              <li>山本 国士, 中澤 篤志, 清川 清, 竹村 治雄:<br>“ハフ変換と期待値最大化法による距離画像からの自然二次曲面の抽出”,<br>電子情報通信学会 技術研究報告, PRMU2004-188, 東京,
+                Feb. 2005.</li>
+
+
+
+              <li>平尾 公男, 中澤 篤志, 清川 清, 竹村 治雄:<br>“多関節 CG モデルと距離画像による上半身の姿勢推定”,<br>電子情報通信学会 技術研究報告, PRMU2004-177, 京都, Jan.
+                2005.</li>
+            </ul>
+          </div>
+
+
+
+          <div id="tab-9041ec6c-22" class="c-tabBody__item" aria-hidden="true">
+            <h3 class="wp-block-heading">Journal (論文誌)</h3>
+
+
+
+            <ul>
+              <li>Kyohei Yoshikawa, Takashi Machida, Kiyoshi Kiyokawa and Haruo Takemura:<br>“A High Presence Shared
+                Space Communication System Using 2D Background and 3D Avatar,”<br>IEICE Trans. on Information and
+                Systems, E87-D(12), pp. 2532-2539, Dec. 2004.</li>
+            </ul>
+
+
+
+            <h3 class="wp-block-heading">International Conference (国際会議査読あり)</h3>
+
+
+
+            <ul>
+              <li>Kimio Hirao, Atsushi Nakazawa, Kiyoshi Kiyokawa and Haruo Takemura:<br>“Pose Estimation of Human Upper
+                Body Using Multi-joint CG Model and Stereo Video Images,”<br>Proc. Int. Conf. on Artificial Reality and
+                Telexistence (ICAT), P-012, Nov. 2004.</li>
+
+
+
+              <li>Kosuke Nakashima, Takashi Machida, Kiyoshi Kiyokawa and Haruo Takemura:<br>“A 2D-3D Integrated
+                Environment for Cooperative Work,”<br>Proc. Int. Conf. on Artificial Reality and Telexistence (ICAT),
+                S11-6, Nov. 2004.</li>
+
+
+
+              <li>Masaki Maeda, Takefumi Ogawa, Kiyoshi Kiyokawa and Haruo Takemura:<br>“Tracking of User Position and
+                Orientation by Stereo Measurement of Infrared Markers and Orientation Sensing,”<br>Proc. Int. Symp. on
+                Wearable Computers (ISWC), pp. 77-84, Nov. 2004.</li>
+
+
+
+              <li>Kengo Uratani, Daisuke Takada, Takefumi Ogawa, Takashi Machida, Kiyoshi Kiyokawa and Haruo
+                Takemura:<br>“Wearable Augmented Reality System with Annotation Visualization Techniques using Networked
+                Annotation Database,”<br>CREST Workshop on Advanced Computing and Communicating Techniques for Wearable
+                Information Playing, pp. 15-18, Oct. 2004.</li>
+
+
+
+              <li>Yusuke Tomozoe, Takashi Machida, Kiyoshi Kiyokawa and Haruo Takemura:<br>“Unified Gesture-Based
+                Interaction Techniques for Object Manipulation and Navigation in a Large-Scale Virtual
+                Environment,”<br>Proc. IEEE Virtual Reality (IEEE VR), pp. 259-260, Mar. 2004.</li>
+
+
+
+              <li>Kyohei Yoshikawa, Takashi Machida, Kiyoshi Kiyokawa and Haruo Takemura:<br>“A High Presence Shared
+                Space Communication System Using 2D Background and 3D Avatar,”<br>Proc. Int. Symp. on Applications and
+                the Internet (SAINT), pp. 50-55, Jan. 2004.</li>
+            </ul>
+
+
+
+            <h3 class="wp-block-heading">International Conference Non-reviewed (国際会議査読無し)</h3>
+
+
+
+            <h3 class="wp-block-heading">Domestic Conference (国内学会発表査読あり)</h3>
+
+
+
+            <h3 class="wp-block-heading">Domestic Conference Non-reviewed (国内学会発表査読無し)</h3>
+
+
+
+            <ul>
+              <li>足立 智章, 小川 剛史, 清川 清, 竹村 治雄:<br>“ライブ映像の３次元実環境モデルへの投影によるテレプレゼンスシステム”,<br>電子情報通信学会 技術研究報告, MVE2004-51,
+                種子島, Dec. 2004.</li>
+
+
+
+              <li>山本 国士, 中澤 篤志, 清川 清, 竹村 治雄:<br>“ハフ変換と期待値最大化法による距離画像からの二次曲面モデルのパラメータ推定”,<br>電子情報通信学会 技術研究報告, MVE2004-44,
+                種子島, Dec. 2004.</li>
+
+
+
+              <li>足立 智章, 小川 剛史, 清川 清, 竹村 治雄:<br>“装着型カメラによるビデオモザイキングを用いたテレプレゼンスシステムの実現”,<br>ヒューマンインタフェースシンポジウム, pp.
+                943-948, 京都, Oct. 2004.</li>
+
+
+
+              <li>平尾 公男, 中澤 篤志, 清川 清, 竹村 治雄:<br>“単眼カメラとモーションキャプチャデータによる両腕の姿勢推定”,<br>ヒューマンインタフェースシンポジウム, pp. 1159-1164,
+                京都, Oct. 2004.</li>
+
+
+
+              <li>前田 真希, 小川 剛史, 清川 清, 竹村 治雄:<br>“ウェアラブル AR による屋内ナビゲーションのための赤外線を用いたビジョンベーストラッキング”,<br>電子情報通信学会 技術研究報告,
+                ITS2003-54, 札幌, Feb. 2004.</li>
+
+
+
+              <li>友添 雄亮, 町田 貴史, 清川 清, 竹村 治雄:<br>“遠隔仮想物体操作と仮想空間ナビゲーションのためのジェスチャを用いた統一的操作手法”,<br>電子情報通信学会 技術研究報告,
+                ITS2003-55, 札幌, Feb. 2004.</li>
+
+
+
+              <li>浦谷 謙吾, 町田 貴史, 清川 清, 竹村 治雄:<br>“AR 環境における奥行き曖昧性と視認性を考慮した注釈提示手法とその評価”,<br>電子情報通信学会 技術研究報告, ITS2003-57,
+                札幌, Feb. 2004.</li>
+
+
+
+              <li>中島 康輔, 町田 貴史, 清川 清, 竹村 治雄:<br>“協調モデリングのための 2 次元と 3 次元の統合作業環境”,<br>電子情報通信学会 技術研究報告, IE2003-191, 札幌,
+                Feb. 2004.</li>
+
+
+
+              <li>羽原 寿和, 町田 貴史, 清川 清, 竹村 治雄:<br>“ウェアラブル PC のための画像マーカを用いた広域屋内位置検出機構”,<br>電子情報通信学会 技術研究報告, IE2003-211, 札幌,
+                Feb. 2004.</li>
+
+
+
+              <li>前田 真希, 小川 剛史, 清川 清, 竹村 治雄:<br>“赤外線を用いたビジョンベーストラッキングによるウェアラブル AR ナビゲーションシステム”,<br>電子情報通信学会 技術研究報告,
+                PRMU2003-196, 大阪, Jan. 2004.</li>
+
+
+
+              <li>吉川 恭平, 町田 貴史, 清川 清, 竹村 治雄, 大野 浩之:<br>“低解像度レンジファインダと高解像度カメラを併用した高臨場感空間共有通信”,<br>電子情報通信学会 技術研究報告,
+                PRMU2003-197, 大阪, Jan. 2004.</li>
+
+
+
+              <li>清川 清, 神原 誠之, 佐藤 清秀, 伴 好弘:<br>“ISMAR03報告 ～複合現実感研究の最新動向～”,<br>電子情報通信学会 技術研究報告, PRMU2003-194, Jan. 大阪,
+                2004.</li>
+            </ul>
+          </div>
+
+
+
+          <div id="tab-9041ec6c-23" class="c-tabBody__item" aria-hidden="true">
+            <h3 class="wp-block-heading">Journal (論文誌)</h3>
+
+
+
+            <h3 class="wp-block-heading">International Conference (国際会議査読あり)</h3>
+
+
+
+            <ul>
+              <li>Kiyoshi Kiyokawa, Mark Billinghurst, Bruce Campbell and Eric Woods:<br>“An Occlusion-Capable Optical
+                See-through Head Mount Display for Supporting Co-located Collaboration,”<br>Proc. IEEE and ACM Int.
+                Symp. on Mixed Augmented Reality (ISMAR), Oct. 2003.</li>
+
+
+
+              <li>Tomoaki Adachi, Takefumi Ogawa, Kiyoshi Kiyokawa and Haruo Takemura:<br>“Development of a High
+                Immersive Tele-directing system Using CyberDome,”<br>Proc. Interact, Sep. 2003.</li>
+
+
+
+              <li>Masaki Maeda, Takefumi Ogawa, Takashi Machida, Kiyoshi Kiyokawa and Haruo Takemura:<br>“Indoor
+                Localization and Navigation using IR Markers for Augmented Reality,”<br>Proc. Int. Conf. on
+                Human-Computer Interaction (HCI International), pp. 283-284, Jun. 2003.</li>
+            </ul>
+
+
+
+            <h3 class="wp-block-heading">International Conference Non-reviewed (国際会議査読無し)</h3>
+
+
+
+            <h3 class="wp-block-heading">Domestic Conference (国内学会発表査読あり)</h3>
+
+
+
+            <h3 class="wp-block-heading">Domestic Conference Non-reviewed (国内学会発表査読無し)</h3>
+
+
+
+            <ul>
+              <li>吉川 恭平, 町田 貴史, 清川 清, 竹村 治雄:<br>“背景領域の 2 次元表示と人物領域の 3 次元表示を併用した高臨場感空間共有通信”,<br>電子情報通信学会 技術研究報告,
+                IE2003-24, 高知, Jul. 2003.</li>
+
+
+
+              <li>友添 雄亮, 町田 貴史, 清川 清, 竹村 治雄:<br>“大規模仮想環境における遠隔仮想物体の操作と仮想空間ナビゲーションのための統一的ジェスチャコマンド”,<br>電子情報通信学会 技術研究報告,
+                IE2003-39, 高知, Jul. 2003.</li>
+
+
+
+              <li>浦谷 謙吾, 町田 貴史, 清川 清, 竹村 治雄:<br>“AR 環境における奥行きの明示的表現を用いた注釈提示手法とその評価”,<br>電子情報通信学会 技術研究報告, MVE2003-52, 高知,
+                Jul. 2003.</li>
+
+
+
+              <li>足立 智章, 小川 剛史, 清川 清, 竹村 治雄:<br>“現実空間への注釈表示が可能な高没入感遠隔指示システム”,<br>電子情報通信学会 技術研究報告, MVE2003-53, 高知, Jul.
+                2003.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
