@@ -29,9 +29,9 @@ type: "website"
       <ul class="swell-block-linkList is-style-default -border">
         {% for post in site.posts %}
         <li class="swell-block-linkList__item">
-          <a class="swell-block-linkList__link" href="{{ post.url }}"><svg xmlns="http://www.w3.org/2000/svg"
-              class="swl-svg-caretRight swell-block-linkList__icon -left" width="1em" height="1em" viewBox="0 0 48 48"
-              role="img" aria-hidden="true" focusable="false">
+          <a class="swell-block-linkList__link" href="{{ post.url | relative_url }}"><svg
+              xmlns="http://www.w3.org/2000/svg" class="swl-svg-caretRight swell-block-linkList__icon -left" width="1em"
+              height="1em" viewBox="0 0 48 48" role="img" aria-hidden="true" focusable="false">
               <path d="M19.4 38.3 32.7 25c.6-.6.6-1.5 0-2.1L19.4 9.6c-.9-.9-2.6-.3-2.6 1.1v26.5c0 1.4 1.6 2.1 2.6 1.1z">
               </path>
             </svg><span class="swell-block-linkList__text">{{ post.date | date: "%Y/%m/%d" }}　{{ post.title
