@@ -6,6 +6,7 @@ categories: lab presentation
 ---
 2025年6月18日に、M1の木下さんと小島君が第213回HCI・第76回EC合同研究発表会で口頭発表を行いました。
 
-![HCI/EC合同研究発表会](/assets/images/posts/IMG_3537-2048x1536.jpg)
-
-![HCI/EC合同研究発表会 2](/assets/images/posts/IMG_3530-1-2048x1536.jpg)
+<div class="image-grid">
+  <img src="{{ '/assets/images/posts/IMG_3537-2048x1536.jpg' | relative_url }}" alt="HCI/EC合同研究発表会">
+  <img src="{{ '/assets/images/posts/IMG_3530-1-2048x1536.jpg' | relative_url }}" alt="HCI/EC合同研究発表会 2">
+</div>

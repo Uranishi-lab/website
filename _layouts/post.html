@@ -1,0 +1,50 @@
+---
+layout: default
+---
+
+<main id="main_content" class="l-mainContent l-article">
+  <div class="l-mainContent__inner" data-clarity-region="article">
+    <h1 class="c-pageTitle" data-style="b_bottom"><span class="c-pageTitle__inner">{{ page.title }}</span></h1>
+    <div class="post_content">
+      {{ content }}
+    </div>
+  </div>
+</main>
+
+<style>
+  /* 画像をグリッド状に並べる */
+  .image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* PC表示：均等に3列 */
+    gap: 16px;
+    /* 画像と画像の隙間 */
+    margin: 2em 0;
+    /* 上下の余白 */
+  }
+
+  /* * 💡重要テクニック
+ * Markdownが自動的に付与してしまう <p> タグを透過させ、
+ * imgタグを直接グリッドの要素として扱うようにします。
+ */
+  .image-grid p {
+    display: contents;
+  }
+
+  /* 画像のスタイル（縦横比が違っても綺麗に揃うようにする） */
+  /* 画像のスタイル */
+  .image-grid img {
+    width: 100%;
+    height: auto;
+    /* 🌟画像の本来の比率を維持する */
+    /* aspect-ratio と object-fit は削除します */
+    border-radius: 4px;
+  }
+
+  /* スマホ表示（画面幅が768px以下の時）は1列に縦並びにする */
+  @media screen and (max-width: 768px) {
+    .image-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

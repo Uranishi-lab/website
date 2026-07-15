@@ -6,9 +6,8 @@ categories: lab presentation
 ---
 2025年12月8日に、D1の北村君がIEEE International Conference on Teaching, Assessment, and Learning for Engineering（TALE2025）で発表を行いました。
 
-![TALE2025](/assets/images/posts/IMG_5508-1-2048x1536.jpg)
-
-![TALE2025 2](/assets/images/posts/IMG_5510-2048x1536.jpg
-)
-
-![TALE2025 3](/assets/images/posts/IMG_5595-2048x1536.jpg)
+<div class="image-grid">
+  <img src="{{ '/assets/images/posts/IMG_5508-1-2048x1536.jpg' | relative_url }}" alt="TALE2025">
+  <img src="{{ '/assets/images/posts/IMG_5510-2048x1536.jpg' | relative_url }}" alt="TALE2025 2">
+  <img src="{{ '/assets/images/posts/IMG_5595-2048x1536.jpg' | relative_url }}" alt="TALE2025 3">
+</div>

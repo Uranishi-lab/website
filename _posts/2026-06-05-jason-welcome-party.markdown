@@ -6,8 +6,8 @@ categories: lab event
 ---
 2026年6月5日にJason先生のウェルカムパーティーが開かれました。
 
-![Jason先生ウェルカムパーティー](/assets/images/posts/IMG_5740-1024x768.jpg)
-
-![Jason先生ウェルカムパーティー 2](/assets/images/posts/IMG_5756-1024x768.jpg)
-
-![Jason先生ウェルカムパーティー 3](/assets/images/posts/IMG_0649-1-1024x675.jpg)
+<div class="image-grid">
+  <img src="{{ '/assets/images/posts/IMG_5740-1024x768.jpg' | relative_url }}" alt="Jason先生ウェルカムパーティー">
+  <img src="{{ '/assets/images/posts/IMG_5756-1024x768.jpg' | relative_url }}" alt="Jason先生ウェルカムパーティー 2">
+  <img src="{{ '/assets/images/posts/IMG_0649-1-1024x675.jpg' | relative_url }}" alt="Jason先生ウェルカムパーティー 3">
+</div>

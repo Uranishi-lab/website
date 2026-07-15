@@ -6,6 +6,7 @@ categories: lab event
 ---
 2025年4月7日に中村先生と新M1の歓迎会が開かれました。
 
-![新M1歓迎会](/assets/images/posts/IMG_6826-1024x768.jpg)
-
-![新M1歓迎会 2](/assets/images/posts/IMG_6827-1024x768.jpg)
+<div class="image-grid">
+  <img src="{{ '/assets/images/posts/IMG_6826-1024x768.jpg' | relative_url }}" alt="新M1歓迎会">
+  <img src="{{ '/assets/images/posts/IMG_6827-1024x768.jpg' | relative_url }}" alt="新M1歓迎会 2">
+</div>

@@ -6,8 +6,8 @@ categories: lab presentation
 ---
 2025年10月10日に、M1の木下さんと小島くんがISMAR2025でポスター発表を行いました。
 
-![ISMAR2025](/assets/images/posts/aaa-1-scaled.jpg)
-
-![ISMAR2025 2](/assets/images/posts/bbb-1-scaled.jpg)
-
-![ISMAR2025 3](/assets/images/posts/ccc-1-scaled.jpg)
+<div class="image-grid">
+  <img src="{{ '/assets/images/posts/aaa-1-scaled.jpg' | relative_url }}" alt="ISMAR2025">
+  <img src="{{ '/assets/images/posts/bbb-1-scaled.jpg' | relative_url }}" alt="ISMAR2025 2">
+  <img src="{{ '/assets/images/posts/ccc-1-scaled.jpg' | relative_url }}" alt="ISMAR2025 3">
+</div>

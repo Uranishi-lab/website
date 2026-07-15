@@ -6,8 +6,8 @@ categories: lab presentation
 ---
 2026年3月23日と24日に、卒業生のLim君と百田くんがThe 33rd IEEE Conference on Virtual Reality and 3D User Interfaces (IEEE VR 2026)で発表を行いました。
 
-![IEEE VR 2026](/assets/images/posts/lim-2048x1536.jpg)
-
-![IEEE VR 2026 2](/assets/images/posts/momota-2048x1536.jpg)
-
-![IEEE VR 2026 3](/assets/images/posts/IMG_6486-2048x1536.jpg)
+<div class="image-grid">
+  <img src="{{ '/assets/images/posts/lim-2048x1536.jpg' | relative_url }}" alt="IEEE VR 2026">
+  <img src="{{ '/assets/images/posts/momota-2048x1536.jpg' | relative_url }}" alt="IEEE VR 2026 2">
+  <img src="{{ '/assets/images/posts/IMG_6486-2048x1536.jpg' | relative_url }}" alt="IEEE VR 2026 3">
+</div>

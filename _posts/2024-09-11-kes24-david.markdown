@@ -6,6 +6,7 @@ categories: lab presentation
 ---
 2024年9月11日に、D3のDavidさんがKES’24で口頭発表を行いました。
 
-![KES’24](/assets/images/posts/20240912_160349-1-2048x1536.jpg)
-
-![KES’24 2](/assets/images/posts/20240911_145409-2048x1536.jpg)
+<div class="image-grid">
+  <img src="{{ '/assets/images/posts/20240912_160349-1-2048x1536.jpg' | relative_url }}" alt="KES’24">
+  <img src="{{ '/assets/images/posts/20240911_145409-2048x1536.jpg' | relative_url }}" alt="KES’24 2">
+</div>

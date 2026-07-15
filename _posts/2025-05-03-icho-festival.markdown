@@ -6,10 +6,9 @@ categories: lab event
 ---
 2025年5月3日にいちょう祭へ浦西研究室が出展しました。
 
-![いちょう祭](/assets/images/posts/mosaic_20250523155725-edited.png)
-
-![いちょう祭 2](/assets/images/posts/1000006430-1024x771.jpg)
-
-![いちょう祭 3](/assets/images/posts/IMG_4643-1024x768.jpg)
-
-![いちょう祭 4](/assets/images/posts/IMG_0001-1024x768.jpg)
+<div class="image-grid">
+  <img src="{{ '/assets/images/posts/mosaic_20250523155725-edited.png' | relative_url }}" alt="いちょう祭">
+  <img src="{{ '/assets/images/posts/1000006430-1024x771.jpg' | relative_url }}" alt="いちょう祭 2">
+  <img src="{{ '/assets/images/posts/IMG_4643-1024x768.jpg' | relative_url }}" alt="いちょう祭 3">
+  <img src="{{ '/assets/images/posts/IMG_0001-1024x768.jpg' | relative_url }}" alt="いちょう祭 4">
+</div>

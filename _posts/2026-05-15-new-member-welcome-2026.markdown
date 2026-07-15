@@ -6,4 +6,6 @@ categories: lab event
 ---
 2026年5月15日に新メンバーの歓迎会が開かれました。
 
-![新入生歓迎会](/assets/images/posts/IMG_0421-1024x768.jpg)
+<div class="image-grid">
+  <img src="{{ '/assets/images/posts/IMG_0421-1024x768.jpg' | relative_url }}" alt="新入生歓迎会">
+</div>
