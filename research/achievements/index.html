@@ -4,47 +4,6 @@ title: "研究業績 | Uranishi Lab"
 type: "website"
 ---
 
-<script>document.addEventListener('DOMContentLoaded', () => {
-    // すべてのタブボタンを取得
-    const tabButtons = document.querySelectorAll('.c-tabList__button');
-
-    tabButtons.forEach(button => {
-      button.addEventListener('click', (e) => {
-        const clickedTab = e.currentTarget;
-
-        // 既に選択されているタブがクリックされた場合は何もしない
-        if (clickedTab.getAttribute('aria-selected') === 'true') {
-          return;
-        }
-
-        // 1. 現在選択されている（アクティブな）タブとコンテンツをリセットする
-        const tabList = clickedTab.closest('.c-tabList') || clickedTab.closest('ul');
-        if (tabList) {
-          const activeTab = tabList.querySelector('[aria-selected="true"]');
-          if (activeTab) {
-            activeTab.setAttribute('aria-selected', 'false');
-            const activeContentId = activeTab.getAttribute('aria-controls');
-            const activeContent = document.getElementById(activeContentId);
-            if (activeContent) {
-              activeContent.setAttribute('aria-hidden', 'true');
-              activeContent.style.display = 'none'; // 念のためインラインでも非表示
-            }
-          }
-        }
-
-        // 2. クリックされたタブとコンテンツをアクティブにする
-        clickedTab.setAttribute('aria-selected', 'true');
-        const targetContentId = clickedTab.getAttribute('aria-controls');
-        const targetContent = document.getElementById(targetContentId);
-        if (targetContent) {
-          targetContent.setAttribute('aria-hidden', 'false');
-          targetContent.style.display = 'block';
-        }
-      });
-    });
-  });</script>
-
-
 <main id="main_content" class="l-mainContent l-article">
   <div class="l-mainContent__inner" data-clarity-region="article">
     <h1 class="c-pageTitle" data-style="b_bottom"><span class="c-pageTitle__inner">研究業績</span></h1>
