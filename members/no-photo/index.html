@@ -22,10 +22,10 @@ type: "website"
             </tr>
           </thead>
           <tbody>
-            {% assign section_order = "教職員/スタッフ,共同研究者" | split: "," %}
+            {% assign section_order = site.data.members | map: "section" | uniq %}
             {% for section in section_order %}
             {% assign section_members = site.data.members | where: "section", section %}
-            {% if section_members.size > 0 %}
+            {% if section != "学生" and section_members.size > 0 %}
             <tr>
               <th colspan="4"><strong>{{ section }}</strong></th>
             </tr>
@@ -63,6 +63,7 @@ type: "website"
             {% else %}
             {% assign grouped_students = student_members | where_exp: "member", "member.role contains '研究生'" %}
             {% endif %}
+
             {% if grouped_students.size > 0 %}
             <tr>
               <th colspan="4">{{ student_group }}</th>
