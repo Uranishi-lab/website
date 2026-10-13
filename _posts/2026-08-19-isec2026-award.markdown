@@ -1,0 +1,12 @@
+---
+layout: post
+title:  "D2の北村君が情報処理学会の情報教育シンポジウム2026でポスター発表を行い，学生奨励賞を受賞しました"
+date:   2026-08-19 11:59:00 +0900
+categories: lab presentation
+---
+D2の北村君が、情報処理学会の情報教育シンポジウム2026（2026年8月19〜21日, 広島大学）でポスター発表を行い、学生奨励賞を受賞しました。
+
+<div class="image-grid">
+  <img src="{{ '/assets/images/posts/20260819_isec2026-kitamura-1.JPG' | relative_url }}" alt="情報教育シンポジウム2026">
+  <img src="{{ '/assets/images/posts/20260819_isec2026-kitamura-2.JPG' | relative_url }}" alt="情報教育シンポジウム2026 2">
+</div>

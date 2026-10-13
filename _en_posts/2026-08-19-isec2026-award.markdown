@@ -1,0 +1,11 @@
+---
+title:  "D2 Student Kitamura Gave a Poster Presentation at IPSJ's Information Education Symposium 2026 and Won the Student Encouragement Award"
+date:   2026-08-19 11:59:00 +0900
+categories: lab presentation
+---
+D2 student Kitamura gave a poster presentation at the Information Processing Society of Japan's Information Education Symposium 2026 (August 19–21, 2026, Hiroshima University) and won the Student Encouragement Award.
+
+<div class="image-grid">
+  <img src="{{ '/assets/images/posts/20260819_isec2026-kitamura-1.JPG' | relative_url }}" alt="Information Education Symposium 2026">
+  <img src="{{ '/assets/images/posts/20260819_isec2026-kitamura-2.JPG' | relative_url }}" alt="Information Education Symposium 2026 2">
+</div>
