@@ -1,0 +1,11 @@
+---
+title:  "D3 Student David Gave an Oral Presentation at KES'24"
+date:   2024-09-11 11:59:00 +0900
+categories: lab presentation
+---
+On September 11, 2024, D3 student David gave an oral presentation at KES'24.
+
+<div class="image-grid">
+  <img src="{{ '/assets/images/posts/20240912_160349-1-2048x1536.jpg' | relative_url }}" alt="KES'24">
+  <img src="{{ '/assets/images/posts/20240911_145409-2048x1536.jpg' | relative_url }}" alt="KES'24 2">
+</div>

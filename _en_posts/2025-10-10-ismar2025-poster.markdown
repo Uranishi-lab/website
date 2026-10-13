@@ -1,0 +1,12 @@
+---
+title:  "M1 Students Kinoshita and Kojima Gave Poster Presentations at ISMAR2025"
+date:   2025-10-10 11:59:00 +0900
+categories: lab presentation
+---
+On October 10, 2025, M1 students Kinoshita and Kojima gave poster presentations at ISMAR2025.
+
+<div class="image-grid">
+  <img src="{{ '/assets/images/posts/aaa-1-scaled.jpg' | relative_url }}" alt="ISMAR2025">
+  <img src="{{ '/assets/images/posts/bbb-1-scaled.jpg' | relative_url }}" alt="ISMAR2025 2">
+  <img src="{{ '/assets/images/posts/ccc-1-scaled.jpg' | relative_url }}" alt="ISMAR2025 3">
+</div>

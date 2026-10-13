@@ -32,6 +32,22 @@ theme: minima
 plugins:
   - jekyll-feed
 
+# English translations of _posts live here and build out under /en/,
+# mirroring the default post permalink pattern so the ja/en URLs only
+# differ by the /en/ prefix.
+collections:
+  en_posts:
+    output: true
+    permalink: /en/:categories/:year/:month/:day/:title.html
+
+defaults:
+  - scope:
+      path: ""
+      type: "en_posts"
+    values:
+      layout: "post"
+      lang: "en"
+
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
