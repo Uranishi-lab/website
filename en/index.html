@@ -1,0 +1,140 @@
+---
+layout: default
+title: "Uranishi Lab"
+lang: en
+---
+
+<main id="main_content" class="l-mainContent l-article">
+  <div class="l-mainContent__inner">
+    <div class="post_content">
+
+      <div class="responsive">
+        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/21hWeGo1vTU?si=0yGGR5lflqwupmvL"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen class=" lazyloaded"></iframe>
+      </div>
+
+
+
+      <p>The Media Integration Environment course (Uranishi Lab) works under the theme of "creating new environments through the integration and utilization of media," solving a wide range of problems in VR, augmented reality, HCI, and robotics, and applying our research to a variety of fields.
+      </p>
+
+
+
+      <h2 class="wp-block-heading">Recent Activity</h2>
+
+
+
+      <ul class="swell-block-linkList is-style-default -border">
+        {% for post in site.en_posts %}
+        <li class="swell-block-linkList__item">
+          <a class="swell-block-linkList__link" href="{{ post.url | relative_url }}"><svg
+              xmlns="http://www.w3.org/2000/svg" class="swl-svg-caretRight swell-block-linkList__icon -left" width="1em"
+              height="1em" viewBox="0 0 48 48" role="img" aria-hidden="true" focusable="false">
+              <path d="M19.4 38.3 32.7 25c.6-.6.6-1.5 0-2.1L19.4 9.6c-.9-.9-2.6-.3-2.6 1.1v26.5c0 1.4 1.6 2.1 2.6 1.1z">
+              </path>
+            </svg><span class="swell-block-linkList__text">{{ post.date | date: "%Y/%m/%d" }}　{{ post.title
+              }}</span></a>
+        </li>
+        {% endfor %}
+      </ul>
+
+
+
+      <h2 class="wp-block-heading">Menu</h2>
+
+
+
+      <div class="swell-block-columns" style="--clmn-w--pc:33.33%">
+        <div class="swell-block-columns__inner">
+          <div class="swell-block-column swl-has-mb--s">
+            <div class="swell-block-bannerLink">
+              <a href="{{ '/en/research/' | relative_url }}" class="c-bannerLink -shadow-on"
+                style="background-color:rgba(0, 0, 0, 0.4)">
+                <figure class="c-bannerLink__figure">
+                  <img decoding="async" width="1327" height="746"
+                    src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                    data-src="{{ '/assets/images/home/research.png' | relative_url }}"
+                    class="c-bannerLink__img wp-image-2738 size-full lazyload lazyaspectratio" alt=""
+                    sizes="(max-width: 1327px) 100vw, 1327px" data-aspectratio="1327/746" style="height: 203.506px;">
+                </figure>
+                <div class="c-bannerLink__text">
+                  <div class="c-bannerLink__title">Research</div>
+                </div>
+              </a>
+            </div>
+          </div>
+
+
+
+          <div class="swell-block-column swl-has-mb--s">
+            <div class="swell-block-bannerLink"><a href="{{ '/en/members/' | relative_url }}"
+                class="c-bannerLink -shadow-on" style="background-color:rgba(0, 0, 0, 0.4)">
+                <figure class="c-bannerLink__figure"><img decoding="async" width="1789" height="1006"
+                    src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                    data-src="{{ '/assets/images/home/members.png' | relative_url }}"
+                    class="c-bannerLink__img wp-image-3056 size-full lazyload lazyaspectratio" alt=""
+                    sizes="(max-width: 1789px) 100vw, 1789px" data-aspectratio="1789/1006" style="height: 203.562px;">
+                </figure>
+                <div class="c-bannerLink__text">
+                  <div class="c-bannerLink__title">Members</div>
+                </div>
+              </a></div>
+          </div>
+
+
+
+          <div class="swell-block-column swl-has-mb--s">
+            <div class="swell-block-bannerLink"><a href="{{ '/en/research/achievements/' | relative_url }}"
+                class="c-bannerLink -shadow-on" style="background-color:rgba(0, 0, 0, 0.4)">
+                <figure class="c-bannerLink__figure"><img decoding="async" width="1302" height="732"
+                    src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                    data-src="{{ '/assets/images/home/achievements.png' | relative_url }}"
+                    class="c-bannerLink__img wp-image-2729 size-full lazyload lazyaspectratio" alt=""
+                    sizes="(max-width: 1302px) 100vw, 1302px" data-aspectratio="1302/732" style="height: 203.521px;">
+                </figure>
+                <div class="c-bannerLink__text">
+                  <div class="c-bannerLink__title">Achievements</div>
+                </div>
+              </a></div>
+          </div>
+
+
+
+          <div class="swell-block-column swl-has-mb--s">
+            <div class="swell-block-bannerLink"><a href="{{ '/en/gallery/' | relative_url }}"
+                class="c-bannerLink -shadow-on" style="background-color:rgba(0, 0, 0, 0.4)">
+                <figure class="c-bannerLink__figure"><img decoding="async" width="2560" height="1440"
+                    src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                    data-src="{{ '/assets/images/home/gallery.jpg' | relative_url }}"
+                    class="c-bannerLink__img wp-image-2748 lazyload lazyaspectratio" alt=""
+                    sizes="(max-width: 2560px) 100vw, 2560px" data-aspectratio="2560/1440" style="height: 203.625px;">
+                </figure>
+                <div class="c-bannerLink__text">
+                  <div class="c-bannerLink__title">Photo Gallery</div>
+                </div>
+              </a></div>
+          </div>
+
+
+
+          <div class="swell-block-column swl-has-mb--s">
+            <div class="swell-block-bannerLink"><a href="{{ '/en/contact/' | relative_url }}"
+                class="c-bannerLink -shadow-on" style="background-color:rgba(0, 0, 0, 0.4)">
+                <figure class="c-bannerLink__figure"><img decoding="async" width="1163" height="654"
+                    src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                    data-src="{{ '/assets/images/home/contact.png' | relative_url }}"
+                    class="c-bannerLink__img wp-image-2731 size-full lazyload lazyaspectratio" alt=""
+                    sizes="(max-width: 1163px) 100vw, 1163px" data-aspectratio="1163/654" style="height: 203.567px;">
+                </figure>
+                <div class="c-bannerLink__text">
+                  <div class="c-bannerLink__title">Contact</div>
+                </div>
+              </a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>

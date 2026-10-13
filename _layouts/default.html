@@ -1,5 +1,16 @@
+{% assign is_en = false %}
+{% if page.url == "/en/" or page.url contains "/en/" %}
+  {% assign is_en = true %}
+{% endif %}
+{% if is_en %}
+  {% assign counterpart_url = page.url | remove_first: "en/" %}
+  {% if counterpart_url == "" %}{% assign counterpart_url = "/" %}{% endif %}
+{% else %}
+  {% assign trimmed_url = page.url | remove_first: "/" %}
+  {% assign counterpart_url = "/en/" | append: trimmed_url %}
+{% endif %}
 <!DOCTYPE html>
-<html lang="ja" data-loaded="true" data-scrolled="false" data-spmenu="closed"
+<html lang="{% if is_en %}en{% else %}ja{% endif %}" data-loaded="true" data-scrolled="false" data-spmenu="closed"
   style="--swl-headerH: 76px; --swl-offset_y: 0px; --swl-scrollbar_width: 15px;">
 
 <head>
@@ -17,8 +28,8 @@
   <!-- SEO SIMPLE PACK 3.4.0 -->
   <title>{{ page.title }}</title>
   <!-- <link rel="canonical" href="https://www.lab.ime.cmc.osaka-u.ac.jp/"> -->
-  <meta property="og:locale" content="ja_JP">
-  <meta property="og:type" content="{{ page.type }}">
+  <meta property="og:locale" content="{% if is_en %}en_US{% else %}ja_JP{% endif %}">
+  <meta property="og:type" content="{% if page.url == '/' or page.url == '/en/' %}website{% else %}article{% endif %}">
   <meta property="og:title" content="{{ page.title }}">
   <meta property="og:description" content="{{ page.description }}">
   <!-- <meta property="og:url" content="https://www.lab.ime.cmc.osaka-u.ac.jp/"> -->
@@ -1410,7 +1421,7 @@
     <div id="sp_menu" class="p-spMenu -left">
       <div class="p-spMenu__inner">
         <div class="p-spMenu__closeBtn">
-          <button class="c-iconBtn -menuBtn c-plainBtn" data-onclick="toggleMenu" aria-label="メニューを閉じる">
+          <button class="c-iconBtn -menuBtn c-plainBtn" data-onclick="toggleMenu" aria-label="{% if is_en %}Close menu{% else %}メニューを閉じる{% endif %}">
             <i class="c-iconBtn__icon icon-close-thin"></i>
           </button>
         </div>
@@ -1419,6 +1430,26 @@
             MENU </div>
           <div class="p-spMenu__nav">
             <ul class="c-spnav c-listMenu">
+              {% if is_en %}
+              <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2497"><a
+                  href="{{ '/en/research/' | relative_url }}">Research</a></li>
+              <li
+                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2453">
+                <a href="{{ '/en/members/' | relative_url }}">Members</a>
+                <ul class="sub-menu">
+                  <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2310"><a
+                      href="{{ '/en/members/no-photo/' | relative_url }}">Members (no photo)</a></li>
+                  <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2379"><a
+                      href="{{ '/en/members/alumni/' | relative_url }}">Alumni</a></li>
+                </ul>
+              </li>
+              <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2474"><a
+                  href="{{ '/en/research/achievements/' | relative_url }}">Achievements</a></li>
+              <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2505"><a
+                  href="{{ '/en/gallery/' | relative_url }}">Photo Gallery</a></li>
+              <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2496"><a
+                  href="{{ '/en/contact/' | relative_url }}">Contact</a></li>
+              {% else %}
               <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2497"><a
                   href="{{ '/research/' | relative_url }}">研究紹介</a></li>
               <li
@@ -1437,6 +1468,7 @@
                   href="{{ '/gallery/' | relative_url }}">フォトギャラリー</a></li>
               <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2496"><a
                   href="{{ '/contact/' | relative_url }}">コンタクト</a></li>
+              {% endif %}
             </ul>
           </div>
         </div>
@@ -1451,6 +1483,26 @@
         </div>
         <nav id="gnav" class="l-header__gnav c-gnavWrap">
           <ul class="c-gnav">
+            {% if is_en %}
+            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2497"><a
+                href="{{ '/en/research/' | relative_url }}"><span class="ttl">Research</span></a></li>
+            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2453">
+              <a href="{{ '/en/members/' | relative_url }}"><span class="ttl">Members</span></a>
+              <ul class="sub-menu">
+                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2310"><a
+                    href="{{ '/en/members/no-photo/' | relative_url }}"><span class="ttl">Members (no photo)</span></a>
+                </li>
+                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2379"><a
+                    href="{{ '/en/members/alumni/' | relative_url }}"><span class="ttl">Alumni</span></a></li>
+              </ul>
+            </li>
+            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2474"><a
+                href="{{ '/en/research/achievements/' | relative_url }}"><span class="ttl">Achievements</span></a></li>
+            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2505"><a
+                href="{{ '/en/gallery/' | relative_url }}"><span class="ttl">Photo Gallery</span></a></li>
+            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2496"><a
+                href="{{ '/en/contact/' | relative_url }}"><span class="ttl">Contact</span></a></li>
+            {% else %}
             <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2497"><a
                 href="{{ '/research/' | relative_url }}"><span class="ttl">研究紹介</span></a></li>
             <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2453">
@@ -1469,17 +1521,20 @@
                 href="{{ '/gallery/' | relative_url }}"><span class="ttl">フォトギャラリー</span></a></li>
             <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2496"><a
                 href="{{ '/contact/' | relative_url }}"><span class="ttl">コンタクト</span></a></li>
+            {% endif %}
           </ul>
         </nav>
         <div class="w-header pc_">
           <div class="w-header__inner">
             <div id="bogo_language_switcher-2" class="w-header__item widget_bogo_language_switcher">
-              <div class="w-header__title">言語切り替え</div>
+              <div class="w-header__title">{% if is_en %}Language{% else %}言語切り替え{% endif %}</div>
               <ul class="bogo-language-switcher list-view">
-                <li class="en-US en first"><span class="bogo-language-name"><a rel="alternate" hreflang="en-US"
-                      href="{{ '/en/' | relative_url }}" title="English">English</a></span></li>
-                <li class="ja current last"><span class="bogo-language-name"><a rel="alternate" hreflang="ja"
-                      href="{{ '/' | relative_url }}" title="日本語" class="current" aria-current="page">日本語</a></span>
+                <li class="en-US en first{% unless is_en %} last{% endunless %}"><span class="bogo-language-name"><a rel="alternate" hreflang="en-US"
+                      href="{% if is_en %}{{ page.url | relative_url }}{% else %}{{ counterpart_url | relative_url }}{% endif %}" title="English"
+                      {% if is_en %}class="current" aria-current="page"{% endif %}>English</a></span></li>
+                <li class="ja{% if is_en %} last{% else %} current last{% endif %}"><span class="bogo-language-name"><a rel="alternate" hreflang="ja"
+                      href="{% if is_en %}{{ counterpart_url | relative_url }}{% else %}{{ page.url | relative_url }}{% endif %}" title="日本語"
+                      {% unless is_en %}class="current" aria-current="page"{% endunless %}>日本語</a></span>
                 </li>
               </ul>
             </div>
@@ -1519,7 +1574,7 @@
           <div class="l-container">
             <p class="copyright">
               <span lang="en">©</span>
-              大阪大学 浦西研究室
+              {% if is_en %}Osaka University, Uranishi Lab{% else %}大阪大学 浦西研究室{% endif %}
             </p>
           </div>
         </div>
@@ -1527,7 +1582,7 @@
     </footer>
     <div class="p-fixBtnWrap">
 
-      <button id="pagetop" class="c-fixBtn c-plainBtn hov-bg-main" data-onclick="pageTop" aria-label="ページトップボタン"
+      <button id="pagetop" class="c-fixBtn c-plainBtn hov-bg-main" data-onclick="pageTop" aria-label="{% if is_en %}Back to top{% else %}ページトップボタン{% endif %}"
         data-has-text="">
         <i class="c-fixBtn__icon icon-chevron-up" role="presentation"></i>
       </button>
@@ -1539,10 +1594,10 @@
         <form role="search" method="get" class="c-searchForm" action="{{ '/' | relative_url }}">
           <input type="text" value="" name="s" class="c-searchForm__s s" placeholder="検索" aria-label="検索ワード">
           <button type="submit" class="c-searchForm__submit icon-search hov-opacity u-bg-main" value="search"
-            aria-label="検索を実行する"></button>
+            aria-label="{% if is_en %}Search{% else %}検索を実行する{% endif %}"></button>
         </form>
         <button class="c-modal__close c-plainBtn" data-onclick="toggleSearch">
-          <i class="icon-batsu"></i> 閉じる </button>
+          <i class="icon-batsu"></i> {% if is_en %}Close{% else %}閉じる{% endif %} </button>
       </div>
     </div> -->
   </div><!--/ #all_wrapp-->
